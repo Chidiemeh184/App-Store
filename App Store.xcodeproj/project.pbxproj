@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		EF15238E1FFF182000ADAD1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15238D1FFF182000ADAD1F /* AppDelegate.swift */; };
-		EF1523901FFF182000ADAD1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15238F1FFF182000ADAD1F /* ViewController.swift */; };
 		EF1523931FFF182000ADAD1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523911FFF182000ADAD1F /* Main.storyboard */; };
 		EF1523951FFF182000ADAD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1523941FFF182000ADAD1F /* Assets.xcassets */; };
 		EF1523981FFF182000ADAD1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523961FFF182000ADAD1F /* LaunchScreen.storyboard */; };
+		EF1523A220006FE300ADAD1F /* TodayTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1523A120006FE300ADAD1F /* TodayTableVC.swift */; };
+		EF1523A62000706900ADAD1F /* GamesTabTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1523A52000706900ADAD1F /* GamesTabTableVC.swift */; };
+		EF1523A9200070AE00ADAD1F /* AppsTabTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1523A8200070AE00ADAD1F /* AppsTabTableVC.swift */; };
+		EF1523AC200070F800ADAD1F /* UpdatesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1523AB200070F800ADAD1F /* UpdatesTableVC.swift */; };
+		EF1523AF2000711F00ADAD1F /* SearchTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1523AE2000711F00ADAD1F /* SearchTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF15238A1FFF182000ADAD1F /* App Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF15238D1FFF182000ADAD1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF15238F1FFF182000ADAD1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF1523921FFF182000ADAD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF1523941FFF182000ADAD1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF1523971FFF182000ADAD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF1523991FFF182000ADAD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF1523A120006FE300ADAD1F /* TodayTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableVC.swift; sourceTree = "<group>"; };
+		EF1523A52000706900ADAD1F /* GamesTabTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTabTableVC.swift; sourceTree = "<group>"; };
+		EF1523A8200070AE00ADAD1F /* AppsTabTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsTabTableVC.swift; sourceTree = "<group>"; };
+		EF1523AB200070F800ADAD1F /* UpdatesTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesTableVC.swift; sourceTree = "<group>"; };
+		EF1523AE2000711F00ADAD1F /* SearchTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,74 @@
 		EF15238C1FFF182000ADAD1F /* App Store */ = {
 			isa = PBXGroup;
 			children = (
+				EF1523A320006FF100ADAD1F /* STORYBOARDS */,
+				EF1523A020006F9E00ADAD1F /* TODAY */,
+				EF1523A42000704700ADAD1F /* GAMESTAB */,
+				EF1523A72000708F00ADAD1F /* APPSTAB */,
+				EF1523AA200070C800ADAD1F /* UPDATES */,
+				EF1523AD2000710300ADAD1F /* SEARCH */,
 				EF15238D1FFF182000ADAD1F /* AppDelegate.swift */,
-				EF15238F1FFF182000ADAD1F /* ViewController.swift */,
-				EF1523911FFF182000ADAD1F /* Main.storyboard */,
 				EF1523941FFF182000ADAD1F /* Assets.xcassets */,
 				EF1523961FFF182000ADAD1F /* LaunchScreen.storyboard */,
 				EF1523991FFF182000ADAD1F /* Info.plist */,
+				EF15239F20006C7A00ADAD1F /* MODEL */,
 			);
 			path = "App Store";
+			sourceTree = "<group>";
+		};
+		EF15239F20006C7A00ADAD1F /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MODEL;
+			sourceTree = "<group>";
+		};
+		EF1523A020006F9E00ADAD1F /* TODAY */ = {
+			isa = PBXGroup;
+			children = (
+				EF1523A120006FE300ADAD1F /* TodayTableVC.swift */,
+			);
+			path = TODAY;
+			sourceTree = "<group>";
+		};
+		EF1523A320006FF100ADAD1F /* STORYBOARDS */ = {
+			isa = PBXGroup;
+			children = (
+				EF1523911FFF182000ADAD1F /* Main.storyboard */,
+			);
+			path = STORYBOARDS;
+			sourceTree = "<group>";
+		};
+		EF1523A42000704700ADAD1F /* GAMESTAB */ = {
+			isa = PBXGroup;
+			children = (
+				EF1523A52000706900ADAD1F /* GamesTabTableVC.swift */,
+			);
+			path = GAMESTAB;
+			sourceTree = "<group>";
+		};
+		EF1523A72000708F00ADAD1F /* APPSTAB */ = {
+			isa = PBXGroup;
+			children = (
+				EF1523A8200070AE00ADAD1F /* AppsTabTableVC.swift */,
+			);
+			path = APPSTAB;
+			sourceTree = "<group>";
+		};
+		EF1523AA200070C800ADAD1F /* UPDATES */ = {
+			isa = PBXGroup;
+			children = (
+				EF1523AB200070F800ADAD1F /* UpdatesTableVC.swift */,
+			);
+			path = UPDATES;
+			sourceTree = "<group>";
+		};
+		EF1523AD2000710300ADAD1F /* SEARCH */ = {
+			isa = PBXGroup;
+			children = (
+				EF1523AE2000711F00ADAD1F /* SearchTableVC.swift */,
+			);
+			path = SEARCH;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF1523901FFF182000ADAD1F /* ViewController.swift in Sources */,
+				EF1523A220006FE300ADAD1F /* TodayTableVC.swift in Sources */,
+				EF1523A62000706900ADAD1F /* GamesTabTableVC.swift in Sources */,
+				EF1523AF2000711F00ADAD1F /* SearchTableVC.swift in Sources */,
+				EF1523AC200070F800ADAD1F /* UpdatesTableVC.swift in Sources */,
+				EF1523A9200070AE00ADAD1F /* AppsTabTableVC.swift in Sources */,
 				EF15238E1FFF182000ADAD1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
