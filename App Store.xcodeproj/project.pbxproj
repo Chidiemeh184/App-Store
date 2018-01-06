@@ -16,6 +16,11 @@
 		EF1523A9200070AE00ADAD1F /* AppsTabTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1523A8200070AE00ADAD1F /* AppsTabTableVC.swift */; };
 		EF1523AC200070F800ADAD1F /* UpdatesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1523AB200070F800ADAD1F /* UpdatesTableVC.swift */; };
 		EF1523AF2000711F00ADAD1F /* SearchTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1523AE2000711F00ADAD1F /* SearchTableVC.swift */; };
+		EF1523B2200073D600ADAD1F /* Today.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523B0200073D600ADAD1F /* Today.storyboard */; };
+		EF1523B4200074CE00ADAD1F /* Games.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523B3200074CE00ADAD1F /* Games.storyboard */; };
+		EF1523B72000752700ADAD1F /* Apps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523B52000752700ADAD1F /* Apps.storyboard */; };
+		EF1523B92000756900ADAD1F /* Updates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523B82000756900ADAD1F /* Updates.storyboard */; };
+		EF1523BC2000759500ADAD1F /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523BA2000759500ADAD1F /* Search.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		EF1523A8200070AE00ADAD1F /* AppsTabTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsTabTableVC.swift; sourceTree = "<group>"; };
 		EF1523AB200070F800ADAD1F /* UpdatesTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesTableVC.swift; sourceTree = "<group>"; };
 		EF1523AE2000711F00ADAD1F /* SearchTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableVC.swift; sourceTree = "<group>"; };
+		EF1523B1200073D600ADAD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "App Store/STORYBOARDS/Base.lproj/Today.storyboard"; sourceTree = "<group>"; };
+		EF1523B3200074CE00ADAD1F /* Games.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Games.storyboard; sourceTree = "<group>"; };
+		EF1523B62000752700ADAD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "App Store/STORYBOARDS/Base.lproj/Apps.storyboard"; sourceTree = "<group>"; };
+		EF1523B82000756900ADAD1F /* Updates.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Updates.storyboard; sourceTree = "<group>"; };
+		EF1523BB2000759500ADAD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "App Store/STORYBOARDS/Base.lproj/Search.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				EF1523911FFF182000ADAD1F /* Main.storyboard */,
+				EF1523B0200073D600ADAD1F /* Today.storyboard */,
+				EF1523B3200074CE00ADAD1F /* Games.storyboard */,
+				EF1523B52000752700ADAD1F /* Apps.storyboard */,
+				EF1523B82000756900ADAD1F /* Updates.storyboard */,
+				EF1523BA2000759500ADAD1F /* Search.storyboard */,
 			);
 			path = STORYBOARDS;
 			sourceTree = "<group>";
@@ -191,8 +206,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1523B2200073D600ADAD1F /* Today.storyboard in Resources */,
 				EF1523981FFF182000ADAD1F /* LaunchScreen.storyboard in Resources */,
+				EF1523B4200074CE00ADAD1F /* Games.storyboard in Resources */,
 				EF1523951FFF182000ADAD1F /* Assets.xcassets in Resources */,
+				EF1523B92000756900ADAD1F /* Updates.storyboard in Resources */,
+				EF1523B72000752700ADAD1F /* Apps.storyboard in Resources */,
+				EF1523BC2000759500ADAD1F /* Search.storyboard in Resources */,
 				EF1523931FFF182000ADAD1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +250,30 @@
 				EF1523971FFF182000ADAD1F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF1523B0200073D600ADAD1F /* Today.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1523B1200073D600ADAD1F /* Base */,
+			);
+			name = Today.storyboard;
+			sourceTree = "<group>";
+		};
+		EF1523B52000752700ADAD1F /* Apps.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1523B62000752700ADAD1F /* Base */,
+			);
+			name = Apps.storyboard;
+			sourceTree = "<group>";
+		};
+		EF1523BA2000759500ADAD1F /* Search.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1523BB2000759500ADAD1F /* Base */,
+			);
+			name = Search.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
