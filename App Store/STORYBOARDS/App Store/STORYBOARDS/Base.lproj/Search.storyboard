@@ -42,7 +42,7 @@
         <scene sceneID="VX2-gn-vhu">
             <objects>
                 <navigationController storyboardIdentifier="searchNavScene" automaticallyAdjustsScrollViewInsets="NO" id="rM3-W7-qwD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="z08-Kn-P71"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search-Icon" id="z08-Kn-P71"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vy0-q5-45J">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -58,4 +58,7 @@
             <point key="canvasLocation" x="3225" y="761"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Search-Icon" width="22" height="22"/>
+    </resources>
 </document>

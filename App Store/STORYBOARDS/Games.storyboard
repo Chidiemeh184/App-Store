@@ -42,7 +42,7 @@
         <scene sceneID="O5m-KH-VOY">
             <objects>
                 <navigationController storyboardIdentifier="GamesNavScene" automaticallyAdjustsScrollViewInsets="NO" id="EgW-OY-DL0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Games" id="fsN-8x-EQd"/>
+                    <tabBarItem key="tabBarItem" title="Games" image="Rocket-Icon" id="fsN-8x-EQd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M9O-CN-eaO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -58,4 +58,7 @@
             <point key="canvasLocation" x="-716" y="69"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Rocket-Icon" width="20" height="22"/>
+    </resources>
 </document>

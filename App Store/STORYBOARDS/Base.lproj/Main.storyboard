@@ -34,7 +34,7 @@
         <scene sceneID="rKn-S3-O1k">
             <objects>
                 <viewControllerPlaceholder storyboardName="Today" referencedIdentifier="TodayNavScene" id="amx-Sz-vnJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Bm3-26-HsM"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="Today-Icon" id="Bm3-26-HsM"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPs-cI-mQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,7 +44,7 @@
         <scene sceneID="aWi-2m-7YQ">
             <objects>
                 <viewControllerPlaceholder storyboardName="Games" referencedIdentifier="GamesNavScene" id="YsV-hB-WAR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="e1H-Vj-hH1"/>
+                    <tabBarItem key="tabBarItem" title="Games" image="Rocket-Icon" id="e1H-Vj-hH1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMZ-cv-AZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +54,7 @@
         <scene sceneID="K9R-cA-nh2">
             <objects>
                 <viewControllerPlaceholder storyboardName="Apps" referencedIdentifier="AppsNavScene" id="OXM-Bt-oIf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SbD-Ee-lQS"/>
+                    <tabBarItem key="tabBarItem" title="App" image="Apps-Icon" id="SbD-Ee-lQS"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRx-al-vyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,7 +64,7 @@
         <scene sceneID="QSP-E6-0p1">
             <objects>
                 <viewControllerPlaceholder storyboardName="Updates" referencedIdentifier="UpdatesNavScene" id="S2z-NC-Q7R" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9yd-99-nk3"/>
+                    <tabBarItem key="tabBarItem" title="Updates" image="Updates-Icon" id="9yd-99-nk3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MkN-Zb-8yX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,11 +74,18 @@
         <scene sceneID="aSs-Ev-SXG">
             <objects>
                 <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="searchNavScene" id="nl2-3P-dVJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="i4a-hZ-hgO"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search-Icon" id="i4a-hZ-hgO"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Das-KL-wcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1542" y="587"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Apps-Icon" width="22" height="22"/>
+        <image name="Rocket-Icon" width="20" height="22"/>
+        <image name="Search-Icon" width="22" height="22"/>
+        <image name="Today-Icon" width="18" height="22"/>
+        <image name="Updates-Icon" width="18" height="22"/>
+    </resources>
 </document>
