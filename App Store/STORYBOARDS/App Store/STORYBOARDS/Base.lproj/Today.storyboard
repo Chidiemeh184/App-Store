@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today TableVC-->
+        <scene sceneID="QF4-Oo-Wxb">
+            <objects>
+                <tableViewController id="RXQ-uw-9Gz" customClass="TodayTableVC" customModule="App_Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="1J9-2J-eXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="todayTableViewCell" rowHeight="380" id="DrX-OV-yI7" customClass="TodayTableViewCell" customModule="App_Store" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="380"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DrX-OV-yI7" id="4Ay-b0-EwX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-xU-rVL">
+                                            <rect key="frame" x="20" y="7" width="335" height="341"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="OMD-xU-rVL" secondAttribute="bottom" constant="32" id="CRf-Io-aum"/>
+                                        <constraint firstItem="OMD-xU-rVL" firstAttribute="top" secondItem="4Ay-b0-EwX" secondAttribute="top" constant="7" id="NeR-lm-Nfu"/>
+                                        <constraint firstAttribute="trailing" secondItem="OMD-xU-rVL" secondAttribute="trailing" constant="20" id="S9b-Pa-zi6"/>
+                                        <constraint firstItem="OMD-xU-rVL" firstAttribute="leading" secondItem="4Ay-b0-EwX" secondAttribute="leading" constant="20" id="vOa-LJ-vDh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="appView" destination="OMD-xU-rVL" id="Cbe-eY-geg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RXQ-uw-9Gz" id="cP0-4p-NAH"/>
+                            <outlet property="delegate" destination="RXQ-uw-9Gz" id="yyH-Xe-zxd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="AYi-X3-2kS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7T-Sf-9C8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-930.39999999999998" y="761.46926536731644"/>
+        </scene>
+        <!--Today-->
+        <scene sceneID="Psh-U4-w2x">
+            <objects>
+                <navigationController storyboardIdentifier="TodayNavScene" automaticallyAdjustsScrollViewInsets="NO" id="pn0-tD-jXF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Today" image="Today-Icon" selectedImage="Today-Icon" id="SBI-GE-BPG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zY4-nO-fQX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RXQ-uw-9Gz" kind="relationship" relationship="rootViewController" id="yII-9c-Ld9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGW-H5-JUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1832" y="762.8185907046477"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Today-Icon" width="18" height="22"/>
+    </resources>
+</document>

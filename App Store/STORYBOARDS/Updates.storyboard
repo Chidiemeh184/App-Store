@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Updates TableVC-->
+        <scene sceneID="nXy-2w-gGY">
+            <objects>
+                <tableViewController id="DUy-6o-S12" customClass="UpdatesTableVC" customModule="App_Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="h3r-3f-UXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="115" id="gPa-S5-ban">
+                                <rect key="frame" x="0.0" y="28" width="375" height="115"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gPa-S5-ban" id="TQZ-d4-g8C">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="114.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DUy-6o-S12" id="Eof-Ch-44b"/>
+                            <outlet property="delegate" destination="DUy-6o-S12" id="b72-GN-ZaG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="kq9-Li-R5l"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugO-8b-wFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037.5" y="1616.5"/>
+        </scene>
+        <!--Updates-->
+        <scene sceneID="i7E-2c-b4I">
+            <objects>
+                <navigationController storyboardIdentifier="UpdatesNavScene" automaticallyAdjustsScrollViewInsets="NO" id="E9X-lJ-PAG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Updates" image="Updates-Icon" id="oes-Kh-PKc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nJV-WF-oEs">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DUy-6o-S12" kind="relationship" relationship="rootViewController" id="NE8-3y-LcQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="miy-z0-6Dk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="761"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Updates-Icon" width="18" height="22"/>
+    </resources>
+</document>

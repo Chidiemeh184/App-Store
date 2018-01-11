@@ -22,6 +22,13 @@
 		EF1523B92000756900ADAD1F /* Updates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523B82000756900ADAD1F /* Updates.storyboard */; };
 		EF1523BC2000759500ADAD1F /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523BA2000759500ADAD1F /* Search.storyboard */; };
 		EF1523BE2001C57200ADAD1F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1523BD2001C57200ADAD1F /* App.swift */; };
+		EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75392007BFC000DD7B86 /* Apps.swift */; };
+		EF3D753D2007C27600DD7B86 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3D753C2007C27600DD7B86 /* data.json */; };
+		EF3D753F2007CAA600DD7B86 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */; };
+		EF3D75422007CAEA00DD7B86 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75412007CAEA00DD7B86 /* Cells.swift */; };
+		EF3D75442007CB3400DD7B86 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75432007CB3400DD7B86 /* Segues.swift */; };
+		EF3D75472007CE2000DD7B86 /* DateHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF3D75462007CE2000DD7B86 /* DateHomeHeaderView.xib */; };
+		EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75482007CE3400DD7B86 /* DateHomeHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,13 @@
 		EF1523B82000756900ADAD1F /* Updates.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Updates.storyboard; sourceTree = "<group>"; };
 		EF1523BB2000759500ADAD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "App Store/STORYBOARDS/Base.lproj/Search.storyboard"; sourceTree = "<group>"; };
 		EF1523BD2001C57200ADAD1F /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		EF3D75392007BFC000DD7B86 /* Apps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apps.swift; sourceTree = "<group>"; };
+		EF3D753C2007C27600DD7B86 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
+		EF3D75412007CAEA00DD7B86 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		EF3D75432007CB3400DD7B86 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		EF3D75462007CE2000DD7B86 /* DateHomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateHomeHeaderView.xib; sourceTree = "<group>"; };
+		EF3D75482007CE3400DD7B86 /* DateHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHomeHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +106,10 @@
 		EF15239F20006C7A00ADAD1F /* MODEL */ = {
 			isa = PBXGroup;
 			children = (
+				EF3D75402007CAD700DD7B86 /* Enumerations */,
+				EF3D753B2007C25400DD7B86 /* Data */,
 				EF1523BD2001C57200ADAD1F /* App.swift */,
+				EF3D75392007BFC000DD7B86 /* Apps.swift */,
 			);
 			path = MODEL;
 			sourceTree = "<group>";
@@ -100,7 +117,9 @@
 		EF1523A020006F9E00ADAD1F /* TODAY */ = {
 			isa = PBXGroup;
 			children = (
+				EF3D75452007CD4900DD7B86 /* HeaderView */,
 				EF1523A120006FE300ADAD1F /* TodayTableVC.swift */,
+				EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */,
 			);
 			path = TODAY;
 			sourceTree = "<group>";
@@ -148,6 +167,32 @@
 				EF1523AE2000711F00ADAD1F /* SearchTableVC.swift */,
 			);
 			path = SEARCH;
+			sourceTree = "<group>";
+		};
+		EF3D753B2007C25400DD7B86 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D753C2007C27600DD7B86 /* data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EF3D75402007CAD700DD7B86 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D75412007CAEA00DD7B86 /* Cells.swift */,
+				EF3D75432007CB3400DD7B86 /* Segues.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		EF3D75452007CD4900DD7B86 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D75462007CE2000DD7B86 /* DateHomeHeaderView.xib */,
+				EF3D75482007CE3400DD7B86 /* DateHomeHeaderView.swift */,
+			);
+			path = HeaderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,11 +256,13 @@
 			files = (
 				EF1523B2200073D600ADAD1F /* Today.storyboard in Resources */,
 				EF1523981FFF182000ADAD1F /* LaunchScreen.storyboard in Resources */,
+				EF3D75472007CE2000DD7B86 /* DateHomeHeaderView.xib in Resources */,
 				EF1523B4200074CE00ADAD1F /* Games.storyboard in Resources */,
 				EF1523951FFF182000ADAD1F /* Assets.xcassets in Resources */,
 				EF1523B92000756900ADAD1F /* Updates.storyboard in Resources */,
 				EF1523B72000752700ADAD1F /* Apps.storyboard in Resources */,
 				EF1523BC2000759500ADAD1F /* Search.storyboard in Resources */,
+				EF3D753D2007C27600DD7B86 /* data.json in Resources */,
 				EF1523931FFF182000ADAD1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,12 +275,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF1523A220006FE300ADAD1F /* TodayTableVC.swift in Sources */,
+				EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */,
 				EF1523A62000706900ADAD1F /* GamesTabTableVC.swift in Sources */,
 				EF1523AF2000711F00ADAD1F /* SearchTableVC.swift in Sources */,
+				EF3D753F2007CAA600DD7B86 /* TodayTableViewCell.swift in Sources */,
 				EF1523AC200070F800ADAD1F /* UpdatesTableVC.swift in Sources */,
 				EF1523A9200070AE00ADAD1F /* AppsTabTableVC.swift in Sources */,
 				EF1523BE2001C57200ADAD1F /* App.swift in Sources */,
+				EF3D75442007CB3400DD7B86 /* Segues.swift in Sources */,
 				EF15238E1FFF182000ADAD1F /* AppDelegate.swift in Sources */,
+				EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */,
+				EF3D75422007CAEA00DD7B86 /* Cells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

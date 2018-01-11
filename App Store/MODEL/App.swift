@@ -50,7 +50,7 @@ struct App : Codable {
     var bundleId : String?
     var isVppDeviceBasedLicensingEnabled : Bool?
     var primaryGenreName : String?
-    var releaseDate : Date?
+    var releaseDate : String?
     var minimumOsVersion : String?
     var formattedPrice : String?
     var releaseNotes : String?
