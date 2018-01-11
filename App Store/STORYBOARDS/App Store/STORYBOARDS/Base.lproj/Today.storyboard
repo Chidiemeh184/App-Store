@@ -16,7 +16,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="1J9-2J-eXJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="todayTableViewCell" rowHeight="380" id="DrX-OV-yI7" customClass="TodayTableViewCell" customModule="App_Store" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="380"/>
@@ -26,14 +26,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-xU-rVL">
-                                            <rect key="frame" x="20" y="7" width="335" height="341"/>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="20" y="3" width="335" height="345"/>
+                                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="OMD-xU-rVL" secondAttribute="bottom" constant="32" id="CRf-Io-aum"/>
-                                        <constraint firstItem="OMD-xU-rVL" firstAttribute="top" secondItem="4Ay-b0-EwX" secondAttribute="top" constant="7" id="NeR-lm-Nfu"/>
+                                        <constraint firstItem="OMD-xU-rVL" firstAttribute="top" secondItem="4Ay-b0-EwX" secondAttribute="top" constant="3" id="NeR-lm-Nfu"/>
                                         <constraint firstAttribute="trailing" secondItem="OMD-xU-rVL" secondAttribute="trailing" constant="20" id="S9b-Pa-zi6"/>
                                         <constraint firstItem="OMD-xU-rVL" firstAttribute="leading" secondItem="4Ay-b0-EwX" secondAttribute="leading" constant="20" id="vOa-LJ-vDh"/>
                                     </constraints>

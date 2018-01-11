@@ -29,6 +29,7 @@
 		EF3D75442007CB3400DD7B86 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75432007CB3400DD7B86 /* Segues.swift */; };
 		EF3D75472007CE2000DD7B86 /* DateHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF3D75462007CE2000DD7B86 /* DateHomeHeaderView.xib */; };
 		EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75482007CE3400DD7B86 /* DateHomeHeaderView.swift */; };
+		EF3D754B2007E8E400DD7B86 /* SanFranciscoFont-master in Resources */ = {isa = PBXBuildFile; fileRef = EF3D754A2007E8E400DD7B86 /* SanFranciscoFont-master */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		EF3D75432007CB3400DD7B86 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
 		EF3D75462007CE2000DD7B86 /* DateHomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateHomeHeaderView.xib; sourceTree = "<group>"; };
 		EF3D75482007CE3400DD7B86 /* DateHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHomeHeaderView.swift; sourceTree = "<group>"; };
+		EF3D754A2007E8E400DD7B86 /* SanFranciscoFont-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SanFranciscoFont-master"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				EF1523941FFF182000ADAD1F /* Assets.xcassets */,
 				EF1523961FFF182000ADAD1F /* LaunchScreen.storyboard */,
 				EF1523991FFF182000ADAD1F /* Info.plist */,
+				EF3D754A2007E8E400DD7B86 /* SanFranciscoFont-master */,
 				EF15239F20006C7A00ADAD1F /* MODEL */,
 			);
 			path = "App Store";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF1523B2200073D600ADAD1F /* Today.storyboard in Resources */,
+				EF3D754B2007E8E400DD7B86 /* SanFranciscoFont-master in Resources */,
 				EF1523981FFF182000ADAD1F /* LaunchScreen.storyboard in Resources */,
 				EF3D75472007CE2000DD7B86 /* DateHomeHeaderView.xib in Resources */,
 				EF1523B4200074CE00ADAD1F /* Games.storyboard in Resources */,
