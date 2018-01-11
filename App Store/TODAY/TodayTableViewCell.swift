@@ -30,7 +30,8 @@ class TodayTableViewCell: UITableViewCell {
         appView.layer.masksToBounds = false
         appView.layer.cornerRadius = 15   //Default 8
         appView.layer.borderWidth = 0.5
-
+        
+        appView.layer.shadowPath = UIBezierPath(roundedRect: self.appView.bounds, cornerRadius: appView.layer.cornerRadius).cgPath
         //appView.layer.shadowPath = UIBezierPath(roundedRect:self.bounds, cornerRadius:self.contentView.layer.cornerRadius).cgPath
     }
     
