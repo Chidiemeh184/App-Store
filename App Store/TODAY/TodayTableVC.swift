@@ -60,13 +60,16 @@ extension TodayTableVC {
         }else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: Cells.sytleThreeTableViewCell.rawValue) as! SytleThreeTableViewCell
             return cell
-        }else if indexPath.row == 2 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.sytleFiveTableViewCell.rawValue) as! SytleFiveTableViewCell
-            return cell
-        }else if indexPath.row == 3 {
+        }
+        else if indexPath.row == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: Cells.sytleFourTableViewCell.rawValue) as! SytleFourTableViewCell
             return cell
-        }else {
+        }else if indexPath.row == 4 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.dailyListTableViewCell.rawValue) as! DailyListTableViewCell
+            cell.numberOfRows = 4
+            return cell
+        }
+        else {
             let cell = tableView.dequeueReusableCell(withIdentifier: Cells.todayTableViewCell.rawValue) as! TodayTableViewCell
             return cell
         }
@@ -122,9 +125,7 @@ extension TodayTableVC {
         self.dates = dates
     }
 
-    
 }
-
 
 
 

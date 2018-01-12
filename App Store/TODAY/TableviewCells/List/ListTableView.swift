@@ -1,5 +1,5 @@
 //
-//  StyleFiveChildTableView.swift
+//  ListTableView.swift
 //  App Store
 //
 //  Created by Chidi Emeh on 1/12/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StyleFiveChildTableView: UITableView {
+class ListTableView: UITableView {
 
     /*
     // Only override draw() if you perform custom drawing.

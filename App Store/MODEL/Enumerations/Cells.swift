@@ -14,5 +14,8 @@ enum Cells : String {
     case sytleTwoTableViewCell = "sytleTwoTableViewCell"
     case sytleThreeTableViewCell = "sytleThreeTableViewCell"
     case sytleFourTableViewCell = "sytleFourTableViewCell"
-    case sytleFiveTableViewCell = "sytleFiveTableViewCell"
+    case dailyListTableViewCell = "dailyListTableViewCell"
+    
+    //List
+    case listTableViewCell = "listTableViewCell"
 }
