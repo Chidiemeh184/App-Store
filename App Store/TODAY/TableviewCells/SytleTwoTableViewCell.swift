@@ -10,36 +10,27 @@ import UIKit
 
 class SytleTwoTableViewCell: UITableViewCell {
 
-    //UI Properties
-    @IBOutlet weak var appView: UIView!
-    
+    @IBOutlet weak var appImageView: UIImageView!
+    @IBOutlet weak var containerView: ShadowView!
+    @IBOutlet weak var visualEffectView: UIVisualEffectView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        configureAppView()
-        //setUPAppView()
+        visualEffectView.roundCorners([.topLeft, .topRight], radius: 15)
+        setUpCustomize()
     }
     
     
-    func configureAppView(){
-        //TODO: Make bottom line go away!
-        appView.layer.borderColor = UIColor.clear.cgColor
-        appView.layer.shadowColor =  UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1).cgColor  //204
-        appView.layer.shadowOffset = CGSize(width: 0, height: 0)
-        appView.layer.shadowRadius = 55  //85
-        appView.layer.shadowOpacity = 1.0
-        appView.layer.masksToBounds = false
-        appView.layer.cornerRadius = 15
-        appView.layer.borderWidth = 0.5
-        
-        appView.layer.shadowPath = UIBezierPath(rect: appView.bounds).cgPath
-        //appView.layer.shadowPath = UIBezierPath(roundedRect: self.appView.bounds, cornerRadius: appView.layer.cornerRadius).cgPath
-        
-        appView.layer.shouldRasterize = true
-        
-        appView.layer.rasterizationScale = UIScreen.main.scale
-        
+    func setUpCustomize(){
+        appImageView.clipsToBounds = true
+        appImageView.layer.cornerRadius = 15
+        containerView.setUpShadow()
     }
 
 }
+
+
+
+
+
+
