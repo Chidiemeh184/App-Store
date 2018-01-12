@@ -4,8 +4,27 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SanFranciscoDisplay-Black.otf</string>
-		<string>SanFranciscoText-Regular.otf</string>
+		<string>SanFranciscoDisplay-Black</string>
+		<string>SanFranciscoDisplay-Bold</string>
+		<string>SanFranciscoText-Regular</string>
+		<string>SanFranciscoDisplay-Light</string>
+		<string>SanFranciscoDisplay-Medium</string>
+		<string>SanFranciscoDisplay-Regular</string>
+		<string>SanFranciscoDisplay-Semibold</string>
+		<string>SanFranciscoDisplay-Thin</string>
+		<string>SanFranciscoDisplay-Ultralight</string>
+		<string>SanFranciscoText-Bold</string>
+		<string>SanFranciscoText-BoldItalic</string>
+		<string>SanFranciscoText-Heavy</string>
+		<string>SanFranciscoText-HeavyItalic</string>
+		<string>SanFranciscoText-Light</string>
+		<string>SanFranciscoText-LightItalic</string>
+		<string>SanFranciscoText-Medium</string>
+		<string>SanFranciscoText-MediumItalic</string>
+		<string>SanFranciscoText-Regular</string>
+		<string>SanFranciscoText-RegularItalic</string>
+		<string>SanFranciscoText-Semibold</string>
+		<string>SanFranciscoText-SemiboldItalic</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

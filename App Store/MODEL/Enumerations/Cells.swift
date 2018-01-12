@@ -11,5 +11,6 @@ import Foundation
 
 enum Cells : String {
     case todayTableViewCell = "todayTableViewCell"
-
+    case sytleTwoTableViewCell = "sytleTwoTableViewCell"
+    case sytleThreeTableViewCell = "sytleThreeTableViewCell"
 }

@@ -53,8 +53,21 @@ extension TodayTableVC {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Cells.todayTableViewCell.rawValue) as! TodayTableViewCell
-        return cell
+        
+        if (indexPath.row % 2) == 0 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.sytleTwoTableViewCell.rawValue) as! SytleTwoTableViewCell
+            return cell
+        }else if indexPath.row == 3 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.sytleThreeTableViewCell.rawValue) as! SytleThreeTableViewCell
+            return cell
+            
+        }else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.todayTableViewCell.rawValue) as! TodayTableViewCell
+            return cell
+        }
+
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
