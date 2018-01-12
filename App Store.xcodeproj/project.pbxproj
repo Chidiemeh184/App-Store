@@ -53,6 +53,9 @@
 		EFD33FD220085BCD00675C5E /* SanFranciscoDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FBD20085BCC00675C5E /* SanFranciscoDisplay-Light.otf */; };
 		EFD33FD320085BCD00675C5E /* SanFranciscoText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FBE20085BCD00675C5E /* SanFranciscoText-Bold.otf */; };
 		EFD33FD420085BCD00675C5E /* SanFranciscoText-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FBF20085BCD00675C5E /* SanFranciscoText-LightItalic.otf */; };
+		EFD33FD6200865CB00675C5E /* SytleFourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FD5200865CB00675C5E /* SytleFourTableViewCell.swift */; };
+		EFD33FD9200883A700675C5E /* SytleFiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FD8200883A700675C5E /* SytleFiveTableViewCell.swift */; };
+		EFD33FDC200886C800675C5E /* StyleFiveChildTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FDB200886C800675C5E /* StyleFiveChildTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +107,9 @@
 		EFD33FBD20085BCC00675C5E /* SanFranciscoDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Light.otf"; sourceTree = "<group>"; };
 		EFD33FBE20085BCD00675C5E /* SanFranciscoText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Bold.otf"; sourceTree = "<group>"; };
 		EFD33FBF20085BCD00675C5E /* SanFranciscoText-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-LightItalic.otf"; sourceTree = "<group>"; };
+		EFD33FD5200865CB00675C5E /* SytleFourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SytleFourTableViewCell.swift; sourceTree = "<group>"; };
+		EFD33FD8200883A700675C5E /* SytleFiveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SytleFiveTableViewCell.swift; sourceTree = "<group>"; };
+		EFD33FDB200886C800675C5E /* StyleFiveChildTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleFiveChildTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,8 +255,11 @@
 		EF3D754C200828A800DD7B86 /* TableviewCells */ = {
 			isa = PBXGroup;
 			children = (
+				EFD33FDA2008868700675C5E /* StyleFiveChildTV */,
 				EF3D754D200836F300DD7B86 /* SytleTwoTableViewCell.swift */,
 				EF3D754F2008463600DD7B86 /* SytleThreeTableViewCell.swift */,
+				EFD33FD5200865CB00675C5E /* SytleFourTableViewCell.swift */,
+				EFD33FD8200883A700675C5E /* SytleFiveTableViewCell.swift */,
 			);
 			path = TableviewCells;
 			sourceTree = "<group>";
@@ -281,6 +290,14 @@
 				EFD33FB820085BCC00675C5E /* SanFranciscoText-SemiboldItalic.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EFD33FDA2008868700675C5E /* StyleFiveChildTV */ = {
+			isa = PBXGroup;
+			children = (
+				EFD33FDB200886C800675C5E /* StyleFiveChildTableView.swift */,
+			);
+			path = StyleFiveChildTV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +406,8 @@
 				EF3D754E200836F300DD7B86 /* SytleTwoTableViewCell.swift in Sources */,
 				EF1523A62000706900ADAD1F /* GamesTabTableVC.swift in Sources */,
 				EF1523AF2000711F00ADAD1F /* SearchTableVC.swift in Sources */,
+				EFD33FDC200886C800675C5E /* StyleFiveChildTableView.swift in Sources */,
+				EFD33FD9200883A700675C5E /* SytleFiveTableViewCell.swift in Sources */,
 				EF3D753F2007CAA600DD7B86 /* TodayTableViewCell.swift in Sources */,
 				EF1523AC200070F800ADAD1F /* UpdatesTableVC.swift in Sources */,
 				EF1523A9200070AE00ADAD1F /* AppsTabTableVC.swift in Sources */,
@@ -398,6 +417,7 @@
 				EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */,
 				EF3D75502008463600DD7B86 /* SytleThreeTableViewCell.swift in Sources */,
 				EF3D75422007CAEA00DD7B86 /* Cells.swift in Sources */,
+				EFD33FD6200865CB00675C5E /* SytleFourTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

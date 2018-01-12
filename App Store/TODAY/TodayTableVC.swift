@@ -54,20 +54,22 @@ extension TodayTableVC {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if (indexPath.row % 2) == 0 {
-            
+        if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: Cells.sytleTwoTableViewCell.rawValue) as! SytleTwoTableViewCell
             return cell
-        }else if indexPath.row == 3 {
-            
+        }else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: Cells.sytleThreeTableViewCell.rawValue) as! SytleThreeTableViewCell
             return cell
-            
+        }else if indexPath.row == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.sytleFiveTableViewCell.rawValue) as! SytleFiveTableViewCell
+            return cell
+        }else if indexPath.row == 3 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.sytleFourTableViewCell.rawValue) as! SytleFourTableViewCell
+            return cell
         }else {
             let cell = tableView.dequeueReusableCell(withIdentifier: Cells.todayTableViewCell.rawValue) as! TodayTableViewCell
             return cell
         }
-
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
