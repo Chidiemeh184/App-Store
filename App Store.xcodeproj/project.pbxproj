@@ -60,6 +60,8 @@
 		EFD33FEB20093E6800675C5E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FEA20093E6800675C5E /* Extensions.swift */; };
 		EFD33FEE2009492B00675C5E /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FED2009492B00675C5E /* ShadowView.swift */; };
 		EFD33FF82009784F00675C5E /* GetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FF72009784E00675C5E /* GetButton.swift */; };
+		EFD33FFB200A63A700675C5E /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FFA200A63A700675C5E /* NetworkProcessor.swift */; };
+		EFD33FFD200A662D00675C5E /* AppStoreServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FFC200A662D00675C5E /* AppStoreServiceAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +120,8 @@
 		EFD33FEA20093E6800675C5E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFD33FED2009492B00675C5E /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		EFD33FF72009784E00675C5E /* GetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetButton.swift; sourceTree = "<group>"; };
+		EFD33FFA200A63A700675C5E /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
+		EFD33FFC200A662D00675C5E /* AppStoreServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreServiceAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 				EF1523AD2000710300ADAD1F /* SEARCH */,
 				EF15238D1FFF182000ADAD1F /* AppDelegate.swift */,
 				EF1523941FFF182000ADAD1F /* Assets.xcassets */,
+				EFD33FF9200A636D00675C5E /* NETWORK */,
 				EFD33FEC2009490200675C5E /* CUSTOM */,
 				EFD33F7E2008599B00675C5E /* SanFranciscoFont-master */,
 				EFD33FAA20085BA600675C5E /* Fonts */,
@@ -328,6 +333,15 @@
 			path = CUSTOM;
 			sourceTree = "<group>";
 		};
+		EFD33FF9200A636D00675C5E /* NETWORK */ = {
+			isa = PBXGroup;
+			children = (
+				EFD33FFA200A63A700675C5E /* NetworkProcessor.swift */,
+				EFD33FFC200A662D00675C5E /* AppStoreServiceAPI.swift */,
+			);
+			path = NETWORK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -446,9 +460,11 @@
 				EF3D75442007CB3400DD7B86 /* Segues.swift in Sources */,
 				EF15238E1FFF182000ADAD1F /* AppDelegate.swift in Sources */,
 				EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */,
+				EFD33FFB200A63A700675C5E /* NetworkProcessor.swift in Sources */,
 				EF3D75502008463600DD7B86 /* SytleThreeTableViewCell.swift in Sources */,
 				EFD33FF82009784F00675C5E /* GetButton.swift in Sources */,
 				EF3D75422007CAEA00DD7B86 /* Cells.swift in Sources */,
+				EFD33FFD200A662D00675C5E /* AppStoreServiceAPI.swift in Sources */,
 				EFD33FD6200865CB00675C5E /* SytleFourTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
