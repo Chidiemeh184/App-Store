@@ -9,26 +9,37 @@
 import UIKit
 
 class DailyListTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataSource {
-
+    
     //Properties
+    @IBOutlet weak var appView: UIView!
+    @IBOutlet weak var shadowView: ShadowView!
     @IBOutlet weak var appsListTableView: ListTableView!
     var numberOfRows  = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         appsListTableView.dataSource = self
         appsListTableView.delegate = self
         appsListTableView.reloadData()
+        configureView()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
 
+    
+    func configureView() {
+        appView.clipsToBounds = true
+        appView.layer.cornerRadius = 15
+        shadowView.setUpShadow()
+    }
+    
 }
 
-//MARK: Datasource
+
+
+//MARK: - Datasource
 extension DailyListTableViewCell {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return numberOfRows
@@ -39,3 +50,26 @@ extension DailyListTableViewCell {
         return cell
     }
 }
+
+
+//MARK: - Footer Height
+extension DailyListTableViewCell {
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55
+    }
+
+
+}
+
+
+
+
+
+
+
+
+

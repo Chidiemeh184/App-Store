@@ -76,7 +76,7 @@ extension TodayTableVC {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 380
+        return 443
     }
     
 }

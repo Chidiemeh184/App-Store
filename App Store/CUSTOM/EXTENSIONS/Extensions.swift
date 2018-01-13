@@ -9,7 +9,7 @@
 import UIKit
 
 
-
+//Adds cornerRadius to two edges
 extension UIVisualEffectView {
     
     func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
@@ -18,4 +18,16 @@ extension UIVisualEffectView {
         mask.path = path.cgPath
         self.layer.mask = mask
     }
+}
+
+//Adds cornerRadius to two edges
+extension UIView {
+
+    func roundBottomCorners(_ corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+    
 }

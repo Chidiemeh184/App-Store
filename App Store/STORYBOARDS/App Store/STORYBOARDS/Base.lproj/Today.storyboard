@@ -10,11 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Bold.otf">
+            <string>SanFranciscoDisplay-Bold</string>
+        </array>
         <array key="SanFranciscoDisplay-Heavy.otf">
             <string>SanFranciscoDisplay-Heavy</string>
-        </array>
-        <array key="SanFranciscoDisplay-Medium.otf">
-            <string>SanFranciscoDisplay-Medium</string>
         </array>
         <array key="SanFranciscoDisplay-Regular.otf">
             <string>SanFranciscoDisplay-Regular</string>
@@ -36,94 +36,85 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="todayTableViewCell" rowHeight="380" id="DrX-OV-yI7" customClass="TodayTableViewCell" customModule="App_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="380"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="todayTableViewCell" rowHeight="443" id="DrX-OV-yI7" customClass="TodayTableViewCell" customModule="App_Store" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="443"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DrX-OV-yI7" id="4Ay-b0-EwX">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-xU-rVL">
-                                            <rect key="frame" x="20" y="3" width="335" height="345"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="beF-xb-53e">
-                                                    <rect key="frame" x="17" y="14" width="310" height="90"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPLORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdh-Kv-gZ3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="310" height="21"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="uEl-Vh-6fg"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="15"/>
-                                                            <color key="textColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Beauty of mordern Living" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rp-lO-SL5">
-                                                            <rect key="frame" x="0.0" y="23" width="310" height="67"/>
-                                                            <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="28"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="btR-MN-QWj">
-                                                    <rect key="frame" x="17" y="279" width="310" height="47"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyN-fF-KOx">
-                                                            <rect key="frame" x="0.0" y="0.0" width="310" height="47"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="310" id="Xoj-4X-r8u"/>
-                                                            </constraints>
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="Pimp up your home with latest design classics and smart helpers.">
-                                                                    <attributes>
-                                                                        <color key="NSColor" red="0.20784313725490194" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-xU-rVL" customClass="ShadowView" customModule="App_Store" customModuleProvider="target">
+                                            <rect key="frame" x="33" y="30.5" width="308" height="380"/>
                                             <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="btR-MN-QWj" secondAttribute="trailing" constant="8" id="Dla-lf-v7H"/>
-                                                <constraint firstAttribute="trailing" secondItem="beF-xb-53e" secondAttribute="trailing" constant="8" id="Kpq-d0-ptV"/>
-                                                <constraint firstItem="btR-MN-QWj" firstAttribute="top" secondItem="beF-xb-53e" secondAttribute="bottom" constant="175" id="eW0-yT-uSz"/>
-                                                <constraint firstItem="beF-xb-53e" firstAttribute="leading" secondItem="OMD-xU-rVL" secondAttribute="leading" constant="17" id="ee2-kA-xhM"/>
-                                                <constraint firstItem="beF-xb-53e" firstAttribute="top" secondItem="OMD-xU-rVL" secondAttribute="top" constant="14" id="oLP-Sn-IxB"/>
-                                                <constraint firstItem="btR-MN-QWj" firstAttribute="leading" secondItem="OMD-xU-rVL" secondAttribute="leading" constant="17" id="sBR-I8-h3g"/>
-                                            </constraints>
+                                        </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="6wz-4U-MTq">
+                                            <rect key="frame" x="20" y="17.5" width="335" height="408"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GuO-q8-58Y">
+                                            <rect key="frame" x="33" y="28" width="310" height="386"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EXPLORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdh-Kv-gZ3">
+                                                    <rect key="frame" x="8" y="8" width="294" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Beauty of mordern Living" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rp-lO-SL5">
+                                                    <rect key="frame" x="8" y="26" width="294" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="28"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyN-fF-KOx">
+                                                    <rect key="frame" x="8" y="331" width="302" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Pimp up your home with latest design classics and smart helpers.">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.20784313725490194" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="OMD-xU-rVL" secondAttribute="bottom" constant="32" id="CRf-Io-aum"/>
-                                        <constraint firstItem="OMD-xU-rVL" firstAttribute="top" secondItem="4Ay-b0-EwX" secondAttribute="top" constant="3" id="NeR-lm-Nfu"/>
-                                        <constraint firstAttribute="trailing" secondItem="OMD-xU-rVL" secondAttribute="trailing" constant="20" id="S9b-Pa-zi6"/>
-                                        <constraint firstItem="OMD-xU-rVL" firstAttribute="leading" secondItem="4Ay-b0-EwX" secondAttribute="leading" constant="20" id="vOa-LJ-vDh"/>
+                                        <constraint firstItem="OMD-xU-rVL" firstAttribute="top" secondItem="4Ay-b0-EwX" secondAttribute="top" constant="30.5" id="7RQ-av-cz6"/>
+                                        <constraint firstItem="OMD-xU-rVL" firstAttribute="leading" secondItem="4Ay-b0-EwX" secondAttribute="leading" constant="33" id="BV0-AG-am4"/>
+                                        <constraint firstAttribute="trailing" secondItem="6wz-4U-MTq" secondAttribute="trailing" constant="20" id="Qeu-qM-m2b"/>
+                                        <constraint firstItem="6wz-4U-MTq" firstAttribute="top" secondItem="4Ay-b0-EwX" secondAttribute="top" constant="17.5" id="U3S-Av-mfz"/>
+                                        <constraint firstAttribute="bottom" secondItem="OMD-xU-rVL" secondAttribute="bottom" constant="32.5" id="cM5-oe-zIF"/>
+                                        <constraint firstAttribute="trailing" secondItem="OMD-xU-rVL" secondAttribute="trailing" constant="34" id="hEz-Qy-k8Z"/>
+                                        <constraint firstItem="6wz-4U-MTq" firstAttribute="leading" secondItem="4Ay-b0-EwX" secondAttribute="leading" constant="20" id="rJZ-Xc-tNV"/>
+                                        <constraint firstAttribute="bottom" secondItem="6wz-4U-MTq" secondAttribute="bottom" constant="17.5" id="zHm-SF-uZF"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="appImageView" destination="6wz-4U-MTq" id="FRc-BT-k3p"/>
                                     <outlet property="appView" destination="OMD-xU-rVL" id="Cbe-eY-geg"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="sytleTwoTableViewCell" rowHeight="380" id="hjY-yc-ik4" customClass="SytleTwoTableViewCell" customModule="App_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="435.5" width="375" height="380"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="sytleTwoTableViewCell" rowHeight="443" id="hjY-yc-ik4" customClass="SytleTwoTableViewCell" customModule="App_Store" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="498.5" width="375" height="443"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hjY-yc-ik4" id="mNs-CO-zfv">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJh-7F-ynF" customClass="ShadowView" customModule="App_Store" customModuleProvider="target">
-                                            <rect key="frame" x="32" y="29.5" width="308" height="322"/>
+                                            <rect key="frame" x="32" y="29.5" width="308" height="385"/>
                                             <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="ayr-8y-Ry0">
-                                            <rect key="frame" x="20" y="17.5" width="335" height="345"/>
+                                            <rect key="frame" x="20" y="17.5" width="335" height="408"/>
                                         </imageView>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zyb-sm-UiF">
                                             <rect key="frame" x="20" y="17" width="335" height="126"/>
@@ -135,12 +126,12 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GET STARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLo-3i-N8I">
                                                         <rect key="frame" x="16" y="8" width="310" height="18"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="15"/>
                                                         <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Book and Plan your holidays right" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kx2-fq-g7q">
-                                                        <rect key="frame" x="16" y="34" width="319" height="67"/>
+                                                        <rect key="frame" x="16" y="33" width="310" height="67"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="28"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,72 +160,79 @@
                                     <outlet property="visualEffectView" destination="zyb-sm-UiF" id="M9E-zY-Qmv"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="sytleThreeTableViewCell" rowHeight="380" id="gAK-RG-f4e" customClass="SytleThreeTableViewCell" customModule="App_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="815.5" width="375" height="380"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="sytleThreeTableViewCell" rowHeight="443" id="gAK-RG-f4e" customClass="SytleThreeTableViewCell" customModule="App_Store" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="941.5" width="375" height="443"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gAK-RG-f4e" id="T04-dW-978">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JK6-yH-Rxd" customClass="ShadowView" customModule="App_Store" customModuleProvider="target">
-                                            <rect key="frame" x="34" y="29.5" width="307" height="321"/>
+                                            <rect key="frame" x="34" y="29.5" width="307" height="384"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snow" translatesAutoresizingMaskIntoConstraints="NO" id="SVQ-ux-7bJ">
-                                            <rect key="frame" x="20" y="17.5" width="335" height="345"/>
+                                            <rect key="frame" x="20" y="17.5" width="335" height="408"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ol-ef-vln">
-                                            <rect key="frame" x="29" y="28" width="316" height="324"/>
+                                            <rect key="frame" x="29" y="28" width="316" height="387"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Caw-t7-KMP">
-                                                    <rect key="frame" x="8" y="8" width="80" height="80"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Caw-t7-KMP">
+                                                    <rect key="frame" x="5" y="5" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="KG0-sJ-xQk"/>
+                                                        <constraint firstAttribute="width" constant="80" id="yXe-x2-Wgv"/>
+                                                    </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APP " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHo-BM-6cf">
+                                                    <rect key="frame" x="12" y="128" width="300" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Heavy" family="San Francisco Display" pointSize="53"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OF THE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ews-2l-BFm">
+                                                    <rect key="frame" x="12" y="177" width="300" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Heavy" family="San Francisco Display" pointSize="53"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DAY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-1f-vyt">
+                                                    <rect key="frame" x="12" y="221" width="300" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Heavy" family="San Francisco Display" pointSize="53"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Geometrics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmU-2A-6Ju">
-                                                    <rect key="frame" x="13" y="287" width="206.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="13" y="332" width="193" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore Architecture around you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5t-8r-yRc">
-                                                    <rect key="frame" x="13" y="268" width="206.5" height="18"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="13"/>
-                                                    <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <rect key="frame" x="13" y="351" width="193" height="21.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHW-Mn-HfD">
-                                                    <rect key="frame" x="237" y="278" width="75.5" height="29"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="236.5" y="336" width="75.5" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="16"/>
                                                     <state key="normal" title="GET">
                                                         <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DAY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-1f-vyt">
-                                                    <rect key="frame" x="12" y="180" width="300" height="41"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Heavy" family="San Francisco Display" pointSize="45"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APP " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHo-BM-6cf">
-                                                    <rect key="frame" x="13" y="106" width="295" height="37"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Heavy" family="San Francisco Display" pointSize="45"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OF THE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ews-2l-BFm">
-                                                    <rect key="frame" x="11" y="146" width="299" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Heavy" family="San Francisco Display" pointSize="45"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Caw-t7-KMP" firstAttribute="leading" secondItem="3Ol-ef-vln" secondAttribute="leading" constant="5" id="Ibm-4L-3o6"/>
+                                                <constraint firstItem="Caw-t7-KMP" firstAttribute="top" secondItem="3Ol-ef-vln" secondAttribute="top" constant="5" id="Q2w-bG-l7s"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -254,144 +252,128 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="appIconImageView" destination="Caw-t7-KMP" id="CXL-iU-Iv6"/>
                                     <outlet property="appImageView" destination="SVQ-ux-7bJ" id="zfC-BB-9aS"/>
                                     <outlet property="appView" destination="JK6-yH-Rxd" id="y90-8v-mmI"/>
+                                    <outlet property="getButton" destination="cHW-Mn-HfD" id="1rB-kN-qhd"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="sytleFourTableViewCell" rowHeight="380" id="alk-Hh-Vb1" customClass="SytleFourTableViewCell" customModule="App_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="1195.5" width="375" height="380"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="sytleFourTableViewCell" rowHeight="443" id="alk-Hh-Vb1" customClass="SytleFourTableViewCell" customModule="App_Store" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="1384.5" width="375" height="443"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="alk-Hh-Vb1" id="k69-AF-PW9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1b-IV-Wql">
-                                            <rect key="frame" x="20" y="3" width="335" height="345"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOW TO " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFi-l5-Q1J">
-                                                    <rect key="frame" x="20" y="15" width="297" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="15"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Tips to Take The perfect Shot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poX-Dv-jCd">
-                                                    <rect key="frame" x="20" y="40" width="307" height="67"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="28"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azL-wn-5op">
-                                                    <rect key="frame" x="0.0" y="269" width="335" height="76"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4hH-9I-71c">
-                                                            <rect key="frame" x="10" y="13" width="222" height="48"/>
-                                                            <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qxi-A1-4qq">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="48" id="3eR-tr-jSM"/>
-                                                                        <constraint firstAttribute="width" constant="48" id="r9h-S9-3yv"/>
-                                                                    </constraints>
-                                                                </imageView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="DL1-2c-2OH">
-                                                                    <rect key="frame" x="58" y="0.0" width="164" height="48"/>
-                                                                    <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="GEOMETRICS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmm-jC-WN7">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="164" height="28"/>
-                                                                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="17"/>
-                                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit and share your photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71H-Do-QlI">
-                                                                            <rect key="frame" x="0.0" y="30" width="164" height="18"/>
-                                                                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
-                                                                            <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                </stackView>
-                                                            </subviews>
-                                                        </stackView>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sg1-Ad-Cd2">
-                                                            <rect key="frame" x="252" y="23" width="68" height="29"/>
-                                                            <color key="backgroundColor" red="0.94117647058823528" green="0.94509803921568625" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="thY-G2-EYL"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
-                                                            <state key="normal" title="GET">
-                                                                <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                            </state>
-                                                        </button>
-                                                    </subviews>
-                                                    <color key="backgroundColor" red="0.39960394965277779" green="0.66568723187500001" blue="0.84166124131944442" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstItem="sg1-Ad-Cd2" firstAttribute="leading" secondItem="4hH-9I-71c" secondAttribute="trailing" constant="20" id="952-OJ-J7E"/>
-                                                        <constraint firstAttribute="height" constant="76" id="J0M-XR-Qmm"/>
-                                                        <constraint firstAttribute="bottom" secondItem="sg1-Ad-Cd2" secondAttribute="bottom" constant="24" id="Pj2-iV-lDG"/>
-                                                        <constraint firstItem="4hH-9I-71c" firstAttribute="top" secondItem="azL-wn-5op" secondAttribute="top" constant="13" id="Qrg-pI-Ipg"/>
-                                                        <constraint firstItem="4hH-9I-71c" firstAttribute="leading" secondItem="azL-wn-5op" secondAttribute="leading" constant="10" id="VHQ-Vs-HNJ"/>
-                                                        <constraint firstAttribute="trailing" secondItem="sg1-Ad-Cd2" secondAttribute="trailing" constant="15" id="aYc-rd-lmE"/>
-                                                        <constraint firstAttribute="bottom" secondItem="4hH-9I-71c" secondAttribute="bottom" constant="15" id="ndy-nq-Vkc"/>
-                                                        <constraint firstItem="sg1-Ad-Cd2" firstAttribute="top" secondItem="azL-wn-5op" secondAttribute="top" constant="23" id="tXc-GF-cG4"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1b-IV-Wql" customClass="ShadowView" customModule="App_Store" customModuleProvider="target">
+                                            <rect key="frame" x="29" y="27.5" width="317" height="387"/>
                                             <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="azL-wn-5op" secondAttribute="bottom" id="S7y-7a-DSv"/>
-                                                <constraint firstItem="azL-wn-5op" firstAttribute="leading" secondItem="B1b-IV-Wql" secondAttribute="leading" id="v29-jX-TNg"/>
-                                                <constraint firstAttribute="trailing" secondItem="azL-wn-5op" secondAttribute="trailing" id="yZg-Xt-ULi"/>
-                                            </constraints>
                                         </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surf" translatesAutoresizingMaskIntoConstraints="NO" id="NeI-uW-BcT">
+                                            <rect key="frame" x="20" y="17.5" width="335" height="408"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azL-wn-5op">
+                                            <rect key="frame" x="20" y="335.5" width="335" height="90.5"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qxi-A1-4qq">
+                                                    <rect key="frame" x="10" y="18" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="GEOMETRICS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmm-jC-WN7">
+                                                    <rect key="frame" x="68" y="21" width="164" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit and share your photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71H-Do-QlI">
+                                                    <rect key="frame" x="68" y="47" width="164" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                                                    <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sg1-Ad-Cd2" customClass="GetButton" customModule="App_Store" customModuleProvider="target">
+                                                    <rect key="frame" x="252" y="31.5" width="68" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.94117647058823528" green="0.94509803921568625" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
+                                                    <state key="normal" title="GET">
+                                                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOW TO " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFi-l5-Q1J">
+                                            <rect key="frame" x="39" y="41" width="297" height="24.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="15"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Tips to Take The perfect Shot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poX-Dv-jCd">
+                                            <rect key="frame" x="39" y="70" width="297" height="78"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="28"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="B1b-IV-Wql" secondAttribute="trailing" constant="20" id="BSo-op-onX"/>
-                                        <constraint firstItem="B1b-IV-Wql" firstAttribute="top" secondItem="k69-AF-PW9" secondAttribute="top" constant="3" id="Ikw-ip-yMA"/>
-                                        <constraint firstItem="B1b-IV-Wql" firstAttribute="leading" secondItem="k69-AF-PW9" secondAttribute="leading" constant="20" id="UnY-8u-EVq"/>
-                                        <constraint firstAttribute="bottom" secondItem="B1b-IV-Wql" secondAttribute="bottom" constant="32" id="hx7-pT-sSu"/>
+                                        <constraint firstAttribute="bottom" secondItem="B1b-IV-Wql" secondAttribute="bottom" constant="28.5" id="0Gp-Mm-hQf"/>
+                                        <constraint firstItem="B1b-IV-Wql" firstAttribute="leading" secondItem="k69-AF-PW9" secondAttribute="leading" constant="29" id="1jf-g9-Gzy"/>
+                                        <constraint firstAttribute="trailing" secondItem="B1b-IV-Wql" secondAttribute="trailing" constant="29" id="3zo-0F-B7X"/>
+                                        <constraint firstItem="NeI-uW-BcT" firstAttribute="leading" secondItem="k69-AF-PW9" secondAttribute="leading" constant="20" id="IkW-Qb-1If"/>
+                                        <constraint firstItem="NeI-uW-BcT" firstAttribute="top" secondItem="k69-AF-PW9" secondAttribute="top" constant="17.5" id="LMQ-jH-d7V"/>
+                                        <constraint firstAttribute="bottom" secondItem="NeI-uW-BcT" secondAttribute="bottom" constant="17.5" id="VOR-QY-wGQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="NeI-uW-BcT" secondAttribute="trailing" constant="20" id="lzu-IK-0Sq"/>
+                                        <constraint firstItem="B1b-IV-Wql" firstAttribute="top" secondItem="k69-AF-PW9" secondAttribute="top" constant="27.5" id="mAQ-vj-nfB"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="appImageView" destination="NeI-uW-BcT" id="gQa-wC-v8y"/>
                                     <outlet property="appView" destination="B1b-IV-Wql" id="DVN-SQ-aQV"/>
+                                    <outlet property="bottomDetailView" destination="azL-wn-5op" id="88p-rj-GXY"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="dailyListTableViewCell" rowHeight="380" id="RHf-AX-dfv" customClass="DailyListTableViewCell" customModule="App_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="1575.5" width="375" height="380"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="dailyListTableViewCell" rowHeight="443" id="RHf-AX-dfv" customClass="DailyListTableViewCell" customModule="App_Store" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="1827.5" width="375" height="443"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RHf-AX-dfv" id="cXX-dv-sOg">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqf-lX-cke" customClass="ShadowView" customModule="App_Store" customModuleProvider="target">
+                                            <rect key="frame" x="28" y="31" width="319" height="381"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daN-Lh-epX">
-                                            <rect key="frame" x="20" y="3" width="335" height="345"/>
+                                            <rect key="frame" x="20" y="17.5" width="335" height="408"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOW TO " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xww-fP-rIb">
-                                                    <rect key="frame" x="20" y="15" width="297" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="15"/>
+                                                    <rect key="frame" x="29" y="17.5" width="246" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="14"/>
                                                     <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 Tips to Take The perfect Shot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq7-ZW-tDJ">
-                                                    <rect key="frame" x="20" y="40" width="307" height="67"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="28"/>
+                                                    <rect key="frame" x="29" y="46" width="246" height="72"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="25"/>
                                                     <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <tableView clipsSubviews="YES" tag="100" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X7B-Hb-gc0" customClass="ListTableView" customModule="App_Store" customModuleProvider="target">
-                                                    <rect key="frame" x="19" y="115" width="297" height="218"/>
+                                                <tableView clipsSubviews="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X7B-Hb-gc0" customClass="ListTableView" customModule="App_Store" customModuleProvider="target">
+                                                    <rect key="frame" x="19" y="136" width="297" height="231"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="218" id="93l-1Z-vOc"/>
-                                                    </constraints>
                                                     <inset key="separatorInset" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     <prototypes>
-                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listTableViewCell" rowHeight="56" id="yv5-Q0-CLQ" customClass="ListTableViewCell" customModule="App_Store" customModuleProvider="target">
+                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listTableViewCell" rowHeight="56" id="yv5-Q0-CLQ" customClass="ListTableViewCell" customModule="App_Store" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="28" width="297" height="56"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yv5-Q0-CLQ" id="LGf-Qg-NCr">
@@ -399,15 +381,15 @@
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Old Man's Journey" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sf-xY-9un">
-                                                                        <rect key="frame" x="69" y="0.0" width="121" height="30"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="13"/>
+                                                                        <rect key="frame" x="69" y="9" width="121" height="21"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="13"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0T-zS-Oal">
-                                                                        <rect key="frame" x="219" y="6" width="63" height="29"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0T-zS-Oal" customClass="GetButton" customModule="App_Store" customModuleProvider="target">
+                                                                        <rect key="frame" x="218" y="12" width="63" height="29"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                                         <color key="backgroundColor" red="0.94117647059999998" green="0.94509803920000002" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
                                                                         <state key="normal" title="GET">
@@ -415,15 +397,15 @@
                                                                         </state>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit and share your photo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWm-oo-Fpa">
-                                                                        <rect key="frame" x="69" y="26" width="126" height="29"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                                                                        <rect key="frame" x="69" y="26" width="126" height="19"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                                         <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="oSS-xi-8Xe">
-                                                                        <rect key="frame" x="15" y="6" width="35" height="35"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <rect key="frame" x="15" y="7" width="35" height="35"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -433,24 +415,25 @@
                                                     <sections/>
                                                 </tableView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstItem="X7B-Hb-gc0" firstAttribute="leading" secondItem="daN-Lh-epX" secondAttribute="leading" constant="19" id="Gs8-Je-Whr"/>
-                                                <constraint firstAttribute="trailing" secondItem="X7B-Hb-gc0" secondAttribute="trailing" constant="19" id="R6e-3y-IVB"/>
-                                                <constraint firstAttribute="bottom" secondItem="X7B-Hb-gc0" secondAttribute="bottom" constant="12" id="mif-4d-NUa"/>
-                                            </constraints>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="daN-Lh-epX" secondAttribute="trailing" constant="20" id="Ak5-PR-DMv"/>
-                                        <constraint firstItem="daN-Lh-epX" firstAttribute="top" secondItem="cXX-dv-sOg" secondAttribute="top" constant="3" id="Cq5-XZ-LdN"/>
-                                        <constraint firstItem="daN-Lh-epX" firstAttribute="leading" secondItem="cXX-dv-sOg" secondAttribute="leading" constant="20" id="OQj-Ad-Vfg"/>
-                                        <constraint firstAttribute="bottom" secondItem="daN-Lh-epX" secondAttribute="bottom" constant="32" id="uTb-Fm-I1u"/>
+                                        <constraint firstAttribute="trailing" secondItem="daN-Lh-epX" secondAttribute="trailing" constant="20" id="0tE-mh-iRH"/>
+                                        <constraint firstItem="daN-Lh-epX" firstAttribute="leading" secondItem="cXX-dv-sOg" secondAttribute="leading" constant="20" id="9T4-yg-gOv"/>
+                                        <constraint firstAttribute="bottom" secondItem="Hqf-lX-cke" secondAttribute="bottom" constant="31" id="ejN-6w-JPq"/>
+                                        <constraint firstItem="daN-Lh-epX" firstAttribute="top" secondItem="cXX-dv-sOg" secondAttribute="top" constant="17.5" id="ft8-fS-9kE"/>
+                                        <constraint firstAttribute="bottom" secondItem="daN-Lh-epX" secondAttribute="bottom" constant="17.5" id="hNd-pw-XoU"/>
+                                        <constraint firstItem="Hqf-lX-cke" firstAttribute="leading" secondItem="cXX-dv-sOg" secondAttribute="leading" constant="28" id="m3X-3w-L8S"/>
+                                        <constraint firstAttribute="trailing" secondItem="Hqf-lX-cke" secondAttribute="trailing" constant="28" id="o2y-r4-G6j"/>
+                                        <constraint firstItem="Hqf-lX-cke" firstAttribute="top" secondItem="cXX-dv-sOg" secondAttribute="top" constant="31" id="vXu-uj-IjH"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="appView" destination="daN-Lh-epX" id="oKL-1u-LBQ"/>
                                     <outlet property="appsListTableView" destination="X7B-Hb-gc0" id="UOt-fX-bxU"/>
+                                    <outlet property="shadowView" destination="Hqf-lX-cke" id="XEx-yP-y44"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -503,7 +486,9 @@
     <resources>
         <image name="Today-Icon" width="18" height="22"/>
         <image name="appIcon" width="512" height="512"/>
+        <image name="food" width="640" height="430"/>
         <image name="snow" width="640" height="426"/>
+        <image name="surf" width="640" height="426"/>
         <image name="travel" width="640" height="426"/>
     </resources>
 </document>

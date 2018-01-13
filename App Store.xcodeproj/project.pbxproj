@@ -59,6 +59,7 @@
 		EFD33FE5200915C200675C5E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FE4200915C200675C5E /* ListTableViewCell.swift */; };
 		EFD33FEB20093E6800675C5E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FEA20093E6800675C5E /* Extensions.swift */; };
 		EFD33FEE2009492B00675C5E /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FED2009492B00675C5E /* ShadowView.swift */; };
+		EFD33FF82009784F00675C5E /* GetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD33FF72009784E00675C5E /* GetButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		EFD33FE4200915C200675C5E /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		EFD33FEA20093E6800675C5E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFD33FED2009492B00675C5E /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		EFD33FF72009784E00675C5E /* GetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +323,7 @@
 			children = (
 				EFD33FE920093E4400675C5E /* EXTENSIONS */,
 				EFD33FED2009492B00675C5E /* ShadowView.swift */,
+				EFD33FF72009784E00675C5E /* GetButton.swift */,
 			);
 			path = CUSTOM;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				EF15238E1FFF182000ADAD1F /* AppDelegate.swift in Sources */,
 				EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */,
 				EF3D75502008463600DD7B86 /* SytleThreeTableViewCell.swift in Sources */,
+				EFD33FF82009784F00675C5E /* GetButton.swift in Sources */,
 				EF3D75422007CAEA00DD7B86 /* Cells.swift in Sources */,
 				EFD33FD6200865CB00675C5E /* SytleFourTableViewCell.swift in Sources */,
 			);
