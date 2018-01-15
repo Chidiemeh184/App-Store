@@ -22,6 +22,8 @@
 		EF1523B92000756900ADAD1F /* Updates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523B82000756900ADAD1F /* Updates.storyboard */; };
 		EF1523BC2000759500ADAD1F /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523BA2000759500ADAD1F /* Search.storyboard */; };
 		EF1523BE2001C57200ADAD1F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1523BD2001C57200ADAD1F /* App.swift */; };
+		EF168AA7200C64CF0045BF60 /* DateHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF168AA6200C64CF0045BF60 /* DateHeaderView.xib */; };
+		EF168AA9200C654F0045BF60 /* DateHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AA8200C654F0045BF60 /* DateHeaderView.swift */; };
 		EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75392007BFC000DD7B86 /* Apps.swift */; };
 		EF3D753D2007C27600DD7B86 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3D753C2007C27600DD7B86 /* data.json */; };
 		EF3D753F2007CAA600DD7B86 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */; };
@@ -82,6 +84,8 @@
 		EF1523B82000756900ADAD1F /* Updates.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Updates.storyboard; sourceTree = "<group>"; };
 		EF1523BB2000759500ADAD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "App Store/STORYBOARDS/Base.lproj/Search.storyboard"; sourceTree = "<group>"; };
 		EF1523BD2001C57200ADAD1F /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		EF168AA6200C64CF0045BF60 /* DateHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateHeaderView.xib; sourceTree = "<group>"; };
+		EF168AA8200C654F0045BF60 /* DateHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeaderView.swift; sourceTree = "<group>"; };
 		EF3D75392007BFC000DD7B86 /* Apps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apps.swift; sourceTree = "<group>"; };
 		EF3D753C2007C27600DD7B86 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
@@ -262,6 +266,8 @@
 			children = (
 				EF3D75462007CE2000DD7B86 /* DateHomeHeaderView.xib */,
 				EF3D75482007CE3400DD7B86 /* DateHomeHeaderView.swift */,
+				EF168AA6200C64CF0045BF60 /* DateHeaderView.xib */,
+				EF168AA8200C654F0045BF60 /* DateHeaderView.swift */,
 			);
 			path = HeaderView;
 			sourceTree = "<group>";
@@ -430,6 +436,7 @@
 				EF1523BC2000759500ADAD1F /* Search.storyboard in Resources */,
 				EFD33FC720085BCD00675C5E /* SanFranciscoText-RegularItalic.otf in Resources */,
 				EFD33FC120085BCD00675C5E /* SanFranciscoText-Semibold.otf in Resources */,
+				EF168AA7200C64CF0045BF60 /* DateHeaderView.xib in Resources */,
 				EF3D753D2007C27600DD7B86 /* data.json in Resources */,
 				EFD33FCC20085BCD00675C5E /* SanFranciscoDisplay-Ultralight.otf in Resources */,
 				EF1523931FFF182000ADAD1F /* Main.storyboard in Resources */,
@@ -460,6 +467,7 @@
 				EF3D75442007CB3400DD7B86 /* Segues.swift in Sources */,
 				EF15238E1FFF182000ADAD1F /* AppDelegate.swift in Sources */,
 				EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */,
+				EF168AA9200C654F0045BF60 /* DateHeaderView.swift in Sources */,
 				EFD33FFB200A63A700675C5E /* NetworkProcessor.swift in Sources */,
 				EF3D75502008463600DD7B86 /* SytleThreeTableViewCell.swift in Sources */,
 				EFD33FF82009784F00675C5E /* GetButton.swift in Sources */,

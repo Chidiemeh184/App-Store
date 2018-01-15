@@ -27,7 +27,14 @@ class TodayTableVC: UITableViewController {
 //MARK: Date Header
 extension TodayTableVC {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let dateHeader = Bundle.main.loadNibNamed("DateHomeHeaderView", owner: self, options: nil)?.first as! DateHomeHeaderView
+        var dateHeader = UIView()
+        
+        if section == 1 {
+            dateHeader = Bundle.main.loadNibNamed("DateHeaderView", owner: self, options: nil)?.first as! DateHeaderView
+        }else {
+            dateHeader = Bundle.main.loadNibNamed("DateHomeHeaderView", owner: self, options: nil)?.first as! DateHomeHeaderView
+        }
+        
         //let dateBackView = dateHeader.backView!
         //dateBackView.backgroundColor =  UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
         return dateHeader
