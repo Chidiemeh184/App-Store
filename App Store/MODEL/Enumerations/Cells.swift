@@ -10,12 +10,21 @@ import Foundation
 
 
 enum Cells : String {
+    
+    //Today
     case todayTableViewCell = "todayTableViewCell"
     case sytleTwoTableViewCell = "sytleTwoTableViewCell"
     case sytleThreeTableViewCell = "sytleThreeTableViewCell"
     case sytleFourTableViewCell = "sytleFourTableViewCell"
     case dailyListTableViewCell = "dailyListTableViewCell"
-    
-    //List
     case listTableViewCell = "listTableViewCell"
+    
+    //Games
+    case gameStyleOneTableViewCell = "gameStyleOneTableViewCell"
+    case gamesStyleOneCollectionViewCell = "gamesStyleOneCollectionViewCell"
+    case gameStyleTwoTableViewCell = "gameStyleTwoTableViewCell"
+    case gamesStyleTwoCollectionViewCell = "gamesStyleTwoCollectionViewCell"
+    
+    
+    
 }

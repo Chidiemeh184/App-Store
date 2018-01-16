@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GameHeaderView" customModule="App_Store" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gz-vO-IjZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbb-zD-ash">
+                            <rect key="frame" x="16" y="38" width="275" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="275" id="O76-9Y-nO7"/>
+                                <constraint firstAttribute="height" constant="41" id="nDQ-Dk-HsS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="pEb-tv-5Kb">
+                            <rect key="frame" x="309" y="38" width="41" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="GBS-MJ-J9G"/>
+                                <constraint firstAttribute="width" constant="41" id="NF5-BI-Wus"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Lbb-zD-ash" firstAttribute="leading" secondItem="9gz-vO-IjZ" secondAttribute="leading" constant="16" id="Qxf-fu-JAv"/>
+                        <constraint firstItem="pEb-tv-5Kb" firstAttribute="top" secondItem="9gz-vO-IjZ" secondAttribute="top" constant="38" id="aFj-Xe-A81"/>
+                        <constraint firstAttribute="trailing" secondItem="pEb-tv-5Kb" secondAttribute="trailing" constant="25" id="fwO-s9-ZEw"/>
+                        <constraint firstAttribute="bottom" secondItem="pEb-tv-5Kb" secondAttribute="bottom" constant="16" id="sF5-Eg-mSL"/>
+                        <constraint firstItem="Lbb-zD-ash" firstAttribute="top" secondItem="9gz-vO-IjZ" secondAttribute="top" constant="38" id="ubn-o5-6HW"/>
+                        <constraint firstAttribute="bottom" secondItem="Lbb-zD-ash" secondAttribute="bottom" constant="16" id="wpb-k8-prV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9gz-vO-IjZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="EV8-kV-CtI"/>
+                <constraint firstItem="9gz-vO-IjZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="XTJ-ko-VnA"/>
+                <constraint firstItem="9gz-vO-IjZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fxc-QM-xMJ"/>
+                <constraint firstItem="9gz-vO-IjZ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="wRv-5x-gAK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="profileImageView" destination="pEb-tv-5Kb" id="eVe-01-g40"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-302.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile" width="1329" height="1772"/>
+    </resources>
+</document>

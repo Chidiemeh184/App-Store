@@ -19,8 +19,6 @@ class TodayTableVC: UITableViewController {
        // loadDates()
         self.navigationController?.navigationBar.isHidden = true
     }
-
-
 }
 
 
