@@ -1,5 +1,5 @@
 //
-//  GameStyleTwoTableViewCell.swift
+//  GameStyleTwoCollectionTableViewCell.swift
 //  App Store
 //
 //  Created by Chidi Emeh on 1/16/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameStyleTwoTableViewCell: UITableViewCell {
+class GameStyleTwoCollectionTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

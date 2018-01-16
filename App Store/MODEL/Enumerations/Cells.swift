@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+//TableViewCell Reuse Identifiers
 enum Cells : String {
     
     //Today
@@ -21,10 +21,9 @@ enum Cells : String {
     
     //Games
     case gameStyleOneTableViewCell = "gameStyleOneTableViewCell"
-    case gamesStyleOneCollectionViewCell = "gamesStyleOneCollectionViewCell"
     case gameStyleTwoTableViewCell = "gameStyleTwoTableViewCell"
-    case gamesStyleTwoCollectionViewCell = "gamesStyleTwoCollectionViewCell"
     
+    case gameStyleTwoCollectionTableViewCell = "gameStyleTwoCollectionTableViewCell"
     
     
 }

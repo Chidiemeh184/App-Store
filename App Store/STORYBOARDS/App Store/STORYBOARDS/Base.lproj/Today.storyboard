@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -447,21 +446,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y7T-Sf-9C8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-930.39999999999998" y="761.46926536731644"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="2L0-Lb-9rA">
-            <objects>
-                <viewController id="4Zl-4j-w4P" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Yxf-BU-s97">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="BeR-C7-9zC"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Kp-n1-FtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-212" y="761.46926536731644"/>
         </scene>
         <!--Today-->
         <scene sceneID="Psh-U4-w2x">

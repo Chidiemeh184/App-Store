@@ -1,34 +1,31 @@
 //
-//  StyleOneTableViewCell.swift
+//  GameStyleTwoTableViewCell.swift
 //  App Store
 //
-//  Created by Chidi Emeh on 1/15/18.
+//  Created by Chidi Emeh on 1/16/18.
 //  Copyright © 2018 Chidi Emeh. All rights reserved.
 //
 
 import UIKit
 
-class GameStyleOneTableViewCell : UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
-
-    @IBOutlet weak var gamesStyleOneCollectionView: UICollectionView!
+class GameStyleTwoTableViewCell: UITableViewCell,
+    UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
+    {
+    @IBOutlet weak var gameStyleTwoCollectionView: UICollectionView!
     
-
-    
-    //First Loading Func
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        gamesStyleOneCollectionView.delegate = self
-        gamesStyleOneCollectionView.dataSource = self
+        gameStyleTwoCollectionView.delegate = self
+        gameStyleTwoCollectionView.dataSource = self
     
     }
 
-    
 }
 
 //MARK: - ScrollViewWillEnd dragging
-extension GameStyleOneTableViewCell {
-
+extension GameStyleTwoTableViewCell {
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
@@ -45,21 +42,19 @@ extension GameStyleOneTableViewCell {
         return inset
     }
     
-
+    
 }
 
 
-
-
 //MARK: - Datasource
-extension GameStyleOneTableViewCell {
+extension GameStyleTwoTableViewCell {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionCells.gamesStyleOneCollectionViewCell.rawValue, for: indexPath) as! GamesStyleOneCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionCells.gameStyleTwoCollectionViewCell.rawValue, for: indexPath) as! GameStyleTwoCollectionViewCell
         return cell
     }
     

@@ -29,8 +29,9 @@
 		EF168AB0200CDBF50045BF60 /* GamesStyleOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AAF200CDBF50045BF60 /* GamesStyleOneCollectionViewCell.swift */; };
 		EF168AB3200DF1340045BF60 /* GameHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AB2200DF1340045BF60 /* GameHeaderView.swift */; };
 		EF168AB5200DF17F0045BF60 /* GameHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF168AB4200DF17F0045BF60 /* GameHeaderView.xib */; };
-		EF168AB8200DF49C0045BF60 /* GameStyleTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AB7200DF49C0045BF60 /* GameStyleTwoTableViewCell.swift */; };
-		EF168ABA200DF5A20045BF60 /* GameStyleTwoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AB9200DF5A20045BF60 /* GameStyleTwoCollectionViewCell.swift */; };
+		EF168ABF200E012F0045BF60 /* GameStyleTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168ABE200E012F0045BF60 /* GameStyleTwoTableViewCell.swift */; };
+		EF168AC4200E76580045BF60 /* GameStyleTwoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AC3200E76580045BF60 /* GameStyleTwoCollectionViewCell.swift */; };
+		EF168AC6200E7F450045BF60 /* GameStyleTwoCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AC5200E7F450045BF60 /* GameStyleTwoCollectionTableViewCell.swift */; };
 		EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75392007BFC000DD7B86 /* Apps.swift */; };
 		EF3D753D2007C27600DD7B86 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3D753C2007C27600DD7B86 /* data.json */; };
 		EF3D753F2007CAA600DD7B86 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */; };
@@ -98,8 +99,9 @@
 		EF168AAF200CDBF50045BF60 /* GamesStyleOneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesStyleOneCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF168AB2200DF1340045BF60 /* GameHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHeaderView.swift; sourceTree = "<group>"; };
 		EF168AB4200DF17F0045BF60 /* GameHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameHeaderView.xib; sourceTree = "<group>"; };
-		EF168AB7200DF49C0045BF60 /* GameStyleTwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleTwoTableViewCell.swift; sourceTree = "<group>"; };
-		EF168AB9200DF5A20045BF60 /* GameStyleTwoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleTwoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF168ABE200E012F0045BF60 /* GameStyleTwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleTwoTableViewCell.swift; sourceTree = "<group>"; };
+		EF168AC3200E76580045BF60 /* GameStyleTwoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleTwoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF168AC5200E7F450045BF60 /* GameStyleTwoCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleTwoCollectionTableViewCell.swift; sourceTree = "<group>"; };
 		EF3D75392007BFC000DD7B86 /* Apps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apps.swift; sourceTree = "<group>"; };
 		EF3D753C2007C27600DD7B86 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
@@ -232,7 +234,6 @@
 				EF168AB1200DF0DC0045BF60 /* Header */,
 				EF1523A52000706900ADAD1F /* GamesTabTableVC.swift */,
 				EF168AAE200CDBC10045BF60 /* STYLE ONE  */,
-				EF168AB6200DF3FF0045BF60 /* STYLE TWO */,
 			);
 			path = GAMESTAB;
 			sourceTree = "<group>";
@@ -266,6 +267,7 @@
 			children = (
 				EF168AAA200C78430045BF60 /* GameStyleOneTableViewCell.swift */,
 				EF168AAF200CDBF50045BF60 /* GamesStyleOneCollectionViewCell.swift */,
+				EF168ABD200E00C30045BF60 /* STYLE TWO */,
 			);
 			path = "STYLE ONE ";
 			sourceTree = "<group>";
@@ -279,13 +281,15 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
-		EF168AB6200DF3FF0045BF60 /* STYLE TWO */ = {
+		EF168ABD200E00C30045BF60 /* STYLE TWO */ = {
 			isa = PBXGroup;
 			children = (
-				EF168AB7200DF49C0045BF60 /* GameStyleTwoTableViewCell.swift */,
-				EF168AB9200DF5A20045BF60 /* GameStyleTwoCollectionViewCell.swift */,
+				EF168ABE200E012F0045BF60 /* GameStyleTwoTableViewCell.swift */,
+				EF168AC3200E76580045BF60 /* GameStyleTwoCollectionViewCell.swift */,
+				EF168AC5200E7F450045BF60 /* GameStyleTwoCollectionTableViewCell.swift */,
 			);
-			path = "STYLE TWO";
+			name = "STYLE TWO";
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		EF3D753B2007C25400DD7B86 /* Data */ = {
@@ -425,6 +429,7 @@
 				TargetAttributes = {
 					EF1523891FFF182000ADAD1F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -497,12 +502,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF1523A220006FE300ADAD1F /* TodayTableVC.swift in Sources */,
-				EF168ABA200DF5A20045BF60 /* GameStyleTwoCollectionViewCell.swift in Sources */,
+				EF168AC4200E76580045BF60 /* GameStyleTwoCollectionViewCell.swift in Sources */,
 				EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */,
 				EF3D754E200836F300DD7B86 /* SytleTwoTableViewCell.swift in Sources */,
 				EFD33FE3200915AA00675C5E /* ListTableView.swift in Sources */,
 				EFD33FEE2009492B00675C5E /* ShadowView.swift in Sources */,
-				EF168AB8200DF49C0045BF60 /* GameStyleTwoTableViewCell.swift in Sources */,
+				EF168ABF200E012F0045BF60 /* GameStyleTwoTableViewCell.swift in Sources */,
 				EF168AB0200CDBF50045BF60 /* GamesStyleOneCollectionViewCell.swift in Sources */,
 				EF1523A62000706900ADAD1F /* GamesTabTableVC.swift in Sources */,
 				EFD33FE5200915C200675C5E /* ListTableViewCell.swift in Sources */,
@@ -524,6 +529,7 @@
 				EF3D75502008463600DD7B86 /* SytleThreeTableViewCell.swift in Sources */,
 				EFD33FF82009784F00675C5E /* GetButton.swift in Sources */,
 				EF3D75422007CAEA00DD7B86 /* Cells.swift in Sources */,
+				EF168AC6200E7F450045BF60 /* GameStyleTwoCollectionTableViewCell.swift in Sources */,
 				EFD33FFD200A662D00675C5E /* AppStoreServiceAPI.swift in Sources */,
 				EFD33FD6200865CB00675C5E /* SytleFourTableViewCell.swift in Sources */,
 			);
@@ -686,6 +692,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = "App Store/Info.plist";
@@ -693,6 +700,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.chidiemeh184.App-Store";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -702,6 +710,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = "App Store/Info.plist";

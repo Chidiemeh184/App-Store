@@ -18,6 +18,8 @@ class DateHomeHeaderView : UIView {
     @IBOutlet weak var grayView: UIView!
     
     
+    
+    
     override func awakeFromNib() {
         profileImageView.layer.cornerRadius = profileImageView.layer.frame.height/2
         //configureGrayView()

@@ -8,11 +8,12 @@
 
 import Foundation
 
-
+//CollectionViewCell Reuse Identifiers
 enum CollectionCells : String {
     
     //GAMES
     case gamesStyleOneCollectionViewCell = "gamesStyleOneCollectionViewCell"
+    case gameStyleTwoCollectionViewCell = "gameStyleTwoCollectionViewCell"
     
     
     
