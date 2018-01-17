@@ -37,6 +37,8 @@
 		EF168ACD200EC2C90045BF60 /* GameStyleThreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168ACC200EC2C90045BF60 /* GameStyleThreeTableViewCell.swift */; };
 		EF168ACF200EC5110045BF60 /* GameStyleThreeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168ACE200EC5110045BF60 /* GameStyleThreeCollectionViewCell.swift */; };
 		EF168AD1200EC7630045BF60 /* GameStyleThreeCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AD0200EC7630045BF60 /* GameStyleThreeCollectionTableViewCell.swift */; };
+		EF168AD4200EEB800045BF60 /* GameStyleFourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AD3200EEB800045BF60 /* GameStyleFourTableViewCell.swift */; };
+		EF168AD6200EECCF0045BF60 /* GameStyleFourCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AD5200EECCF0045BF60 /* GameStyleFourCollectionViewCell.swift */; };
 		EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75392007BFC000DD7B86 /* Apps.swift */; };
 		EF3D753D2007C27600DD7B86 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3D753C2007C27600DD7B86 /* data.json */; };
 		EF3D753F2007CAA600DD7B86 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */; };
@@ -112,6 +114,8 @@
 		EF168ACC200EC2C90045BF60 /* GameStyleThreeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleThreeTableViewCell.swift; sourceTree = "<group>"; };
 		EF168ACE200EC5110045BF60 /* GameStyleThreeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleThreeCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF168AD0200EC7630045BF60 /* GameStyleThreeCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleThreeCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		EF168AD3200EEB800045BF60 /* GameStyleFourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleFourTableViewCell.swift; sourceTree = "<group>"; };
+		EF168AD5200EECCF0045BF60 /* GameStyleFourCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleFourCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF3D75392007BFC000DD7B86 /* Apps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apps.swift; sourceTree = "<group>"; };
 		EF3D753C2007C27600DD7B86 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 				EF168AAE200CDBC10045BF60 /* STYLE ONE  */,
 				EF168ABD200E00C30045BF60 /* STYLE TWO */,
 				EF168ACB200EBDF50045BF60 /* STYLE THREE */,
+				EF168AD2200EEB230045BF60 /* STYLE FOUR */,
 			);
 			path = GAMESTAB;
 			sourceTree = "<group>";
@@ -313,6 +318,15 @@
 				EF168AD0200EC7630045BF60 /* GameStyleThreeCollectionTableViewCell.swift */,
 			);
 			path = "STYLE THREE";
+			sourceTree = "<group>";
+		};
+		EF168AD2200EEB230045BF60 /* STYLE FOUR */ = {
+			isa = PBXGroup;
+			children = (
+				EF168AD3200EEB800045BF60 /* GameStyleFourTableViewCell.swift */,
+				EF168AD5200EECCF0045BF60 /* GameStyleFourCollectionViewCell.swift */,
+			);
+			path = "STYLE FOUR";
 			sourceTree = "<group>";
 		};
 		EF3D753B2007C25400DD7B86 /* Data */ = {
@@ -531,6 +545,7 @@
 				EF3D754E200836F300DD7B86 /* SytleTwoTableViewCell.swift in Sources */,
 				EF168AD1200EC7630045BF60 /* GameStyleThreeCollectionTableViewCell.swift in Sources */,
 				EFD33FE3200915AA00675C5E /* ListTableView.swift in Sources */,
+				EF168AD4200EEB800045BF60 /* GameStyleFourTableViewCell.swift in Sources */,
 				EFD33FEE2009492B00675C5E /* ShadowView.swift in Sources */,
 				EF168ABF200E012F0045BF60 /* GameStyleTwoTableViewCell.swift in Sources */,
 				EF168AB0200CDBF50045BF60 /* GamesStyleOneCollectionViewCell.swift in Sources */,
@@ -545,6 +560,7 @@
 				EF1523A9200070AE00ADAD1F /* AppsTabTableVC.swift in Sources */,
 				EF1523BE2001C57200ADAD1F /* App.swift in Sources */,
 				EFD33FE0200912E000675C5E /* DailyListTableViewCell.swift in Sources */,
+				EF168AD6200EECCF0045BF60 /* GameStyleFourCollectionViewCell.swift in Sources */,
 				EF3D75442007CB3400DD7B86 /* Segues.swift in Sources */,
 				EF15238E1FFF182000ADAD1F /* AppDelegate.swift in Sources */,
 				EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */,

@@ -25,7 +25,7 @@ class GameStyleThreeCollectionViewCell: UICollectionViewCell, UITableViewDelegat
 extension GameStyleThreeCollectionViewCell {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 117
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -37,7 +37,6 @@ extension GameStyleThreeCollectionViewCell {
 
 
 //MARK: Data Source
-
 extension GameStyleThreeCollectionViewCell {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

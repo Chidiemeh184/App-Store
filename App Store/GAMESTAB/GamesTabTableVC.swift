@@ -36,7 +36,7 @@ extension GamesTabTableVC {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         var dateHeader = UIView()
-        if section == 1 {
+        if section != 0 {
 
             dateHeader = Bundle.main.loadNibNamed("GameHeaderTitleOne", owner: self, options: nil)?.first as! GameHeaderTitleOne
 
@@ -57,7 +57,7 @@ extension GamesTabTableVC {
 extension GamesTabTableVC {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 5
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -82,7 +82,9 @@ extension GamesTabTableVC {
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: Cells.gameStyleThreeTableViewCell.rawValue) as! GameStyleThreeTableViewCell
             return cell
-            
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.gameStyleFourTableViewCell.rawValue) as! GameStyleFourTableViewCell
+            return cell
         default:
             print("Could not dequeue cell")
         }
@@ -97,7 +99,15 @@ extension GamesTabTableVC {
 extension GamesTabTableVC {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return indexPath.section == 0 ? 340 : 290 //372
+
+        if indexPath.section == 0 {
+            return 340
+        }else if indexPath.section == 4 {
+            return 320
+        }else {
+            return 290
+        }
+        //return indexPath.section == 0 ? 340 : 290 //372 //369
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

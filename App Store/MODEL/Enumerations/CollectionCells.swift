@@ -15,6 +15,7 @@ enum CollectionCells : String {
     case gamesStyleOneCollectionViewCell = "gamesStyleOneCollectionViewCell"
     case gameStyleTwoCollectionViewCell = "gameStyleTwoCollectionViewCell"
     case gameStyleThreeCollectionViewCell = "gameStyleThreeCollectionViewCell"
+    case gameStyleFourCollectionViewCell = "gameStyleFourCollectionViewCell"
     
     
     

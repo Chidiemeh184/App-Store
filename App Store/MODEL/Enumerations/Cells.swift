@@ -27,4 +27,6 @@ enum Cells : String {
     case gameStyleThreeTableViewCell = "gameStyleThreeTableViewCell"
     case gameStyleThreeCollectionTableViewCell = "gameStyleThreeCollectionTableViewCell"
     
+    case gameStyleFourTableViewCell = "gameStyleFourTableViewCell"
+    
 }
