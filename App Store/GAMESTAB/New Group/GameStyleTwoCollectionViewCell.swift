@@ -8,8 +8,7 @@
 
 import UIKit
 
-class GameStyleTwoCollectionViewCell: UICollectionViewCell,
-UITableViewDelegate, UITableViewDataSource{
+class GameStyleTwoCollectionViewCell: UICollectionViewCell,UITableViewDelegate, UITableViewDataSource{
     
     
     @IBOutlet weak var gameStyleTwoTableView: UITableView!
@@ -29,11 +28,12 @@ UITableViewDelegate, UITableViewDataSource{
 extension GameStyleTwoCollectionViewCell {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 89
+        return 78
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0
+        
     }
     
 }

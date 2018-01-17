@@ -38,7 +38,7 @@ extension GameStyleTwoTableViewCell {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let inset = UIEdgeInsetsMake(0, 15, 20, 20)
+        let inset = UIEdgeInsetsMake(0, 5, 20, 20)
         return inset
     }
     
