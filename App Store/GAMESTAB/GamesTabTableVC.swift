@@ -24,9 +24,11 @@ class GamesTabTableVC: UITableViewController {
         navigationController?.navigationItem.rightBarButtonItem = rightImage
         
     }
-
-
-
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
 }
 
 
@@ -57,7 +59,7 @@ extension GamesTabTableVC {
 extension GamesTabTableVC {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 7
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -85,6 +87,12 @@ extension GamesTabTableVC {
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: Cells.gameStyleFourTableViewCell.rawValue) as! GameStyleFourTableViewCell
             return cell
+        case 5:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.gameStyleFiveTableViewCell.rawValue) as! GameStyleFiveTableViewCell
+            return cell
+        case 6:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.gameStyleThreeTableViewCell.rawValue) as! GameStyleThreeTableViewCell
+            return cell
         default:
             print("Could not dequeue cell")
         }
@@ -104,7 +112,11 @@ extension GamesTabTableVC {
             return 340
         }else if indexPath.section == 4 {
             return 320
-        }else {
+            
+        }else if indexPath.section == 5 {
+            return 392
+        }
+        else {
             return 290
         }
         //return indexPath.section == 0 ? 340 : 290 //372 //369
