@@ -358,6 +358,9 @@
                                                                 <state key="normal" title="$4.99">
                                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="PE9-Ll-OFS" kind="show" id="AFS-ZH-S0J"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </view>
@@ -497,33 +500,55 @@
             </objects>
             <point key="canvasLocation" x="164" y="1193.2533733133434"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="dh4-1A-fr7">
+        <!--Top Charts-->
+        <scene sceneID="gaM-ug-Yfv">
             <objects>
-                <tableViewController id="o8b-ZI-hhU" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vaU-uq-CaL">
+                <viewController id="PE9-Ll-OFS" customClass="HeaderStyleTwoVC" customModule="App_Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQg-vY-xDc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="P0r-YJ-4dB">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P0r-YJ-4dB" id="yEb-k3-e8L">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="o8b-ZI-hhU" id="hQi-xM-nUe"/>
-                            <outlet property="delegate" destination="o8b-ZI-hhU" id="ax1-JK-IzS"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xzB-v6-oYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Dp-in-FUm">
+                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vMR-GQ-hUW"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" id="JdJ-2o-to2"/>
+                                    <barButtonItem style="plain" id="Q6o-GY-Ymy">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="bWT-v3-5R9">
+                                            <rect key="frame" x="24" y="7.5" width="335" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Paid Apps"/>
+                                                <segment title="Free Apps"/>
+                                            </segments>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Dp-in-FUm" firstAttribute="top" secondItem="MvY-iO-Hrw" secondAttribute="top" id="OhB-Wo-s9W"/>
+                            <constraint firstItem="8Dp-in-FUm" firstAttribute="trailing" secondItem="MvY-iO-Hrw" secondAttribute="trailing" id="hlU-Cc-XIb"/>
+                            <constraint firstItem="8Dp-in-FUm" firstAttribute="leading" secondItem="MvY-iO-Hrw" secondAttribute="leading" id="kRP-qE-hEY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MvY-iO-Hrw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Top Charts" id="gj3-Up-xq8">
+                        <barButtonItem key="rightBarButtonItem" title="All Games" id="tuZ-oa-c8n"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="appTypeSegmentedControl" destination="bWT-v3-5R9" id="og0-UV-4gx"/>
+                        <outlet property="topToolbar" destination="8Dp-in-FUm" id="Dxu-aG-zJI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="em3-PI-fjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="178" y="1881"/>
+            <point key="canvasLocation" x="820" y="1193"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ie6-05-GHY">
@@ -532,13 +557,37 @@
                     <view key="view" contentMode="scaleToFill" id="T7L-Uk-C29">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idn-Gy-SfI">
+                                <rect key="frame" x="0.0" y="328" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.58649935787671237" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rlw-LA-0vi">
+                                <rect key="frame" x="0.0" y="131" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" id="VUi-ct-YYN"/>
+                                    <barButtonItem style="plain" id="olC-g8-q5N">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="KWY-17-ij4">
+                                            <rect key="frame" x="24" y="7.5" width="335" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Paid Apps"/>
+                                                <segment title="Free Apps"/>
+                                            </segments>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="yAn-V0-sDt"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VLA-zP-LwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783" y="1126"/>
+            <point key="canvasLocation" x="1625" y="1085"/>
         </scene>
         <!--Games-->
         <scene sceneID="O5m-KH-VOY">

@@ -43,6 +43,7 @@
 		EF168ADB200F71BE0045BF60 /* GameStyleFiveInnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168ADA200F71BE0045BF60 /* GameStyleFiveInnerTableViewCell.swift */; };
 		EF168ADF200FA7950045BF60 /* HeaderSytleOneTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168ADE200FA7950045BF60 /* HeaderSytleOneTableVC.swift */; };
 		EF168AE1200FA89D0045BF60 /* HeaderStyleOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AE0200FA89D0045BF60 /* HeaderStyleOneTableViewCell.swift */; };
+		EF168AE4201052A10045BF60 /* HeaderStyleTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AE3201052A10045BF60 /* HeaderStyleTwoVC.swift */; };
 		EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75392007BFC000DD7B86 /* Apps.swift */; };
 		EF3D753D2007C27600DD7B86 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3D753C2007C27600DD7B86 /* data.json */; };
 		EF3D753F2007CAA600DD7B86 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */; };
@@ -124,6 +125,7 @@
 		EF168ADA200F71BE0045BF60 /* GameStyleFiveInnerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleFiveInnerTableViewCell.swift; sourceTree = "<group>"; };
 		EF168ADE200FA7950045BF60 /* HeaderSytleOneTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSytleOneTableVC.swift; sourceTree = "<group>"; };
 		EF168AE0200FA89D0045BF60 /* HeaderStyleOneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStyleOneTableViewCell.swift; sourceTree = "<group>"; };
+		EF168AE3201052A10045BF60 /* HeaderStyleTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStyleTwoVC.swift; sourceTree = "<group>"; };
 		EF3D75392007BFC000DD7B86 /* Apps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apps.swift; sourceTree = "<group>"; };
 		EF3D753C2007C27600DD7B86 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 		EF168ADC200FA6A30045BF60 /* Header TVC */ = {
 			isa = PBXGroup;
 			children = (
+				EF168AE22010423E0045BF60 /* Header Style TWO TVC */,
 				EF168ADD200FA6B70045BF60 /* Header Style ONE TVC */,
 			);
 			path = "Header TVC";
@@ -363,6 +366,14 @@
 				EF168AE0200FA89D0045BF60 /* HeaderStyleOneTableViewCell.swift */,
 			);
 			path = "Header Style ONE TVC";
+			sourceTree = "<group>";
+		};
+		EF168AE22010423E0045BF60 /* Header Style TWO TVC */ = {
+			isa = PBXGroup;
+			children = (
+				EF168AE3201052A10045BF60 /* HeaderStyleTwoVC.swift */,
+			);
+			path = "Header Style TWO TVC";
 			sourceTree = "<group>";
 		};
 		EF3D753B2007C25400DD7B86 /* Data */ = {
@@ -575,6 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF168AE4201052A10045BF60 /* HeaderStyleTwoVC.swift in Sources */,
 				EF1523A220006FE300ADAD1F /* TodayTableVC.swift in Sources */,
 				EF168AC4200E76580045BF60 /* GameStyleTwoCollectionViewCell.swift in Sources */,
 				EF168AD9200F67600045BF60 /* GameStyleFiveTableViewCell.swift in Sources */,
