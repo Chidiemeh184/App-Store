@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Bold.otf">
+            <string>SanFranciscoText-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchHeaderView" customModule="App_Store" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phx-QD-s1F">
+                    <rect key="frame" x="16" y="31" width="343" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="KlU-5N-DtA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="App Store" translatesAutoresizingMaskIntoConstraints="NO" id="Bu9-xf-MvI">
+                    <rect key="frame" x="16" y="71" width="343" height="56"/>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv9-Yb-BEU">
+                    <rect key="frame" x="16" y="149" width="343" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="1Td-Km-HP8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="21"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cv9-Yb-BEU" secondAttribute="trailing" constant="16" id="3HN-Ur-138"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Phx-QD-s1F" secondAttribute="trailing" constant="16" id="88I-Qr-8I0"/>
+                <constraint firstItem="Bu9-xf-MvI" firstAttribute="top" secondItem="Phx-QD-s1F" secondAttribute="bottom" constant="-1" id="KOj-cG-eSd"/>
+                <constraint firstItem="cv9-Yb-BEU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ZKh-Ma-dWK"/>
+                <constraint firstItem="Phx-QD-s1F" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="31" id="f6a-LH-J7U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bu9-xf-MvI" secondAttribute="trailing" constant="16" id="fO3-Db-wdR"/>
+                <constraint firstItem="Phx-QD-s1F" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="gmY-W5-YGf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cv9-Yb-BEU" secondAttribute="bottom" constant="6" id="iia-tS-m1H"/>
+                <constraint firstItem="Bu9-xf-MvI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="s8g-yc-CGT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="-182"/>
+        </view>
+        <searchDisplayController id="7Jr-sU-F3P">
+            <connections>
+                <outlet property="searchBar" destination="Bu9-xf-MvI" id="g5I-Hu-L3l"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

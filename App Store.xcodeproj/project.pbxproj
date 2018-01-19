@@ -44,6 +44,9 @@
 		EF168ADF200FA7950045BF60 /* HeaderSytleOneTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168ADE200FA7950045BF60 /* HeaderSytleOneTableVC.swift */; };
 		EF168AE1200FA89D0045BF60 /* HeaderStyleOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AE0200FA89D0045BF60 /* HeaderStyleOneTableViewCell.swift */; };
 		EF168AE4201052A10045BF60 /* HeaderStyleTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168AE3201052A10045BF60 /* HeaderStyleTwoVC.swift */; };
+		EF168B052011F0780045BF60 /* SearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF168B042011F0780045BF60 /* SearchHeaderView.xib */; };
+		EF168B072011F08B0045BF60 /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168B062011F08B0045BF60 /* SearchHeaderView.swift */; };
+		EF168B092011F5490045BF60 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168B082011F5490045BF60 /* SearchTableViewCell.swift */; };
 		EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75392007BFC000DD7B86 /* Apps.swift */; };
 		EF3D753D2007C27600DD7B86 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3D753C2007C27600DD7B86 /* data.json */; };
 		EF3D753F2007CAA600DD7B86 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */; };
@@ -126,6 +129,9 @@
 		EF168ADE200FA7950045BF60 /* HeaderSytleOneTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSytleOneTableVC.swift; sourceTree = "<group>"; };
 		EF168AE0200FA89D0045BF60 /* HeaderStyleOneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStyleOneTableViewCell.swift; sourceTree = "<group>"; };
 		EF168AE3201052A10045BF60 /* HeaderStyleTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStyleTwoVC.swift; sourceTree = "<group>"; };
+		EF168B042011F0780045BF60 /* SearchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchHeaderView.xib; sourceTree = "<group>"; };
+		EF168B062011F08B0045BF60 /* SearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
+		EF168B082011F5490045BF60 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		EF3D75392007BFC000DD7B86 /* Apps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apps.swift; sourceTree = "<group>"; };
 		EF3D753C2007C27600DD7B86 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
@@ -285,7 +291,11 @@
 		EF1523AD2000710300ADAD1F /* SEARCH */ = {
 			isa = PBXGroup;
 			children = (
+				EF168B0A2011FC9C0045BF60 /* STYLE ONE */,
+				EF168B0B2011FCA50045BF60 /* STYLE TWO */,
+				EF168B032011F04D0045BF60 /* Header */,
 				EF1523AE2000711F00ADAD1F /* SearchTableVC.swift */,
+				EF168B082011F5490045BF60 /* SearchTableViewCell.swift */,
 			);
 			path = SEARCH;
 			sourceTree = "<group>";
@@ -374,6 +384,29 @@
 				EF168AE3201052A10045BF60 /* HeaderStyleTwoVC.swift */,
 			);
 			path = "Header Style TWO TVC";
+			sourceTree = "<group>";
+		};
+		EF168B032011F04D0045BF60 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EF168B042011F0780045BF60 /* SearchHeaderView.xib */,
+				EF168B062011F08B0045BF60 /* SearchHeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		EF168B0A2011FC9C0045BF60 /* STYLE ONE */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "STYLE ONE";
+			sourceTree = "<group>";
+		};
+		EF168B0B2011FCA50045BF60 /* STYLE TWO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "STYLE TWO";
 			sourceTree = "<group>";
 		};
 		EF3D753B2007C25400DD7B86 /* Data */ = {
@@ -568,6 +601,7 @@
 				EF1523B92000756900ADAD1F /* Updates.storyboard in Resources */,
 				EF1523B72000752700ADAD1F /* Apps.storyboard in Resources */,
 				EFD33FC220085BCD00675C5E /* SanFranciscoDisplay-Medium.otf in Resources */,
+				EF168B052011F0780045BF60 /* SearchHeaderView.xib in Resources */,
 				EFD33FC320085BCD00675C5E /* SanFranciscoDisplay-Heavy.otf in Resources */,
 				EF1523BC2000759500ADAD1F /* Search.storyboard in Resources */,
 				EFD33FC720085BCD00675C5E /* SanFranciscoText-RegularItalic.otf in Resources */,
@@ -623,9 +657,11 @@
 				EF168AC8200EA94C0045BF60 /* GameHeaderTitleOne.swift in Sources */,
 				EF168ACF200EC5110045BF60 /* GameStyleThreeCollectionViewCell.swift in Sources */,
 				EFD33FF82009784F00675C5E /* GetButton.swift in Sources */,
+				EF168B092011F5490045BF60 /* SearchTableViewCell.swift in Sources */,
 				EF3D75422007CAEA00DD7B86 /* Cells.swift in Sources */,
 				EF168ACD200EC2C90045BF60 /* GameStyleThreeTableViewCell.swift in Sources */,
 				EF168AC6200E7F450045BF60 /* GameStyleTwoCollectionTableViewCell.swift in Sources */,
+				EF168B072011F08B0045BF60 /* SearchHeaderView.swift in Sources */,
 				EFD33FFD200A662D00675C5E /* AppStoreServiceAPI.swift in Sources */,
 				EFD33FD6200865CB00675C5E /* SytleFourTableViewCell.swift in Sources */,
 			);
