@@ -47,6 +47,11 @@
 		EF168B052011F0780045BF60 /* SearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF168B042011F0780045BF60 /* SearchHeaderView.xib */; };
 		EF168B072011F08B0045BF60 /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168B062011F08B0045BF60 /* SearchHeaderView.swift */; };
 		EF168B092011F5490045BF60 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168B082011F5490045BF60 /* SearchTableViewCell.swift */; };
+		EF168B0D201205DF0045BF60 /* SearchStyleOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168B0C201205DF0045BF60 /* SearchStyleOneTableViewCell.swift */; };
+		EF168B0F201209490045BF60 /* SearchStyleTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168B0E201209490045BF60 /* SearchStyleTwoTableViewCell.swift */; };
+		EF168B1220120B060045BF60 /* SearchStyleThreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168B1120120B060045BF60 /* SearchStyleThreeTableViewCell.swift */; };
+		EF168B152012393D0045BF60 /* UpdateHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF168B142012393D0045BF60 /* UpdateHeaderView.xib */; };
+		EF168B17201240320045BF60 /* UpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF168B16201240320045BF60 /* UpdateTableViewCell.swift */; };
 		EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D75392007BFC000DD7B86 /* Apps.swift */; };
 		EF3D753D2007C27600DD7B86 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3D753C2007C27600DD7B86 /* data.json */; };
 		EF3D753F2007CAA600DD7B86 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */; };
@@ -132,6 +137,11 @@
 		EF168B042011F0780045BF60 /* SearchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchHeaderView.xib; sourceTree = "<group>"; };
 		EF168B062011F08B0045BF60 /* SearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
 		EF168B082011F5490045BF60 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		EF168B0C201205DF0045BF60 /* SearchStyleOneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStyleOneTableViewCell.swift; sourceTree = "<group>"; };
+		EF168B0E201209490045BF60 /* SearchStyleTwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStyleTwoTableViewCell.swift; sourceTree = "<group>"; };
+		EF168B1120120B060045BF60 /* SearchStyleThreeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStyleThreeTableViewCell.swift; sourceTree = "<group>"; };
+		EF168B142012393D0045BF60 /* UpdateHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateHeaderView.xib; sourceTree = "<group>"; };
+		EF168B16201240320045BF60 /* UpdateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTableViewCell.swift; sourceTree = "<group>"; };
 		EF3D75392007BFC000DD7B86 /* Apps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apps.swift; sourceTree = "<group>"; };
 		EF3D753C2007C27600DD7B86 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		EF3D753E2007CAA600DD7B86 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
@@ -283,7 +293,9 @@
 		EF1523AA200070C800ADAD1F /* UPDATES */ = {
 			isa = PBXGroup;
 			children = (
+				EF168B132012390B0045BF60 /* Header */,
 				EF1523AB200070F800ADAD1F /* UpdatesTableVC.swift */,
+				EF168B16201240320045BF60 /* UpdateTableViewCell.swift */,
 			);
 			path = UPDATES;
 			sourceTree = "<group>";
@@ -291,6 +303,7 @@
 		EF1523AD2000710300ADAD1F /* SEARCH */ = {
 			isa = PBXGroup;
 			children = (
+				EF168B1020120AEE0045BF60 /* STYLE THREE */,
 				EF168B0A2011FC9C0045BF60 /* STYLE ONE */,
 				EF168B0B2011FCA50045BF60 /* STYLE TWO */,
 				EF168B032011F04D0045BF60 /* Header */,
@@ -398,6 +411,7 @@
 		EF168B0A2011FC9C0045BF60 /* STYLE ONE */ = {
 			isa = PBXGroup;
 			children = (
+				EF168B0C201205DF0045BF60 /* SearchStyleOneTableViewCell.swift */,
 			);
 			path = "STYLE ONE";
 			sourceTree = "<group>";
@@ -405,8 +419,25 @@
 		EF168B0B2011FCA50045BF60 /* STYLE TWO */ = {
 			isa = PBXGroup;
 			children = (
+				EF168B0E201209490045BF60 /* SearchStyleTwoTableViewCell.swift */,
 			);
 			path = "STYLE TWO";
+			sourceTree = "<group>";
+		};
+		EF168B1020120AEE0045BF60 /* STYLE THREE */ = {
+			isa = PBXGroup;
+			children = (
+				EF168B1120120B060045BF60 /* SearchStyleThreeTableViewCell.swift */,
+			);
+			path = "STYLE THREE";
+			sourceTree = "<group>";
+		};
+		EF168B132012390B0045BF60 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EF168B142012393D0045BF60 /* UpdateHeaderView.xib */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		EF3D753B2007C25400DD7B86 /* Data */ = {
@@ -585,6 +616,7 @@
 				EFD33FD220085BCD00675C5E /* SanFranciscoDisplay-Light.otf in Resources */,
 				EF3D75472007CE2000DD7B86 /* DateHomeHeaderView.xib in Resources */,
 				EFD33FC520085BCD00675C5E /* SanFranciscoDisplay-Black.otf in Resources */,
+				EF168B152012393D0045BF60 /* UpdateHeaderView.xib in Resources */,
 				EFD33FCB20085BCD00675C5E /* SanFranciscoDisplay-Thin.otf in Resources */,
 				EF1523B4200074CE00ADAD1F /* Games.storyboard in Resources */,
 				EFD33FC620085BCD00675C5E /* SanFranciscoText-Heavy.otf in Resources */,
@@ -622,6 +654,7 @@
 			files = (
 				EF168AE4201052A10045BF60 /* HeaderStyleTwoVC.swift in Sources */,
 				EF1523A220006FE300ADAD1F /* TodayTableVC.swift in Sources */,
+				EF168B0D201205DF0045BF60 /* SearchStyleOneTableViewCell.swift in Sources */,
 				EF168AC4200E76580045BF60 /* GameStyleTwoCollectionViewCell.swift in Sources */,
 				EF168AD9200F67600045BF60 /* GameStyleFiveTableViewCell.swift in Sources */,
 				EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */,
@@ -629,6 +662,7 @@
 				EF168AD1200EC7630045BF60 /* GameStyleThreeCollectionTableViewCell.swift in Sources */,
 				EFD33FE3200915AA00675C5E /* ListTableView.swift in Sources */,
 				EF168AD4200EEB800045BF60 /* GameStyleFourTableViewCell.swift in Sources */,
+				EF168B17201240320045BF60 /* UpdateTableViewCell.swift in Sources */,
 				EFD33FEE2009492B00675C5E /* ShadowView.swift in Sources */,
 				EF168ABF200E012F0045BF60 /* GameStyleTwoTableViewCell.swift in Sources */,
 				EF168AB0200CDBF50045BF60 /* GamesStyleOneCollectionViewCell.swift in Sources */,
@@ -643,6 +677,7 @@
 				EF1523AC200070F800ADAD1F /* UpdatesTableVC.swift in Sources */,
 				EF1523A9200070AE00ADAD1F /* AppsTabTableVC.swift in Sources */,
 				EF1523BE2001C57200ADAD1F /* App.swift in Sources */,
+				EF168B1220120B060045BF60 /* SearchStyleThreeTableViewCell.swift in Sources */,
 				EFD33FE0200912E000675C5E /* DailyListTableViewCell.swift in Sources */,
 				EF168ADB200F71BE0045BF60 /* GameStyleFiveInnerTableViewCell.swift in Sources */,
 				EF168AD6200EECCF0045BF60 /* GameStyleFourCollectionViewCell.swift in Sources */,
@@ -651,6 +686,7 @@
 				EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */,
 				EF168ADF200FA7950045BF60 /* HeaderSytleOneTableVC.swift in Sources */,
 				EF168AAB200C78430045BF60 /* GameStyleOneTableViewCell.swift in Sources */,
+				EF168B0F201209490045BF60 /* SearchStyleTwoTableViewCell.swift in Sources */,
 				EF168AA9200C654F0045BF60 /* DateHeaderView.swift in Sources */,
 				EFD33FFB200A63A700675C5E /* NetworkProcessor.swift in Sources */,
 				EF3D75502008463600DD7B86 /* SytleThreeTableViewCell.swift in Sources */,

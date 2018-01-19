@@ -39,5 +39,12 @@ enum Cells : String {
     
     //Search
     case searchTableViewCell = "searchTableViewCell"
+    case searchStyleOneTableViewCell = "searchStyleOneTableViewCell"
+    case searchStyleTwoTableViewCell = "searchStyleTwoTableViewCell"
+    
+    
+    
+    //UPdate
+    case updateTableViewCell = "updateTableViewCell"
     
 }
