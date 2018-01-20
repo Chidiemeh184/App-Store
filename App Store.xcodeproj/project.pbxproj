@@ -65,6 +65,8 @@
 		EF83E486201250B5007A36AE /* GameStyleSixCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E485201250B5007A36AE /* GameStyleSixCollectionViewCell.swift */; };
 		EF83E48920138D3B007A36AE /* PaidAppsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E48820138D3B007A36AE /* PaidAppsTableVC.swift */; };
 		EF83E48B20138E9B007A36AE /* PaidAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E48A20138E9B007A36AE /* PaidAppsTableViewCell.swift */; };
+		EF83E48E2013A2EA007A36AE /* FreeAppsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E48D2013A2EA007A36AE /* FreeAppsTableVC.swift */; };
+		EF83E4902013A30D007A36AE /* FreeAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E48F2013A30D007A36AE /* FreeAppsTableViewCell.swift */; };
 		EFD33F7F2008599C00675C5E /* SanFranciscoFont-master in Resources */ = {isa = PBXBuildFile; fileRef = EFD33F7E2008599B00675C5E /* SanFranciscoFont-master */; };
 		EFD33FC020085BCD00675C5E /* SanFranciscoText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FAB20085BCB00675C5E /* SanFranciscoText-Regular.otf */; };
 		EFD33FC120085BCD00675C5E /* SanFranciscoText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FAC20085BCB00675C5E /* SanFranciscoText-Semibold.otf */; };
@@ -159,6 +161,8 @@
 		EF83E485201250B5007A36AE /* GameStyleSixCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleSixCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF83E48820138D3B007A36AE /* PaidAppsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidAppsTableVC.swift; sourceTree = "<group>"; };
 		EF83E48A20138E9B007A36AE /* PaidAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidAppsTableViewCell.swift; sourceTree = "<group>"; };
+		EF83E48D2013A2EA007A36AE /* FreeAppsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeAppsTableVC.swift; sourceTree = "<group>"; };
+		EF83E48F2013A30D007A36AE /* FreeAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeAppsTableViewCell.swift; sourceTree = "<group>"; };
 		EFD33F7E2008599B00675C5E /* SanFranciscoFont-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SanFranciscoFont-master"; sourceTree = "<group>"; };
 		EFD33FAB20085BCB00675C5E /* SanFranciscoText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Regular.otf"; sourceTree = "<group>"; };
 		EFD33FAC20085BCB00675C5E /* SanFranciscoText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Semibold.otf"; sourceTree = "<group>"; };
@@ -403,6 +407,7 @@
 		EF168AE22010423E0045BF60 /* Header Style TWO TVC */ = {
 			isa = PBXGroup;
 			children = (
+				EF83E48C2013A2B0007A36AE /* Free Apps TVC */,
 				EF83E48720138CEA007A36AE /* Paid Apps TVC */,
 				EF168AE3201052A10045BF60 /* HeaderStyleTwoVC.swift */,
 			);
@@ -507,6 +512,15 @@
 				EF83E48A20138E9B007A36AE /* PaidAppsTableViewCell.swift */,
 			);
 			path = "Paid Apps TVC";
+			sourceTree = "<group>";
+		};
+		EF83E48C2013A2B0007A36AE /* Free Apps TVC */ = {
+			isa = PBXGroup;
+			children = (
+				EF83E48D2013A2EA007A36AE /* FreeAppsTableVC.swift */,
+				EF83E48F2013A30D007A36AE /* FreeAppsTableViewCell.swift */,
+			);
+			path = "Free Apps TVC";
 			sourceTree = "<group>";
 		};
 		EFD33FAA20085BA600675C5E /* Fonts */ = {
@@ -682,12 +696,14 @@
 			files = (
 				EF168AE4201052A10045BF60 /* HeaderStyleTwoVC.swift in Sources */,
 				EF1523A220006FE300ADAD1F /* TodayTableVC.swift in Sources */,
+				EF83E48E2013A2EA007A36AE /* FreeAppsTableVC.swift in Sources */,
 				EF168B0D201205DF0045BF60 /* SearchStyleOneTableViewCell.swift in Sources */,
 				EF83E486201250B5007A36AE /* GameStyleSixCollectionViewCell.swift in Sources */,
 				EF168AC4200E76580045BF60 /* GameStyleTwoCollectionViewCell.swift in Sources */,
 				EF168AD9200F67600045BF60 /* GameStyleFiveTableViewCell.swift in Sources */,
 				EF3D753A2007BFC000DD7B86 /* Apps.swift in Sources */,
 				EF3D754E200836F300DD7B86 /* SytleTwoTableViewCell.swift in Sources */,
+				EF83E4902013A30D007A36AE /* FreeAppsTableViewCell.swift in Sources */,
 				EF83E48420124832007A36AE /* GameStyleSixTableViewCell.swift in Sources */,
 				EF168AD1200EC7630045BF60 /* GameStyleThreeCollectionTableViewCell.swift in Sources */,
 				EFD33FE3200915AA00675C5E /* ListTableView.swift in Sources */,

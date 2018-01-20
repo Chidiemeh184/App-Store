@@ -38,6 +38,7 @@ enum Cells : String {
     
         //Header Style Two
         case paidAppsTableViewCell = "paidAppsTableViewCell"
+        case freeAppsTableViewCell = "freeAppsTableViewCell"
     
     case gameStyleSixTableViewCell = "gameStyleSixTableViewCell"
     

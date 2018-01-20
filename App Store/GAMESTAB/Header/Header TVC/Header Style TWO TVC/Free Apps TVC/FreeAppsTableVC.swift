@@ -1,5 +1,5 @@
 //
-//  PaidAppsTableVC.swift
+//  FreeAppsTableVC.swift
 //  App Store
 //
 //  Created by Chidi Emeh on 1/20/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PaidAppsTableVC: UITableViewController {
+class FreeAppsTableVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +17,8 @@ class PaidAppsTableVC: UITableViewController {
 
 }
 
-
 //MARK : Row Height
-extension PaidAppsTableVC {
+extension FreeAppsTableVC {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 95
@@ -35,16 +34,16 @@ extension PaidAppsTableVC {
 
 //MARK: Data Source
 
-extension PaidAppsTableVC {
+extension FreeAppsTableVC {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 21
+        return 12
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: Cells.paidAppsTableViewCell.rawValue) as!
-        PaidAppsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Cells.freeAppsTableViewCell.rawValue) as!
+        FreeAppsTableViewCell
         return cell
         
     }
