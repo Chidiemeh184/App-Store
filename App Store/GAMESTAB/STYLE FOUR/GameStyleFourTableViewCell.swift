@@ -35,13 +35,13 @@ extension GameStyleFourTableViewCell {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = CGSize(width: collectionView.frame.size.width - 35, height: 304)
+        let size = CGSize(width: collectionView.frame.size.width - 10, height: 308)
         return size
         
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let inset = UIEdgeInsetsMake(0, 15, 20, 20)
+        let inset = UIEdgeInsetsMake(0, 10, 20, 0)
         return inset
     }
     

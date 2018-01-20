@@ -35,7 +35,7 @@ extension GameStyleThreeTableViewCell {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = CGSize(width: collectionView.frame.size.width - 35, height: 304)
+        let size = CGSize(width: collectionView.frame.size.width - 35, height: 234) //Height is based on the inner tableview row height
         return size
         
     }

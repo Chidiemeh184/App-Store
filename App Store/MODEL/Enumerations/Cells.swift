@@ -36,6 +36,9 @@ enum Cells : String {
         //Header Style One
         case headerStyleOneTableViewCell = "headerStyleOneTableViewCell"
     
+        //Header Style Two
+        case paidAppsTableViewCell = "paidAppsTableViewCell"
+    
     case gameStyleSixTableViewCell = "gameStyleSixTableViewCell"
     
     

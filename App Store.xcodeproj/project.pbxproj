@@ -63,6 +63,8 @@
 		EF3D75502008463600DD7B86 /* SytleThreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D754F2008463600DD7B86 /* SytleThreeTableViewCell.swift */; };
 		EF83E48420124832007A36AE /* GameStyleSixTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E48320124832007A36AE /* GameStyleSixTableViewCell.swift */; };
 		EF83E486201250B5007A36AE /* GameStyleSixCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E485201250B5007A36AE /* GameStyleSixCollectionViewCell.swift */; };
+		EF83E48920138D3B007A36AE /* PaidAppsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E48820138D3B007A36AE /* PaidAppsTableVC.swift */; };
+		EF83E48B20138E9B007A36AE /* PaidAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E48A20138E9B007A36AE /* PaidAppsTableViewCell.swift */; };
 		EFD33F7F2008599C00675C5E /* SanFranciscoFont-master in Resources */ = {isa = PBXBuildFile; fileRef = EFD33F7E2008599B00675C5E /* SanFranciscoFont-master */; };
 		EFD33FC020085BCD00675C5E /* SanFranciscoText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FAB20085BCB00675C5E /* SanFranciscoText-Regular.otf */; };
 		EFD33FC120085BCD00675C5E /* SanFranciscoText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FAC20085BCB00675C5E /* SanFranciscoText-Semibold.otf */; };
@@ -155,6 +157,8 @@
 		EF3D754F2008463600DD7B86 /* SytleThreeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SytleThreeTableViewCell.swift; sourceTree = "<group>"; };
 		EF83E48320124832007A36AE /* GameStyleSixTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleSixTableViewCell.swift; sourceTree = "<group>"; };
 		EF83E485201250B5007A36AE /* GameStyleSixCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleSixCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF83E48820138D3B007A36AE /* PaidAppsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidAppsTableVC.swift; sourceTree = "<group>"; };
+		EF83E48A20138E9B007A36AE /* PaidAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidAppsTableViewCell.swift; sourceTree = "<group>"; };
 		EFD33F7E2008599B00675C5E /* SanFranciscoFont-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SanFranciscoFont-master"; sourceTree = "<group>"; };
 		EFD33FAB20085BCB00675C5E /* SanFranciscoText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Regular.otf"; sourceTree = "<group>"; };
 		EFD33FAC20085BCB00675C5E /* SanFranciscoText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Semibold.otf"; sourceTree = "<group>"; };
@@ -399,6 +403,7 @@
 		EF168AE22010423E0045BF60 /* Header Style TWO TVC */ = {
 			isa = PBXGroup;
 			children = (
+				EF83E48720138CEA007A36AE /* Paid Apps TVC */,
 				EF168AE3201052A10045BF60 /* HeaderStyleTwoVC.swift */,
 			);
 			path = "Header Style TWO TVC";
@@ -493,6 +498,15 @@
 				EF83E485201250B5007A36AE /* GameStyleSixCollectionViewCell.swift */,
 			);
 			path = "STYLE SIX";
+			sourceTree = "<group>";
+		};
+		EF83E48720138CEA007A36AE /* Paid Apps TVC */ = {
+			isa = PBXGroup;
+			children = (
+				EF83E48820138D3B007A36AE /* PaidAppsTableVC.swift */,
+				EF83E48A20138E9B007A36AE /* PaidAppsTableViewCell.swift */,
+			);
+			path = "Paid Apps TVC";
 			sourceTree = "<group>";
 		};
 		EFD33FAA20085BA600675C5E /* Fonts */ = {
@@ -677,6 +691,7 @@
 				EF83E48420124832007A36AE /* GameStyleSixTableViewCell.swift in Sources */,
 				EF168AD1200EC7630045BF60 /* GameStyleThreeCollectionTableViewCell.swift in Sources */,
 				EFD33FE3200915AA00675C5E /* ListTableView.swift in Sources */,
+				EF83E48B20138E9B007A36AE /* PaidAppsTableViewCell.swift in Sources */,
 				EF168AD4200EEB800045BF60 /* GameStyleFourTableViewCell.swift in Sources */,
 				EF168B17201240320045BF60 /* UpdateTableViewCell.swift in Sources */,
 				EFD33FEE2009492B00675C5E /* ShadowView.swift in Sources */,
@@ -702,6 +717,7 @@
 				EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */,
 				EF168ADF200FA7950045BF60 /* HeaderSytleOneTableVC.swift in Sources */,
 				EF168AAB200C78430045BF60 /* GameStyleOneTableViewCell.swift in Sources */,
+				EF83E48920138D3B007A36AE /* PaidAppsTableVC.swift in Sources */,
 				EF168B0F201209490045BF60 /* SearchStyleTwoTableViewCell.swift in Sources */,
 				EF168AA9200C654F0045BF60 /* DateHeaderView.swift in Sources */,
 				EFD33FFB200A63A700675C5E /* NetworkProcessor.swift in Sources */,
