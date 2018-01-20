@@ -31,7 +31,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="0Ic-h0-rW4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
@@ -104,7 +104,7 @@
                                             </cells>
                                         </collectionView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="b4d-tv-tTw" firstAttribute="leading" secondItem="Ht1-MB-8F8" secondAttribute="leading" id="7Ty-Xz-zbY"/>
                                         <constraint firstItem="b4d-tv-tTw" firstAttribute="top" secondItem="Ht1-MB-8F8" secondAttribute="top" id="RUD-XB-78D"/>
@@ -117,60 +117,59 @@
                                     <outlet property="gamesStyleOneCollectionView" destination="b4d-tv-tTw" id="Sp2-8x-nwl"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="15" indentationWidth="10" reuseIdentifier="gameStyleTwoTableViewCell" rowHeight="338" id="icu-SN-umq" customClass="GameStyleTwoTableViewCell" customModule="App_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="428.5" width="375" height="338"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationLevel="15" indentationWidth="10" reuseIdentifier="gameStyleTwoTableViewCell" rowHeight="263" id="icu-SN-umq" customClass="GameStyleTwoTableViewCell" customModule="App_Store" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="428.5" width="375" height="263"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="icu-SN-umq" id="OZ7-pT-7j7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="337.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="262.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y9F-hN-cza">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="338"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y9F-hN-cza">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="263"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TPt-qU-Qma">
-                                                <size key="itemSize" width="335" height="270"/>
+                                                <size key="itemSize" width="350" height="261"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gameStyleTwoCollectionViewCell" id="0bR-Aa-NVv" customClass="GameStyleTwoCollectionViewCell" customModule="App_Store" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="34" width="335" height="270"/>
+                                                    <rect key="frame" x="0.0" y="1" width="350" height="261"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="270"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="261"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
                                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qzu-gC-fKK">
-                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="270"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="261"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <inset key="separatorInset" minX="95" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <prototypes>
                                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="gameStyleTwoCollectionTableViewCell" rowHeight="78" id="oZX-oh-Ooj" customClass="GameStyleTwoCollectionTableViewCell" customModule="App_Store" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="28" width="335" height="78"/>
+                                                                        <rect key="frame" x="0.0" y="28" width="350" height="78"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oZX-oh-Ooj" id="ii3-IU-zLr">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="77.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="77.5"/>
                                                                             <autoresizingMask key="autoresizingMask"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Animus - Stand Alone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Za-Pd-LGA">
-                                                                                    <rect key="frame" x="97" y="18" width="157" height="21"/>
+                                                                                    <rect key="frame" x="79" y="18" width="157" height="21"/>
                                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Animus - Stand Alone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zI-uA-kFi">
-                                                                                    <rect key="frame" x="97" y="41" width="157" height="16"/>
+                                                                                    <rect key="frame" x="79" y="41" width="157" height="16"/>
                                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="12"/>
                                                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1I-cL-yPp" customClass="GetButton" customModule="App_Store" customModuleProvider="target">
-                                                                                    <rect key="frame" x="262" y="26" width="73" height="27"/>
+                                                                                    <rect key="frame" x="244" y="26" width="73" height="27"/>
                                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                     <color key="backgroundColor" red="0.94117647058823528" green="0.94509803921568625" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
@@ -182,7 +181,7 @@
                                                                                     </connections>
                                                                                 </button>
                                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2e1-a3-SVt">
-                                                                                    <rect key="frame" x="19" y="5" width="70" height="70"/>
+                                                                                    <rect key="frame" x="1" y="5" width="70" height="70"/>
                                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                 </imageView>
                                                                             </subviews>
@@ -193,7 +192,7 @@
                                                             </tableView>
                                                         </subviews>
                                                     </view>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <outlet property="gameStyleTwoTableView" destination="qzu-gC-fKK" id="alQ-M7-U3K"/>
                                                     </connections>
@@ -201,7 +200,13 @@
                                             </cells>
                                         </collectionView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="y9F-hN-cza" firstAttribute="leading" secondItem="OZ7-pT-7j7" secondAttribute="leading" id="BtW-3a-BDk"/>
+                                        <constraint firstAttribute="trailing" secondItem="y9F-hN-cza" secondAttribute="trailing" id="HuD-fD-OsN"/>
+                                        <constraint firstAttribute="bottom" secondItem="y9F-hN-cza" secondAttribute="bottom" id="RcK-6g-xgB"/>
+                                        <constraint firstItem="y9F-hN-cza" firstAttribute="top" secondItem="OZ7-pT-7j7" secondAttribute="top" id="f8Y-bs-yTj"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
@@ -209,7 +214,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="15" indentationWidth="10" reuseIdentifier="gameStyleThreeTableViewCell" rowHeight="338" id="9Ri-X5-Zlr" customClass="GameStyleThreeTableViewCell" customModule="App_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="766.5" width="375" height="338"/>
+                                <rect key="frame" x="0.0" y="691.5" width="375" height="338"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Ri-X5-Zlr" id="p31-gI-AxD">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="337.5"/>
@@ -297,7 +302,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="15" indentationWidth="10" reuseIdentifier="gameStyleFourTableViewCell" rowHeight="369" id="hRa-Db-eII" customClass="GameStyleFourTableViewCell" customModule="App_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="1104.5" width="375" height="369"/>
+                                <rect key="frame" x="0.0" y="1029.5" width="375" height="369"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hRa-Db-eII" id="1gH-hm-r4H">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="368.5"/>
@@ -377,7 +382,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="15" indentationWidth="10" reuseIdentifier="gameStyleFiveTableViewCell" rowHeight="392" id="hhv-8J-bqP" customClass="GameStyleFiveTableViewCell" customModule="App_Store" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="1473.5" width="375" height="392"/>
+                                <rect key="frame" x="0.0" y="1398.5" width="375" height="392"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hhv-8J-bqP" id="8c9-uj-geE">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="391.5"/>
@@ -419,6 +424,44 @@
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="gameStyleFiveTableView" destination="knd-5c-j4G" id="LxP-4n-QQJ"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="15" indentationWidth="10" reuseIdentifier="gameStyleSixTableViewCell" rowHeight="206" id="pxS-wW-VMo" customClass="GameStyleSixTableViewCell" customModule="App_Store" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="1790.5" width="375" height="206"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pxS-wW-VMo" id="ZCX-A2-KPR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="205.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="thR-AQ-P0q">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6wq-e0-HvJ">
+                                                <size key="itemSize" width="352" height="173"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gameStyleSixCollectionViewCell" id="tx3-S3-WGb" customClass="GameStyleSixCollectionViewCell" customModule="App_Store" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="8.5" width="352" height="173"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="352" height="173"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </view>
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="gameStyleSixCollectionView" destination="thR-AQ-P0q" id="hAY-uV-mwy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -587,7 +630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VLA-zP-LwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="1085"/>
+            <point key="canvasLocation" x="-1417" y="967"/>
         </scene>
         <!--Games-->
         <scene sceneID="O5m-KH-VOY">

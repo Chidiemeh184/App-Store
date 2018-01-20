@@ -17,6 +17,7 @@ class GameStyleTwoCollectionViewCell: UICollectionViewCell,UITableViewDelegate, 
     override func awakeFromNib() {
         gameStyleTwoTableView.dataSource = self
         gameStyleTwoTableView.delegate  = self
+    
     }
     
     

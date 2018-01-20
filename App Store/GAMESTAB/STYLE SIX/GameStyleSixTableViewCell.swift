@@ -1,30 +1,36 @@
 //
-//  GameStyleTwoTableViewCell.swift
+//  GameStyleSixTableViewCell.swift
 //  App Store
 //
-//  Created by Chidi Emeh on 1/16/18.
+//  Created by Chidi Emeh on 1/19/18.
 //  Copyright © 2018 Chidi Emeh. All rights reserved.
 //
 
 import UIKit
 
-class GameStyleTwoTableViewCell: UITableViewCell,
-    UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
-    {
-    @IBOutlet weak var gameStyleTwoCollectionView: UICollectionView!
+class GameStyleSixTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
+    
+    @IBOutlet weak var gameStyleSixCollectionView: UICollectionView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        gameStyleTwoCollectionView.delegate = self
-        gameStyleTwoCollectionView.dataSource = self
-    
+        // Initialization code
+        gameStyleSixCollectionView.delegate = self
+        gameStyleSixCollectionView.dataSource = self
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
 
 }
 
 //MARK: - ScrollViewWillEnd dragging
-extension GameStyleTwoTableViewCell {
+extension GameStyleSixTableViewCell {
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -32,30 +38,29 @@ extension GameStyleTwoTableViewCell {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = CGSize(width: collectionView.frame.size.width - 50, height: 234 )  //Height is number of table row * 3 so determined by the rows in table view
+        let size = CGSize(width: collectionView.frame.size.width - 35, height: 173)
         return size
         
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-      
-        let inset = UIEdgeInsetsMake(0, 5, 0, 0)
+        let inset = UIEdgeInsetsMake(0, 5, 20, 20)
         return inset
     }
-    
-    
+
 }
 
 
+
 //MARK: - Datasource
-extension GameStyleTwoTableViewCell {
+extension GameStyleSixTableViewCell {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionCells.gameStyleTwoCollectionViewCell.rawValue, for: indexPath) as! GameStyleTwoCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionCells.gameStyleSixCollectionViewCell.rawValue, for: indexPath) as! GameStyleSixCollectionViewCell
         return cell
     }
     

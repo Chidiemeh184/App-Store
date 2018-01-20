@@ -59,7 +59,7 @@ extension GamesTabTableVC {
 extension GamesTabTableVC {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 7
+        return 8
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -93,6 +93,9 @@ extension GamesTabTableVC {
         case 6:
             let cell = tableView.dequeueReusableCell(withIdentifier: Cells.gameStyleThreeTableViewCell.rawValue) as! GameStyleThreeTableViewCell
             return cell
+        case 7:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.gameStyleSixTableViewCell.rawValue) as! GameStyleSixTableViewCell
+            return cell
         default:
             print("Could not dequeue cell")
         }
@@ -103,18 +106,26 @@ extension GamesTabTableVC {
 }
 
 
-//MARK: - Height
+//MARK: - Row Height
 extension GamesTabTableVC {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 
         if indexPath.section == 0 {
             return 340
-        }else if indexPath.section == 4 {
+        }else if indexPath.section == 1 && indexPath.section == 2 {
+            return 263 //284
+        }
+        
+        else if indexPath.section == 4 {
             return 320
             
         }else if indexPath.section == 5 {
             return 392
+        }else if indexPath.section == 7 {
+            
+            ///Change  gameStyleSixTableViewCell
+            return 206
         }
         else {
             return 290
