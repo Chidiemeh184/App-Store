@@ -59,7 +59,7 @@ extension GamesTabTableVC {
 extension GamesTabTableVC {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 8
+        return 10
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -96,8 +96,14 @@ extension GamesTabTableVC {
         case 7:
             let cell = tableView.dequeueReusableCell(withIdentifier: Cells.gameStyleSixTableViewCell.rawValue) as! GameStyleSixTableViewCell
             return cell
+        case 8:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.gameStyleThreeTableViewCell.rawValue) as! GameStyleThreeTableViewCell
+            return cell
+        case 9:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Cells.gameStyleSevenTableViewCell.rawValue) as! GameStyleSevenTableViewCell
+            return cell
         default:
-            print("Could not dequeue cell")
+            break
         }
     
         return cell
@@ -115,21 +121,18 @@ extension GamesTabTableVC {
             return 340
         }else if indexPath.section == 1 && indexPath.section == 2 {
             return 285
-        }else if indexPath.section == 3 && indexPath.section == 6 {
+        }else if indexPath.section == 3 && indexPath.section == 6 && indexPath.section == 8{
             return 295
         }else if indexPath.section == 4 {
             return 327
         }else if indexPath.section == 5 {
             return 392
         }else if indexPath.section == 7 {
-            
-            ///Change  gameStyleSixTableViewCell
-            return 206
+            return 190
         }
         else {
             return 290
         }
-        //return indexPath.section == 0 ? 340 : 290 //372 //369
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

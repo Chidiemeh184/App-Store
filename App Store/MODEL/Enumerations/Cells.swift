@@ -41,6 +41,7 @@ enum Cells : String {
         case freeAppsTableViewCell = "freeAppsTableViewCell"
     
     case gameStyleSixTableViewCell = "gameStyleSixTableViewCell"
+    case gameStyleSevenTableViewCell = "gameStyleSevenTableViewCell"
     
     
     //Search
