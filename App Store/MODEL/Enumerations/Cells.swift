@@ -43,6 +43,10 @@ enum Cells : String {
     case gameStyleSixTableViewCell = "gameStyleSixTableViewCell"
     case gameStyleSevenTableViewCell = "gameStyleSevenTableViewCell"
     
+    case gameStyleSevenInnerTableViewCell = "gameStyleSevenInnerTableViewCell"
+    case gameStyleSevenInnerTableViewCellTWO = "gameStyleSevenInnerTableViewCellTWO"
+    case gameStyleSevenInnerTableViewCellTHREE = "gameStyleSevenInnerTableViewCellTHREE"
+    
     
     //Search
     case searchTableViewCell = "searchTableViewCell"

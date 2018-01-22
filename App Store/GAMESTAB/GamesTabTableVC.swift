@@ -129,9 +129,11 @@ extension GamesTabTableVC {
             return 392
         }else if indexPath.section == 7 {
             return 190
+        }else if indexPath.section == 9 {
+            return 322  //396
         }
         else {
-            return 290
+            return 290  //290
         }
     }
     
