@@ -267,6 +267,7 @@
 		EF1523A020006F9E00ADAD1F /* TODAY */ = {
 			isa = PBXGroup;
 			children = (
+				EF31349B2018105900E73D41 /* OPEN  */,
 				EF3D754C200828A800DD7B86 /* TableviewCells */,
 				EF3D75452007CD4900DD7B86 /* HeaderView */,
 				EF1523A120006FE300ADAD1F /* TodayTableVC.swift */,
@@ -462,6 +463,29 @@
 				EF168B142012393D0045BF60 /* UpdateHeaderView.xib */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		EF31349B2018105900E73D41 /* OPEN  */ = {
+			isa = PBXGroup;
+			children = (
+				EF31349D2018107900E73D41 /* STYLE TWO */,
+				EF31349C2018106B00E73D41 /* STYLE ONE */,
+			);
+			path = "OPEN ";
+			sourceTree = "<group>";
+		};
+		EF31349C2018106B00E73D41 /* STYLE ONE */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "STYLE ONE";
+			sourceTree = "<group>";
+		};
+		EF31349D2018107900E73D41 /* STYLE TWO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "STYLE TWO";
 			sourceTree = "<group>";
 		};
 		EF3D753B2007C25400DD7B86 /* Data */ = {
