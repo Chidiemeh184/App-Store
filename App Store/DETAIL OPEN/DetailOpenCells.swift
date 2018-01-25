@@ -12,8 +12,11 @@ import Foundation
 
 enum DetailOpenCells : String {
     
+    //TableViewCell
     case topTableViewCell = "topTableViewCell"
+    case whatsNewTableViewCell = "whatsNewTableViewCell"
+    case previewTableViewCell = "previewTableViewCell"
     
-    
-    
+    //CollectionViewCell
+    case previewCollectionViewCell = "previewCollectionViewCell"
 }

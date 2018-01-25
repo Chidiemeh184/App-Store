@@ -14,6 +14,15 @@ class AppDetailOpenTableViewController: UITableViewController {
         super.viewDidLoad()
         
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        //navigationController?.navigationBar.prefersLargeTitles = true
+    }
 
 
 }
@@ -22,7 +31,19 @@ class AppDetailOpenTableViewController: UITableViewController {
 extension AppDetailOpenTableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 158
+        
+        switch indexPath.row {
+        case 0:
+            return 205
+        case 1:
+            return 146
+        case 2:
+            return 486
+        default:
+            break
+        }
+        
+        return 205
     }
     
 }
@@ -36,13 +57,28 @@ extension AppDetailOpenTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 3
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.topTableViewCell.rawValue) as!
-        TopTableViewCell
+        var cell = UITableViewCell()
+        
+        
+        switch indexPath.row {
+        case 0:
+            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.topTableViewCell.rawValue) as!
+            TopTableViewCell
+        case 1:
+             cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.whatsNewTableViewCell.rawValue) as!
+        WhatsNewTableViewCell
+        case 2:
+            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.previewTableViewCell.rawValue) as!
+            PreviewTableViewCell
+        default:
+            break
+        }
+        
         return cell
     }
     
