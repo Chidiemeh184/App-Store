@@ -79,6 +79,7 @@
 		EF83E4932014C5C5007A36AE /* GameStyleSevenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E4922014C5C5007A36AE /* GameStyleSevenTableViewCell.swift */; };
 		EFB95A91201AD07E00B9A65A /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB95A8F201AD07E00B9A65A /* DescriptionTableViewCell.swift */; };
 		EFB95A92201AD07E00B9A65A /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB95A90201AD07E00B9A65A /* DescriptionTableViewCell.xib */; };
+		EFB95A94201AFB4500B9A65A /* WhatsNewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB95A93201AFB4500B9A65A /* WhatsNewTableViewCell.xib */; };
 		EFD33F7F2008599C00675C5E /* SanFranciscoFont-master in Resources */ = {isa = PBXBuildFile; fileRef = EFD33F7E2008599B00675C5E /* SanFranciscoFont-master */; };
 		EFD33FC020085BCD00675C5E /* SanFranciscoText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FAB20085BCB00675C5E /* SanFranciscoText-Regular.otf */; };
 		EFD33FC120085BCD00675C5E /* SanFranciscoText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FAC20085BCB00675C5E /* SanFranciscoText-Semibold.otf */; };
@@ -187,6 +188,7 @@
 		EF83E4922014C5C5007A36AE /* GameStyleSevenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleSevenTableViewCell.swift; sourceTree = "<group>"; };
 		EFB95A8F201AD07E00B9A65A /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		EFB95A90201AD07E00B9A65A /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		EFB95A93201AFB4500B9A65A /* WhatsNewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhatsNewTableViewCell.xib; sourceTree = "<group>"; };
 		EFD33F7E2008599B00675C5E /* SanFranciscoFont-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SanFranciscoFont-master"; sourceTree = "<group>"; };
 		EFD33FAB20085BCB00675C5E /* SanFranciscoText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Regular.otf"; sourceTree = "<group>"; };
 		EFD33FAC20085BCB00675C5E /* SanFranciscoText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Semibold.otf"; sourceTree = "<group>"; };
@@ -530,6 +532,7 @@
 			isa = PBXGroup;
 			children = (
 				EF3134A92018FE0F00E73D41 /* WhatsNewTableViewCell.swift */,
+				EFB95A93201AFB4500B9A65A /* WhatsNewTableViewCell.xib */,
 			);
 			path = "Whats New Cell";
 			sourceTree = "<group>";
@@ -784,6 +787,7 @@
 				EF1523B72000752700ADAD1F /* Apps.storyboard in Resources */,
 				EFD33FC220085BCD00675C5E /* SanFranciscoDisplay-Medium.otf in Resources */,
 				EF168B052011F0780045BF60 /* SearchHeaderView.xib in Resources */,
+				EFB95A94201AFB4500B9A65A /* WhatsNewTableViewCell.xib in Resources */,
 				EFD33FC320085BCD00675C5E /* SanFranciscoDisplay-Heavy.otf in Resources */,
 				EF1523BC2000759500ADAD1F /* Search.storyboard in Resources */,
 				EFD33FC720085BCD00675C5E /* SanFranciscoText-RegularItalic.otf in Resources */,

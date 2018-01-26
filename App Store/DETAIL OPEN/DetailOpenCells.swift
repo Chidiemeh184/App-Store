@@ -14,7 +14,6 @@ enum DetailOpenCells : String {
     
     //TableViewCell
     case topTableViewCell = "topTableViewCell"
-    case whatsNewTableViewCell = "whatsNewTableViewCell"
     case previewTableViewCell = "previewTableViewCell"
     
     //CollectionViewCell
@@ -22,4 +21,5 @@ enum DetailOpenCells : String {
     
     //NIBcells
     case descriptionTableViewCell = "descriptionTableViewCell"
+    case whatsNewTableViewCell = "whatsNewTableViewCell"
 }
