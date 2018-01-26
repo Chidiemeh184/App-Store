@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+        <array key="SanFranciscoText-Bold.otf">
+            <string>SanFranciscoText-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell tag="1" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="1082" id="KGk-i7-Jjw" customClass="DescriptionTableViewCell" customModule="App_Store" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1082"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="1081.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-q9-MeR">
+                        <rect key="frame" x="27" y="8" width="266" height="974"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyj-Aa-VtE">
+                                <rect key="frame" x="0.0" y="0.0" width="266" height="974"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="U2b-Lp-Zwa"/>
+                                </constraints>
+                                <mutableString key="text">Yelp has over 135 million reviews of businesses worldwide. Whether you’re looking for a new pizza place to try, a great coffee shop nearby, or need to book a haircut, Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax. The Yelp app is available for iPhone, iPad, and Apple Watch.\n\nYelp features:\n\nFood Near You - Find Restaurants\n• Find the newest and hottest restaurants in your area\n• Make reservations, order delivery or pickup—all from your phone\n• Filter restaurant search results by price, location, open now, and more\n\nSearch for Nearby Businesses, Services, &amp; Professionals\n• Discover great local businesses, from hair salons to trusted doctors and movers\n• Read millions of reviews by the Yelp community\n• Home need repairs? Find the best rated contractors and handymen\n• Find great deals offered by local businesses, get quotes instantly, and book appointments\n\nBeauty - Pamper Yourself \n• Find highly-rated salons, spas, massage therapists, and more\n• Book appointments through Yelp at the most relaxing staycation destinations\n\nSearch Filters \n• Filter your search results by neighborhood, distance, rating, price, and hours of operation\n• Look up addresses and phone numbers, call a business, or make reservations directly from the app\n\nOther Features\n• Read expert user reviews and browse through beautiful photos of each business\n• Write and read reviews, check-in to local businesses, upload photos and add tips for other Yelp users\n\nFind local restaurants, read expert customer reviews, and start searching for businesses near you with Yelp. \n\nNeed Help? Contact Yelp at https://www.yelp-support.com/?l=en_US\nNote: Continued use of GPS running can dramatically decrease battery life.</mutableString>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2g-Su-otr">
+                        <rect key="frame" x="27" y="1027" width="266" height="23"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="G2g-Su-otr" secondAttribute="trailing" constant="27" id="9W3-6b-dRA"/>
+                    <constraint firstAttribute="bottom" secondItem="G2g-Su-otr" secondAttribute="bottom" constant="31.5" id="JSf-yH-ReU"/>
+                    <constraint firstAttribute="trailing" secondItem="vC8-q9-MeR" secondAttribute="trailing" constant="27" id="Yuk-Cl-lQt"/>
+                    <constraint firstItem="G2g-Su-otr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="eaY-YF-lyd"/>
+                    <constraint firstItem="vC8-q9-MeR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="fZS-RF-kVL"/>
+                    <constraint firstItem="G2g-Su-otr" firstAttribute="top" secondItem="Kyj-Aa-VtE" secondAttribute="bottom" constant="45" id="rHy-yv-8Ss"/>
+                    <constraint firstItem="vC8-q9-MeR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="uAz-gP-KAb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="33" y="591"/>
+        </tableViewCell>
+    </objects>
+</document>
