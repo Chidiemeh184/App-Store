@@ -16,7 +16,7 @@ class AppDetailOpenTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.estimatedRowHeight = 100
+        tableView.estimatedRowHeight = 575
         tableView.rowHeight = UITableViewAutomaticDimension
         registerNibs()
     }
@@ -58,18 +58,16 @@ extension AppDetailOpenTableViewController {
         if indexPath.row == 3 {
             isDescriptionTapped = true
             let selectedIndex = IndexPath(row: indexPath.row, section: 0)
-            tableView.reloadRows(at: [selectedIndex], with: .fade)
+            tableView.reloadRows(at: [selectedIndex], with: .none)
         }else if indexPath.row == 1{
             isWhatsNewTapped = true
             let selectedIndex = IndexPath(row: indexPath.row, section: 0)
-            tableView.reloadRows(at: [selectedIndex], with: .fade)
+            tableView.reloadRows(at: [selectedIndex], with: .none)
             
         }else {
             
         }
     }
-    
-    
 }
 
 
@@ -91,7 +89,9 @@ extension AppDetailOpenTableViewController {
         case 4:
             return 164
         case 5:
-            return 400
+            return 330
+        case 6:
+            return  575//UITableViewAutomaticDimension//575
         default:
             break
         }
@@ -110,7 +110,7 @@ extension AppDetailOpenTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -137,6 +137,9 @@ extension AppDetailOpenTableViewController {
         case 5:
             cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.userRatingTableViewCell.rawValue) as!
             UserRatingTableViewCell
+        case 6:
+            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.informationTableViewCell.rawValue) as!
+            InformationTableViewCell
         default:
             break
         }

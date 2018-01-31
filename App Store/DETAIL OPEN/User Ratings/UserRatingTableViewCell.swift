@@ -62,6 +62,7 @@ extension UserRatingTableViewCell {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DetailOpenCells.userRatingCollectionViewCell.rawValue, for: indexPath) as! UserRatingCollectionViewCell
         return cell
     }

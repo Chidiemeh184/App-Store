@@ -15,6 +15,8 @@ enum DetailOpenCells : String {
     //TableViewCell
     case topTableViewCell = "topTableViewCell"
     case previewTableViewCell = "previewTableViewCell"
+    case informationTableViewCell = "informationTableViewCell"
+    case informationInnerTableViewCell = "informationInnerTableViewCell"
     
     //CollectionViewCell
     case previewCollectionViewCell = "previewCollectionViewCell"
