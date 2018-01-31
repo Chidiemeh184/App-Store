@@ -12,11 +12,12 @@ class AppDetailOpenTableViewController: UITableViewController {
     
     var isDescriptionTapped = false
     var isWhatsNewTapped = false
+    var isInformationTapped = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.estimatedRowHeight = 575
+        tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
         registerNibs()
     }
@@ -43,10 +44,6 @@ extension AppDetailOpenTableViewController {
         
             tableView.register(UINib(nibName: "DescriptionTableViewCell", bundle: nil), forCellReuseIdentifier: DetailOpenCells.descriptionTableViewCell.rawValue)
             tableView.register(UINib(nibName: "RatingsAndReviewsTableViewCell", bundle: nil), forCellReuseIdentifier: DetailOpenCells.ratingsAndReviewsTableViewCell.rawValue)
- 
-        
-        
-        
     }
 }
 
@@ -64,7 +61,13 @@ extension AppDetailOpenTableViewController {
             let selectedIndex = IndexPath(row: indexPath.row, section: 0)
             tableView.reloadRows(at: [selectedIndex], with: .none)
             
-        }else {
+        }else if indexPath.row == 6{
+            isInformationTapped = true
+            let selectedIndex = IndexPath(row: indexPath.row, section: 0)
+            tableView.reloadRows(at: [selectedIndex], with: .none)
+            
+        }
+        else {
             
         }
     }
@@ -91,7 +94,7 @@ extension AppDetailOpenTableViewController {
         case 5:
             return 330
         case 6:
-            return  575//UITableViewAutomaticDimension//575
+            return isInformationTapped ? UITableViewAutomaticDimension : 575
         default:
             break
         }

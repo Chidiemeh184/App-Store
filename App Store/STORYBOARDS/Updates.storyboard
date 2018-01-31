@@ -102,7 +102,7 @@
         <!--App Detail Open Table View Controller-->
         <scene sceneID="GHf-JF-bvJ">
             <objects>
-                <tableViewController id="7to-KB-6wn" customClass="AppDetailOpenTableViewController" customModule="App_Store" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AppDetailOpenTableViewController" id="7to-KB-6wn" customClass="AppDetailOpenTableViewController" customModule="App_Store" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AEF-8M-tqT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -414,36 +414,41 @@
                                     <outlet property="userRatingCollectionView" destination="pzz-PV-fFR" id="RyZ-Bw-Z9c"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="informationTableViewCell" rowHeight="575" id="8Y2-7B-MSY" customClass="InformationTableViewCell" customModule="App_Store" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" tag="11" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="informationTableViewCell" rowHeight="575" id="8Y2-7B-MSY" customClass="InformationTableViewCell" customModule="App_Store" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="1051" width="375" height="575"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Y2-7B-MSY" id="dif-DB-GVY">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="574.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rYc-bt-kdg">
-                                            <rect key="frame" x="16" y="63" width="343" height="481"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </tableView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAO-EI-V26">
-                                            <rect key="frame" x="16" y="11" width="343" height="38"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="38" id="DWb-LC-L0C"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="21"/>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="FyB-7e-fTS">
+                                            <rect key="frame" x="16" y="11" width="343" height="523.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAO-EI-V26">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="16.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="343" id="12l-yW-Byp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="21"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rYc-bt-kdg">
+                                                    <rect key="frame" x="0.0" y="56.5" width="343" height="467"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="343" id="2wL-F6-25P"/>
+                                                    </constraints>
+                                                </tableView>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="GAO-EI-V26" firstAttribute="leading" secondItem="dif-DB-GVY" secondAttribute="leading" constant="16" id="GWR-Yl-GzP"/>
-                                        <constraint firstItem="GAO-EI-V26" firstAttribute="top" secondItem="dif-DB-GVY" secondAttribute="top" constant="11" id="J9Z-GR-i9i"/>
-                                        <constraint firstAttribute="trailing" secondItem="GAO-EI-V26" secondAttribute="trailing" constant="16" id="Uql-rr-PQu"/>
-                                        <constraint firstAttribute="bottom" secondItem="rYc-bt-kdg" secondAttribute="bottom" constant="30.5" id="bGS-hI-KFe"/>
-                                        <constraint firstItem="rYc-bt-kdg" firstAttribute="top" secondItem="GAO-EI-V26" secondAttribute="bottom" constant="14" id="iWA-pv-5O3"/>
-                                        <constraint firstAttribute="trailing" secondItem="rYc-bt-kdg" secondAttribute="trailing" constant="16" id="mNu-Q4-sen"/>
-                                        <constraint firstItem="rYc-bt-kdg" firstAttribute="leading" secondItem="dif-DB-GVY" secondAttribute="leading" constant="16" id="qHy-BT-rjX"/>
+                                        <constraint firstAttribute="bottom" secondItem="FyB-7e-fTS" secondAttribute="bottom" constant="40" id="0Xb-jB-cbb"/>
+                                        <constraint firstAttribute="trailing" secondItem="FyB-7e-fTS" secondAttribute="trailing" constant="16" id="SSg-6c-j20"/>
+                                        <constraint firstItem="FyB-7e-fTS" firstAttribute="leading" secondItem="dif-DB-GVY" secondAttribute="leading" constant="16" id="qxI-05-phH"/>
+                                        <constraint firstItem="FyB-7e-fTS" firstAttribute="top" secondItem="dif-DB-GVY" secondAttribute="top" constant="11" id="wG1-ji-xRZ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

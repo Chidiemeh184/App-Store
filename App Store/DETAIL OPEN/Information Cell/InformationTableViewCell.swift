@@ -53,12 +53,22 @@ extension InformationTableViewCell {
 //Tap section to Expand
 extension InformationTableViewCell {
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        let updateSB = UIStoryboard(name: "Updates", bundle: nil)
+        let appDetailTVC = updateSB.instantiateViewController(withIdentifier: "AppDetailOpenTableViewController") as! AppDetailOpenTableViewController
+        let appDetailTableView = appDetailTVC.tableView
+       
+        
+        
         
         //TODO: Refactor
         if indexPath.row == 3 {
             isCategoryTapped = true
             let selectedIndex = IndexPath(row: indexPath.row, section: 0)
             tableView.reloadRows(at: [selectedIndex], with: .none)
+            
+            //appDetailTableView?.reloadData()
+
         }else if indexPath.row == 4{
             isCompactibilityTapped = true
             let selectedIndex = IndexPath(row: indexPath.row, section: 0)
