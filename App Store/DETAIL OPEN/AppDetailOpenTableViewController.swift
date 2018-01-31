@@ -100,7 +100,7 @@ extension AppDetailOpenTableViewController {
         case 7:
             return 220
         case 8:
-            return 294
+            return 340
         default:
             break
         }

@@ -82,6 +82,8 @@
 		EF83E4902013A30D007A36AE /* FreeAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E48F2013A30D007A36AE /* FreeAppsTableViewCell.swift */; };
 		EF83E4932014C5C5007A36AE /* GameStyleSevenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E4922014C5C5007A36AE /* GameStyleSevenTableViewCell.swift */; };
 		EF9EAD4820221ACF001A5071 /* AlsoLikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9EAD4720221ACF001A5071 /* AlsoLikeTableViewCell.swift */; };
+		EF9EAD4A20221CC9001A5071 /* AlsoLikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9EAD4920221CC9001A5071 /* AlsoLikeCollectionViewCell.swift */; };
+		EF9EAD4C2022252B001A5071 /* AlsoLikeAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9EAD4B2022252B001A5071 /* AlsoLikeAppsTableViewCell.swift */; };
 		EFB95A91201AD07E00B9A65A /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB95A8F201AD07E00B9A65A /* DescriptionTableViewCell.swift */; };
 		EFB95A92201AD07E00B9A65A /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB95A90201AD07E00B9A65A /* DescriptionTableViewCell.xib */; };
 		EFB95A94201AFB4500B9A65A /* WhatsNewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB95A93201AFB4500B9A65A /* WhatsNewTableViewCell.xib */; };
@@ -200,6 +202,8 @@
 		EF83E48F2013A30D007A36AE /* FreeAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeAppsTableViewCell.swift; sourceTree = "<group>"; };
 		EF83E4922014C5C5007A36AE /* GameStyleSevenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleSevenTableViewCell.swift; sourceTree = "<group>"; };
 		EF9EAD4720221ACF001A5071 /* AlsoLikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlsoLikeTableViewCell.swift; sourceTree = "<group>"; };
+		EF9EAD4920221CC9001A5071 /* AlsoLikeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlsoLikeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF9EAD4B2022252B001A5071 /* AlsoLikeAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlsoLikeAppsTableViewCell.swift; sourceTree = "<group>"; };
 		EFB95A8F201AD07E00B9A65A /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		EFB95A90201AD07E00B9A65A /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		EFB95A93201AFB4500B9A65A /* WhatsNewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhatsNewTableViewCell.xib; sourceTree = "<group>"; };
@@ -670,6 +674,8 @@
 			isa = PBXGroup;
 			children = (
 				EF9EAD4720221ACF001A5071 /* AlsoLikeTableViewCell.swift */,
+				EF9EAD4920221CC9001A5071 /* AlsoLikeCollectionViewCell.swift */,
+				EF9EAD4B2022252B001A5071 /* AlsoLikeAppsTableViewCell.swift */,
 			);
 			path = "Also Like Cell";
 			sourceTree = "<group>";
@@ -909,6 +915,7 @@
 				EF168AE1200FA89D0045BF60 /* HeaderStyleOneTableViewCell.swift in Sources */,
 				EF168AAD200CDB3E0045BF60 /* CollectionCells.swift in Sources */,
 				EF168AB3200DF1340045BF60 /* GameHeaderView.swift in Sources */,
+				EF9EAD4C2022252B001A5071 /* AlsoLikeAppsTableViewCell.swift in Sources */,
 				EF1523AF2000711F00ADAD1F /* SearchTableVC.swift in Sources */,
 				EF35F80B201645F200F77A06 /* GameStyleSevenInnerTableViewCellTHREE.swift in Sources */,
 				EFD33FEB20093E6800675C5E /* Extensions.swift in Sources */,
@@ -921,6 +928,7 @@
 				EF168B1220120B060045BF60 /* SearchStyleThreeTableViewCell.swift in Sources */,
 				EFD33FE0200912E000675C5E /* DailyListTableViewCell.swift in Sources */,
 				EF168ADB200F71BE0045BF60 /* GameStyleFiveInnerTableViewCell.swift in Sources */,
+				EF9EAD4A20221CC9001A5071 /* AlsoLikeCollectionViewCell.swift in Sources */,
 				EF168AD6200EECCF0045BF60 /* GameStyleFourCollectionViewCell.swift in Sources */,
 				EF83E4932014C5C5007A36AE /* GameStyleSevenTableViewCell.swift in Sources */,
 				EF3D75442007CB3400DD7B86 /* Segues.swift in Sources */,
