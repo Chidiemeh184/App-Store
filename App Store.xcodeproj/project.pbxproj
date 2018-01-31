@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF02BE7E20221293002FF9FB /* SupportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02BE7D20221293002FF9FB /* SupportsTableViewCell.swift */; };
 		EF15238E1FFF182000ADAD1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15238D1FFF182000ADAD1F /* AppDelegate.swift */; };
 		EF1523931FFF182000ADAD1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1523911FFF182000ADAD1F /* Main.storyboard */; };
 		EF1523951FFF182000ADAD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1523941FFF182000ADAD1F /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		EF83E48E2013A2EA007A36AE /* FreeAppsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E48D2013A2EA007A36AE /* FreeAppsTableVC.swift */; };
 		EF83E4902013A30D007A36AE /* FreeAppsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E48F2013A30D007A36AE /* FreeAppsTableViewCell.swift */; };
 		EF83E4932014C5C5007A36AE /* GameStyleSevenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83E4922014C5C5007A36AE /* GameStyleSevenTableViewCell.swift */; };
+		EF9EAD4820221ACF001A5071 /* AlsoLikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9EAD4720221ACF001A5071 /* AlsoLikeTableViewCell.swift */; };
 		EFB95A91201AD07E00B9A65A /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB95A8F201AD07E00B9A65A /* DescriptionTableViewCell.swift */; };
 		EFB95A92201AD07E00B9A65A /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB95A90201AD07E00B9A65A /* DescriptionTableViewCell.xib */; };
 		EFB95A94201AFB4500B9A65A /* WhatsNewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB95A93201AFB4500B9A65A /* WhatsNewTableViewCell.xib */; };
@@ -121,6 +123,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF02BE7D20221293002FF9FB /* SupportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportsTableViewCell.swift; sourceTree = "<group>"; };
 		EF15238A1FFF182000ADAD1F /* App Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF15238D1FFF182000ADAD1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF1523921FFF182000ADAD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 		EF83E48D2013A2EA007A36AE /* FreeAppsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeAppsTableVC.swift; sourceTree = "<group>"; };
 		EF83E48F2013A30D007A36AE /* FreeAppsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeAppsTableViewCell.swift; sourceTree = "<group>"; };
 		EF83E4922014C5C5007A36AE /* GameStyleSevenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStyleSevenTableViewCell.swift; sourceTree = "<group>"; };
+		EF9EAD4720221ACF001A5071 /* AlsoLikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlsoLikeTableViewCell.swift; sourceTree = "<group>"; };
 		EFB95A8F201AD07E00B9A65A /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		EFB95A90201AD07E00B9A65A /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		EFB95A93201AFB4500B9A65A /* WhatsNewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhatsNewTableViewCell.xib; sourceTree = "<group>"; };
@@ -247,6 +251,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF02BE7C20221273002FF9FB /* Supports Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF02BE7D20221293002FF9FB /* SupportsTableViewCell.swift */,
+			);
+			path = "Supports Cell";
+			sourceTree = "<group>";
+		};
 		EF1523811FFF182000ADAD1F = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +545,8 @@
 				EFB95A95201B09D400B9A65A /* Rating & Review Cell */,
 				EFB95A9A201B1ADE00B9A65A /* User Ratings */,
 				EF58463E2021A1BA00CFB9B6 /* Information Cell */,
+				EF02BE7C20221273002FF9FB /* Supports Cell */,
+				EF9EAD4620221AA8001A5071 /* Also Like Cell */,
 			);
 			path = "DETAIL OPEN";
 			sourceTree = "<group>";
@@ -650,6 +664,14 @@
 				EF35F80A201645F200F77A06 /* GameStyleSevenInnerTableViewCellTHREE.swift */,
 			);
 			path = "STYLE SEVEN";
+			sourceTree = "<group>";
+		};
+		EF9EAD4620221AA8001A5071 /* Also Like Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF9EAD4720221ACF001A5071 /* AlsoLikeTableViewCell.swift */,
+			);
+			path = "Also Like Cell";
 			sourceTree = "<group>";
 		};
 		EFB95A8E201AD03F00B9A65A /* Description Cell */ = {
@@ -905,7 +927,9 @@
 				EF15238E1FFF182000ADAD1F /* AppDelegate.swift in Sources */,
 				EFB95A91201AD07E00B9A65A /* DescriptionTableViewCell.swift in Sources */,
 				EF3D75492007CE3400DD7B86 /* DateHomeHeaderView.swift in Sources */,
+				EF02BE7E20221293002FF9FB /* SupportsTableViewCell.swift in Sources */,
 				EF168ADF200FA7950045BF60 /* HeaderSytleOneTableVC.swift in Sources */,
+				EF9EAD4820221ACF001A5071 /* AlsoLikeTableViewCell.swift in Sources */,
 				EF168AAB200C78430045BF60 /* GameStyleOneTableViewCell.swift in Sources */,
 				EF83E48920138D3B007A36AE /* PaidAppsTableVC.swift in Sources */,
 				EF168B0F201209490045BF60 /* SearchStyleTwoTableViewCell.swift in Sources */,

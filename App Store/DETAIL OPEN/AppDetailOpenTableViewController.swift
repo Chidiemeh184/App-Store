@@ -17,6 +17,8 @@ class AppDetailOpenTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("Tableview was reloaded.......................")
+        
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
         registerNibs()
@@ -94,7 +96,11 @@ extension AppDetailOpenTableViewController {
         case 5:
             return 330
         case 6:
-            return isInformationTapped ? UITableViewAutomaticDimension : 575
+            return isInformationTapped ? UITableViewAutomaticDimension : 595
+        case 7:
+            return 220
+        case 8:
+            return 294
         default:
             break
         }
@@ -113,7 +119,7 @@ extension AppDetailOpenTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 9
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -143,6 +149,12 @@ extension AppDetailOpenTableViewController {
         case 6:
             cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.informationTableViewCell.rawValue) as!
             InformationTableViewCell
+        case 7:
+            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.supportsTableViewCell.rawValue) as!
+            SupportsTableViewCell
+        case 8:
+            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.alsoLikeTableViewCell.rawValue) as!
+        AlsoLikeTableViewCell
         default:
             break
         }
