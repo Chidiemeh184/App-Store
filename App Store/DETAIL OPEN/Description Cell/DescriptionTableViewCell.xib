@@ -20,7 +20,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell tag="1" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="247" id="KGk-i7-Jjw" customClass="DescriptionTableViewCell" customModule="App_Store" customModuleProvider="target">
+        <tableViewCell tag="1" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="247" id="KGk-i7-Jjw" customClass="DescriptionTableViewCell" customModule="App_Store" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="247"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -28,17 +28,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyj-Aa-VtE">
-                        <rect key="frame" x="27" y="25" width="266" height="127.5"/>
+                        <rect key="frame" x="21" y="25" width="272" height="127.5"/>
                         <mutableString key="text">nearby, or need to book a haircut, Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax. </mutableString>
                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-sd-XEg">
-                        <rect key="frame" x="28" y="194.5" width="240" height="34"/>
+                        <rect key="frame" x="23" y="194.5" width="245" height="34"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2g-Su-otr">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="16"/>
+                                <rect key="frame" x="0.0" y="0.0" width="245" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="Ve0-lE-0bi"/>
                                 </constraints>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiya" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSY-6q-eh1">
-                                <rect key="frame" x="0.0" y="18" width="240" height="16"/>
+                                <rect key="frame" x="0.0" y="18" width="245" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="vb5-c5-DaC"/>
                                 </constraints>
@@ -67,9 +67,9 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="ykX-eC-AmM" secondAttribute="trailing" constant="16" id="91F-EH-4VY"/>
-                    <constraint firstItem="Kyj-Aa-VtE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="Fde-T1-u0D"/>
+                    <constraint firstItem="Kyj-Aa-VtE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="Fde-T1-u0D"/>
                     <constraint firstItem="Xho-sd-XEg" firstAttribute="top" secondItem="Kyj-Aa-VtE" secondAttribute="bottom" constant="42" id="MA2-lH-3ih"/>
-                    <constraint firstItem="Xho-sd-XEg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="OLb-0W-3g9"/>
+                    <constraint firstItem="Xho-sd-XEg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="OLb-0W-3g9"/>
                     <constraint firstAttribute="trailing" secondItem="Kyj-Aa-VtE" secondAttribute="trailing" constant="27" id="WIy-Iq-Rwf"/>
                     <constraint firstItem="ykX-eC-AmM" firstAttribute="leading" secondItem="Xho-sd-XEg" secondAttribute="trailing" constant="22" id="Xef-pU-Nmb"/>
                     <constraint firstAttribute="bottom" secondItem="ykX-eC-AmM" secondAttribute="bottom" constant="25.5" id="ZmH-Yd-rwC"/>

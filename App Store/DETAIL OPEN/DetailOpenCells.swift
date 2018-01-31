@@ -18,8 +18,11 @@ enum DetailOpenCells : String {
     
     //CollectionViewCell
     case previewCollectionViewCell = "previewCollectionViewCell"
+    case userRatingCollectionViewCell = "userRatingCollectionViewCell"
     
     //NIBcells
     case descriptionTableViewCell = "descriptionTableViewCell"
     case whatsNewTableViewCell = "whatsNewTableViewCell"
+    case ratingsAndReviewsTableViewCell = "ratingsAndReviewsTableViewCell"
+    case userRatingTableViewCell = "userRatingTableViewCell"
 }

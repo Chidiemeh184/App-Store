@@ -80,6 +80,10 @@
 		EFB95A91201AD07E00B9A65A /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB95A8F201AD07E00B9A65A /* DescriptionTableViewCell.swift */; };
 		EFB95A92201AD07E00B9A65A /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB95A90201AD07E00B9A65A /* DescriptionTableViewCell.xib */; };
 		EFB95A94201AFB4500B9A65A /* WhatsNewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB95A93201AFB4500B9A65A /* WhatsNewTableViewCell.xib */; };
+		EFB95A98201B0A3800B9A65A /* RatingsAndReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB95A96201B0A3800B9A65A /* RatingsAndReviewsTableViewCell.swift */; };
+		EFB95A99201B0A3800B9A65A /* RatingsAndReviewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB95A97201B0A3800B9A65A /* RatingsAndReviewsTableViewCell.xib */; };
+		EFB95A9D201B1B8800B9A65A /* UserRatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB95A9B201B1B8800B9A65A /* UserRatingTableViewCell.swift */; };
+		EFB95AA0201B9A5800B9A65A /* UserRatingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB95A9F201B9A5800B9A65A /* UserRatingCollectionViewCell.swift */; };
 		EFD33F7F2008599C00675C5E /* SanFranciscoFont-master in Resources */ = {isa = PBXBuildFile; fileRef = EFD33F7E2008599B00675C5E /* SanFranciscoFont-master */; };
 		EFD33FC020085BCD00675C5E /* SanFranciscoText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FAB20085BCB00675C5E /* SanFranciscoText-Regular.otf */; };
 		EFD33FC120085BCD00675C5E /* SanFranciscoText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFD33FAC20085BCB00675C5E /* SanFranciscoText-Semibold.otf */; };
@@ -189,6 +193,10 @@
 		EFB95A8F201AD07E00B9A65A /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		EFB95A90201AD07E00B9A65A /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		EFB95A93201AFB4500B9A65A /* WhatsNewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhatsNewTableViewCell.xib; sourceTree = "<group>"; };
+		EFB95A96201B0A3800B9A65A /* RatingsAndReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsAndReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		EFB95A97201B0A3800B9A65A /* RatingsAndReviewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingsAndReviewsTableViewCell.xib; sourceTree = "<group>"; };
+		EFB95A9B201B1B8800B9A65A /* UserRatingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRatingTableViewCell.swift; sourceTree = "<group>"; };
+		EFB95A9F201B9A5800B9A65A /* UserRatingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRatingCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFD33F7E2008599B00675C5E /* SanFranciscoFont-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SanFranciscoFont-master"; sourceTree = "<group>"; };
 		EFD33FAB20085BCB00675C5E /* SanFranciscoText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Regular.otf"; sourceTree = "<group>"; };
 		EFD33FAC20085BCB00675C5E /* SanFranciscoText-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoText-Semibold.otf"; sourceTree = "<group>"; };
@@ -516,6 +524,8 @@
 				EF3134A82018FDE600E73D41 /* Whats New Cell */,
 				EF3134AB201940DC00E73D41 /* Preview Cell */,
 				EFB95A8E201AD03F00B9A65A /* Description Cell */,
+				EFB95A95201B09D400B9A65A /* Rating & Review Cell */,
+				EFB95A9A201B1ADE00B9A65A /* User Ratings */,
 			);
 			path = "DETAIL OPEN";
 			sourceTree = "<group>";
@@ -632,6 +642,24 @@
 				EFB95A90201AD07E00B9A65A /* DescriptionTableViewCell.xib */,
 			);
 			path = "Description Cell";
+			sourceTree = "<group>";
+		};
+		EFB95A95201B09D400B9A65A /* Rating & Review Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EFB95A96201B0A3800B9A65A /* RatingsAndReviewsTableViewCell.swift */,
+				EFB95A97201B0A3800B9A65A /* RatingsAndReviewsTableViewCell.xib */,
+			);
+			path = "Rating & Review Cell";
+			sourceTree = "<group>";
+		};
+		EFB95A9A201B1ADE00B9A65A /* User Ratings */ = {
+			isa = PBXGroup;
+			children = (
+				EFB95A9B201B1B8800B9A65A /* UserRatingTableViewCell.swift */,
+				EFB95A9F201B9A5800B9A65A /* UserRatingCollectionViewCell.swift */,
+			);
+			path = "User Ratings";
 			sourceTree = "<group>";
 		};
 		EFD33FAA20085BA600675C5E /* Fonts */ = {
@@ -764,6 +792,7 @@
 				EFD33FCA20085BCD00675C5E /* SanFranciscoText-Medium.otf in Resources */,
 				EFD33F7F2008599C00675C5E /* SanFranciscoFont-master in Resources */,
 				EF1523981FFF182000ADAD1F /* LaunchScreen.storyboard in Resources */,
+				EFB95A99201B0A3800B9A65A /* RatingsAndReviewsTableViewCell.xib in Resources */,
 				EFD33FCD20085BCD00675C5E /* SanFranciscoText-SemiboldItalic.otf in Resources */,
 				EFD33FD020085BCD00675C5E /* SanFranciscoText-MediumItalic.otf in Resources */,
 				EFD33FD220085BCD00675C5E /* SanFranciscoDisplay-Light.otf in Resources */,
@@ -807,6 +836,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB95AA0201B9A5800B9A65A /* UserRatingCollectionViewCell.swift in Sources */,
 				EF3134A22018E88900E73D41 /* DetailOpenCells.swift in Sources */,
 				EF168AE4201052A10045BF60 /* HeaderStyleTwoVC.swift in Sources */,
 				EF1523A220006FE300ADAD1F /* TodayTableVC.swift in Sources */,
@@ -831,6 +861,7 @@
 				EFD33FEE2009492B00675C5E /* ShadowView.swift in Sources */,
 				EF168ABF200E012F0045BF60 /* GameStyleTwoTableViewCell.swift in Sources */,
 				EF3134AA2018FE0F00E73D41 /* WhatsNewTableViewCell.swift in Sources */,
+				EFB95A9D201B1B8800B9A65A /* UserRatingTableViewCell.swift in Sources */,
 				EF168AB0200CDBF50045BF60 /* GamesStyleOneCollectionViewCell.swift in Sources */,
 				EF1523A62000706900ADAD1F /* GamesTabTableVC.swift in Sources */,
 				EFD33FE5200915C200675C5E /* ListTableViewCell.swift in Sources */,
@@ -865,6 +896,7 @@
 				EF168AC8200EA94C0045BF60 /* GameHeaderTitleOne.swift in Sources */,
 				EF168ACF200EC5110045BF60 /* GameStyleThreeCollectionViewCell.swift in Sources */,
 				EFD33FF82009784F00675C5E /* GetButton.swift in Sources */,
+				EFB95A98201B0A3800B9A65A /* RatingsAndReviewsTableViewCell.swift in Sources */,
 				EF168B092011F5490045BF60 /* SearchTableViewCell.swift in Sources */,
 				EF3D75422007CAEA00DD7B86 /* Cells.swift in Sources */,
 				EF168ACD200EC2C90045BF60 /* GameStyleThreeTableViewCell.swift in Sources */,

@@ -10,7 +10,8 @@ import UIKit
 
 class AppDetailOpenTableViewController: UITableViewController {
     
-    var isTapped = false
+    var isDescriptionTapped = false
+    var isWhatsNewTapped = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +38,15 @@ extension AppDetailOpenTableViewController {
    
     func registerNibs(){
         
+        //UserRatingTableViewCell
             tableView.register(UINib(nibName: "WhatsNewTableViewCell", bundle: nil), forCellReuseIdentifier: DetailOpenCells.whatsNewTableViewCell.rawValue)
         
             tableView.register(UINib(nibName: "DescriptionTableViewCell", bundle: nil), forCellReuseIdentifier: DetailOpenCells.descriptionTableViewCell.rawValue)
+            tableView.register(UINib(nibName: "RatingsAndReviewsTableViewCell", bundle: nil), forCellReuseIdentifier: DetailOpenCells.ratingsAndReviewsTableViewCell.rawValue)
+ 
+        
+        
+        
     }
 }
 
@@ -49,11 +56,11 @@ extension AppDetailOpenTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.row == 3 {
-            isTapped = true
+            isDescriptionTapped = true
             let selectedIndex = IndexPath(row: indexPath.row, section: 0)
             tableView.reloadRows(at: [selectedIndex], with: .fade)
         }else if indexPath.row == 1{
-            isTapped = true
+            isWhatsNewTapped = true
             let selectedIndex = IndexPath(row: indexPath.row, section: 0)
             tableView.reloadRows(at: [selectedIndex], with: .fade)
             
@@ -76,11 +83,15 @@ extension AppDetailOpenTableViewController {
         case 0:
             return 205
         case 1:
-            return isTapped ? UITableViewAutomaticDimension : 160
+            return isWhatsNewTapped ? UITableViewAutomaticDimension : 160
         case 2:
             return 486
         case 3:
-            return isTapped ? UITableViewAutomaticDimension : 200
+            return isDescriptionTapped ? UITableViewAutomaticDimension : 200
+        case 4:
+            return 164
+        case 5:
+            return 400
         default:
             break
         }
@@ -99,7 +110,7 @@ extension AppDetailOpenTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 6
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -120,6 +131,12 @@ extension AppDetailOpenTableViewController {
         case 3:
             cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.descriptionTableViewCell.rawValue) as!
             DescriptionTableViewCell
+        case 4:
+            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.ratingsAndReviewsTableViewCell.rawValue) as!
+            RatingsAndReviewsTableViewCell
+        case 5:
+            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.userRatingTableViewCell.rawValue) as!
+            UserRatingTableViewCell
         default:
             break
         }
