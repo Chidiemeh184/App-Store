@@ -10,14 +10,20 @@ import UIKit
 
 class AppDetailOpenTableViewController: UITableViewController {
     
+    //Class properties
     var isDescriptionTapped = false
     var isWhatsNewTapped = false
     var isInformationTapped = false
+    
+    var app : App? {
+        didSet {
+            print("App has been set")
+        }
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("Tableview was reloaded.......................")
         
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -129,8 +135,10 @@ extension AppDetailOpenTableViewController {
         
         switch indexPath.row {
         case 0:
-            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.topTableViewCell.rawValue) as!
+            let cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.topTableViewCell.rawValue) as!
             TopTableViewCell
+            cell.setUp(app: self.app!)
+            return cell
         case 1:
              cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.whatsNewTableViewCell.rawValue) as!
         WhatsNewTableViewCell

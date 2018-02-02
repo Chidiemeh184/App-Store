@@ -39,9 +39,12 @@ extension UIView {
 extension UIImageView {
     
     func downloadImage(string : String){
-        
 
-  
+        
+        //Image Settings
+        self.layer.cornerRadius = 15
+        self.layer.borderWidth = 0.5
+        self.layer.borderColor = UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 0.5).cgColor
         
         let imageCache = NSCache<AnyObject, AnyObject>()
         
@@ -50,9 +53,6 @@ extension UIImageView {
         if let imageFromCache = imageCache.object(forKey: url as AnyObject) as? UIImage {
             
             self.image = imageFromCache
-            self.layer.masksToBounds = false
-            self.layer.borderWidth = 0.5
-            self.layer.borderColor = UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 0.5).cgColor
             return
             
         }else {
@@ -65,13 +65,9 @@ extension UIImageView {
                     imageCache.setObject(image, forKey: url as AnyObject)
                     
                     DispatchQueue.main.async {
-                        self.image = image
-                        self.layer.cornerRadius = 10
-                        self.clipsToBounds = true
                         
-                        self.layer.masksToBounds = false
-                        self.layer.borderWidth = 0.5
-                        self.layer.borderColor = UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 0.5).cgColor
+                        self.clipsToBounds = true
+                        self.image = image
  
                     }
                 }else {

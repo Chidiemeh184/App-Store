@@ -42,7 +42,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="157.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="liu-xf-vSG">
+                                        <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="liu-xf-vSG">
                                             <rect key="frame" x="15" y="11" width="66" height="66"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -68,9 +68,6 @@
                                             <state key="normal" title="OPEN">
                                                 <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
-                                            <connections>
-                                                <segue destination="7to-KB-6wn" kind="show" id="lkn-nk-EUc"/>
-                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sw3-vQ-Lg5">
                                             <rect key="frame" x="16" y="103" width="343" height="44"/>
@@ -102,6 +99,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Updates" id="avO-NY-ija"/>
+                    <connections>
+                        <segue destination="7to-KB-6wn" kind="show" identifier="updateToDetailOpen" id="nFQ-0N-FYT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugO-8b-wFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,6 +231,14 @@
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="appImageView" destination="30O-xn-rNq" id="GQD-vj-wHi"/>
+                                    <outlet property="contentAdvisoryRatingLabel" destination="TFO-Z4-W1l" id="q9d-ez-Mo6"/>
+                                    <outlet property="sellerNameLabel" destination="ycN-Fv-A2q" id="OFY-et-OaN"/>
+                                    <outlet property="trackCensoredNameLabel" destination="9WA-pW-gRB" id="hIT-sX-aMv"/>
+                                    <outlet property="userRatingCountLabel" destination="8jc-zj-8G1" id="Bdf-Ri-Vie"/>
+                                    <outlet property="userRatingForCurrentVersionLabel" destination="tjV-Kt-N9Z" id="Qsc-Qo-4RX"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="previewTableViewCell" rowHeight="486" id="BeC-jR-jaa" customClass="PreviewTableViewCell" customModule="App_Store" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="233" width="375" height="486"/>
@@ -641,7 +649,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vub-it-oJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3157.5999999999999" y="1624.1379310344828"/>
+            <point key="canvasLocation" x="3498" y="1633"/>
         </scene>
         <!--Updates-->
         <scene sceneID="i7E-2c-b4I">

@@ -36,22 +36,23 @@ class UpdateTableViewCell: UITableViewCell {
     
     func setUp(app : App){
         self.app = app
-        guard let imageURL = app.artworkUrl100 else {return}
+        guard let imageURLString = app.artworkUrl100 else {return}
       
         
-        let imageDownloader = NetworkProcessor(url: URL(string: imageURL)!)
-        imageDownloader.downloadImageDataFromURL { (data, response, error) in
-            if error == nil {
-                let image = UIImage(data: data!)
-                
-                DispatchQueue.main.async {
-                    self.appImageView.image = image
-                    self.appImageView.layer.cornerRadius = 10
-                    self.appImageView.clipsToBounds = true
-                }
-            }
-        }
+//        let imageDownloader = NetworkProcessor(url: URL(string: imageURL)!)
+//        imageDownloader.downloadImageDataFromURL { (data, response, error) in
+//            if error == nil {
+//                let image = UIImage(data: data!)
+//
+//                DispatchQueue.main.async {
+//                    self.appImageView.image = image
+//                    self.appImageView.layer.cornerRadius = 10
+//                    self.appImageView.clipsToBounds = true
+//                }
+//            }
+//        }
         
+        appImageView.downloadImage(string: imageURLString)
         
         
        

@@ -37,7 +37,7 @@ extension UpdatesTableVC {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 15
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -72,6 +72,32 @@ extension  UpdatesTableVC {
             print("Error loading data : \(error)")
         }
     }
+}
+
+
+//MARK: Segue
+
+extension UpdatesTableVC {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segues.updateToDetailOpen.rawValue {
+            
+            let detailOpenTVC = segue.destination as! AppDetailOpenTableViewController
+            guard let indexPath = sender as? NSIndexPath else { return }
+            let updateTVcell = tableView.cellForRow(at: indexPath as IndexPath) as? UpdateTableViewCell
+            
+            print("Sent app is \(updateTVcell?.app?.artistName)")
+            
+            detailOpenTVC.app = updateTVcell?.app
+            
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: Segues.updateToDetailOpen.rawValue, sender: indexPath)
+        
+    }
+    
 }
 
 

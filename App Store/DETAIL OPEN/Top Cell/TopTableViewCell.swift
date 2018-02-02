@@ -10,6 +10,16 @@ import UIKit
 
 class TopTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var appImageView: UIImageView!
+    @IBOutlet weak var trackCensoredNameLabel: UILabel!
+    @IBOutlet weak var userRatingForCurrentVersionLabel: UILabel!
+    @IBOutlet weak var sellerNameLabel: UILabel!
+    @IBOutlet weak var contentAdvisoryRatingLabel: UILabel!
+    @IBOutlet weak var userRatingCountLabel: UILabel!
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,8 +27,19 @@ class TopTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
+    
+    func setUp(app : App){
+        
+        guard let imageURLString = app.artworkUrl100 else {return}
+        appImageView.downloadImage(string: imageURLString)
+        trackCensoredNameLabel.text = app.trackCensoredName!
+        userRatingForCurrentVersionLabel.text = app.userRatingCountForCurrentVersion.debugDescription
+        sellerNameLabel.text = app.sellerName!
+        contentAdvisoryRatingLabel.text = app.contentAdvisoryRating!
+        userRatingCountLabel.text = "\(app.userRatingCount!) Rating"
+        
+    }
+    
 
 }

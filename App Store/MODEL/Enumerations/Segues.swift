@@ -9,6 +9,6 @@
 import Foundation
 
 enum Segues : String {
-    case first = "  "
+    case updateToDetailOpen = "updateToDetailOpen"
     
 }
