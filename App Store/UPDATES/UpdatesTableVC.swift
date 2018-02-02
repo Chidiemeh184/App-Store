@@ -9,10 +9,12 @@
 import UIKit
 
 class UpdatesTableVC: UITableViewController {
-
+    
+    var apps = [App]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loadData()
     }
 
 }
@@ -42,7 +44,44 @@ extension UpdatesTableVC {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Cells.updateTableViewCell.rawValue) as!
         UpdateTableViewCell
+        
+        cell.setUp(app: apps[indexPath.row])
         return cell
     }
     
 }
+
+
+
+//MARK: Load Fake Data
+
+extension  UpdatesTableVC {
+    
+    func loadData(){
+        let filePath = Bundle.main.path(forResource: "appStore-data", ofType: "json")
+        let url = URL(fileURLWithPath: filePath!)
+        
+        do {
+            let data = try Data(contentsOf: url)
+            
+            //let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+            let appResult = try JSONDecoder().decode(Apps.self, from: data)
+            guard let apps = appResult.results else { return }
+            self.apps = apps
+        }catch let error as NSError {
+            print("Error loading data : \(error)")
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

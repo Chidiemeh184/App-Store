@@ -10,6 +10,18 @@ import UIKit
 
 class UpdateTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var appImageView: UIImageView!
+    @IBOutlet weak var appNameLabel: UILabel!
+    @IBOutlet weak var releaseLabel: UILabel!
+    
+    
+    var app : App? {
+        didSet {
+            //print("App was set")
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +31,33 @@ class UpdateTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    func setUp(app : App){
+        self.app = app
+        guard let imageURL = app.artworkUrl100 else {return}
+      
+        
+        let imageDownloader = NetworkProcessor(url: URL(string: imageURL)!)
+        imageDownloader.downloadImageDataFromURL { (data, response, error) in
+            if error == nil {
+                let image = UIImage(data: data!)
+                
+                DispatchQueue.main.async {
+                    self.appImageView.image = image
+                    self.appImageView.layer.cornerRadius = 10
+                    self.appImageView.clipsToBounds = true
+                }
+            }
+        }
+        
+        
+        
+       
+        appNameLabel.text = app.trackName!
+        releaseLabel.text = app.releaseNotes!
+        
     }
 
 }
