@@ -10,6 +10,11 @@ import UIKit
 
 class RatingsAndReviewsTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var averageUserRatingLabel: UILabel!
+    @IBOutlet weak var userRatingCountLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +24,13 @@ class RatingsAndReviewsTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    func setUp(averageUserRating : Float, userRatingCount : Int){
+        
+        averageUserRatingLabel.text = "\(averageUserRating)"
+        userRatingCountLabel.text = "\(userRatingCount) Ratings"
     }
     
 }

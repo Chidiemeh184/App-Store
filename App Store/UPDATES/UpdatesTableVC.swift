@@ -86,8 +86,6 @@ extension UpdatesTableVC {
             guard let indexPath = sender as? NSIndexPath else { return }
             let updateTVcell = tableView.cellForRow(at: indexPath as IndexPath) as? UpdateTableViewCell
             
-            print("Sent app is \(updateTVcell?.app?.artistName)")
-            
             detailOpenTVC.app = updateTVcell?.app
             
         }

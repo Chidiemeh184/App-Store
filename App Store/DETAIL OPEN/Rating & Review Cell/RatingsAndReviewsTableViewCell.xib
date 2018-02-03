@@ -71,7 +71,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="401 Ratings" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQL-sO-im2">
-                        <rect key="frame" x="186" y="120.5" width="118" height="18"/>
+                        <rect key="frame" x="182" y="120.5" width="118" height="18"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18" id="KFM-vH-xvQ"/>
                             <constraint firstAttribute="width" constant="118" id="beY-pW-NLb"/>
@@ -200,12 +200,16 @@
                     <constraint firstAttribute="bottom" secondItem="QQL-sO-im2" secondAttribute="bottom" constant="25" id="Ocn-dw-zvA"/>
                     <constraint firstItem="dK2-1A-anU" firstAttribute="top" secondItem="loa-4f-7m4" secondAttribute="bottom" constant="8" id="Xws-Ar-5ra"/>
                     <constraint firstAttribute="trailing" secondItem="ZXA-nJ-hT2" secondAttribute="trailing" constant="20" id="bfw-1t-amO"/>
-                    <constraint firstAttribute="trailing" secondItem="QQL-sO-im2" secondAttribute="trailing" constant="16" id="pde-bU-NrZ"/>
+                    <constraint firstAttribute="trailing" secondItem="QQL-sO-im2" secondAttribute="trailing" constant="20" id="pde-bU-NrZ"/>
                     <constraint firstItem="loa-4f-7m4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="rS8-5z-hO1"/>
                     <constraint firstAttribute="bottom" secondItem="dK2-1A-anU" secondAttribute="bottom" constant="20" id="yVP-cz-O6C"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="averageUserRatingLabel" destination="loa-4f-7m4" id="WtX-hM-55w"/>
+                <outlet property="userRatingCountLabel" destination="QQL-sO-im2" id="tcG-Ly-I2U"/>
+            </connections>
             <point key="canvasLocation" x="33" y="-17"/>
         </tableViewCell>
     </objects>

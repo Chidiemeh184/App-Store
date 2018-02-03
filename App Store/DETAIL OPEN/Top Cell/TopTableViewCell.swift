@@ -16,7 +16,7 @@ class TopTableViewCell: UITableViewCell {
     @IBOutlet weak var sellerNameLabel: UILabel!
     @IBOutlet weak var contentAdvisoryRatingLabel: UILabel!
     @IBOutlet weak var userRatingCountLabel: UILabel!
-    
+    @IBOutlet weak var primaryGenreName: UILabel!
     
     
     
@@ -34,10 +34,13 @@ class TopTableViewCell: UITableViewCell {
         guard let imageURLString = app.artworkUrl100 else {return}
         appImageView.downloadImage(string: imageURLString)
         trackCensoredNameLabel.text = app.trackCensoredName!
-        userRatingForCurrentVersionLabel.text = app.userRatingCountForCurrentVersion.debugDescription
+        primaryGenreName.text = app.primaryGenreName!
+        userRatingForCurrentVersionLabel.text = "\(app.averageUserRating!)"
         sellerNameLabel.text = app.sellerName!
         contentAdvisoryRatingLabel.text = app.contentAdvisoryRating!
         userRatingCountLabel.text = "\(app.userRatingCount!) Rating"
+        
+     
         
     }
     

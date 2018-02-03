@@ -82,9 +82,9 @@
                                 <fragment>
                                     <string key="content">We removed precisely 37 bugs (and one intrepid spider, which we’re pretty sure isn’t technically a bug) from this version of the Yelp app.e removed precisely 37 bugs (and one intrepid spider, which we’re pretty sure isn’t technically a bug) from this version of the Yelp app. a bug) from this version of the Yelp app.e removed precisely 37 bugs (and one intrepid spider, which we’re pretty sure isn’t technically a bug) from this version of the Yelp app.</string>
                                     <attributes>
-                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <font key="NSFont" size="13" name="SFProDisplay-Regular"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                        <color key="NSColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="15" name="SFProDisplay-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
                                     </attributes>
                                 </fragment>
                             </attributedString>
@@ -104,6 +104,10 @@
                 <constraint firstItem="l0f-89-TxB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xFh-FC-QXB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="releaseNotesLabel" destination="oTW-TB-YkH" id="1db-uh-9R7"/>
+                <outlet property="versionLabel" destination="cF9-Tx-A9w" id="p4x-1x-ZI6"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="-192"/>
         </view>
     </objects>

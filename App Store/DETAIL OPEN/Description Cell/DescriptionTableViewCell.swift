@@ -10,6 +10,10 @@ import UIKit
 
 class DescriptionTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var artistNameLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +24,11 @@ class DescriptionTableViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
+    
+    func setUp(description : String, artistName : String){
+        descriptionLabel.text = description
+        artistNameLabel.text = artistName
+    }
+    
     
 }

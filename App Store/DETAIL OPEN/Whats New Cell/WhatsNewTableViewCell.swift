@@ -9,7 +9,12 @@
 import UIKit
 
 class WhatsNewTableViewCell: UITableViewCell {
-
+    
+    //Class Properties
+    
+    @IBOutlet weak var versionLabel: UILabel!
+    @IBOutlet weak var releaseNotesLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,6 +25,13 @@ class WhatsNewTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+    }
+    
+    func setUp(app : App){
+        
+        versionLabel.text = "Version \(app.version!)"
+        releaseNotesLabel.text = app.releaseNotes!
+        
     }
 
 }

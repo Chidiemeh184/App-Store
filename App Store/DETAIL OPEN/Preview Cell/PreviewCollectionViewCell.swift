@@ -10,7 +10,16 @@ import UIKit
 
 class PreviewCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var screenshotImageView: UIImageView!
     
     
+    func setUp(image : UIImage){
+        screenshotImageView.image = image
+        
+    }
+    
+    func setUp(imageview : UIImageView){
+        screenshotImageView.image = imageview.image
+    }
     
 }

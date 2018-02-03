@@ -14,10 +14,15 @@ class AppDetailOpenTableViewController: UITableViewController {
     var isDescriptionTapped = false
     var isWhatsNewTapped = false
     var isInformationTapped = false
+   
+    var screenShotsUrls = [String]()
+    var loadedImageViews = [UIImageView]()
     
     var app : App? {
         didSet {
-            print("App has been set")
+            screenShotsUrls = (app?.screenshotUrls)!
+            print("screenshots Url was set \(screenShotsUrls.count)")
+            loadImagesFromURLs()
         }
         
     }
@@ -28,6 +33,7 @@ class AppDetailOpenTableViewController: UITableViewController {
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
         registerNibs()
+        
     }
     
     
@@ -41,6 +47,25 @@ class AppDetailOpenTableViewController: UITableViewController {
 
 
 }
+
+
+//Load Images
+extension AppDetailOpenTableViewController {
+    
+    
+    func loadImagesFromURLs(){
+    
+        for item in screenShotsUrls {
+            let tempImageView = UIImageView()
+            tempImageView.downloadImage(string: item)
+            loadedImageViews.append(tempImageView)
+        }
+        
+        print("LoadedImageViews count : \(loadedImageViews.count)")
+    }
+    
+}
+
 
 //Register cell Nibs
 extension AppDetailOpenTableViewController {
@@ -90,11 +115,11 @@ extension AppDetailOpenTableViewController {
         
         switch indexPath.row {
         case 0:
-            return 205
+            return 215
         case 1:
             return isWhatsNewTapped ? UITableViewAutomaticDimension : 160
         case 2:
-            return 486
+            return 540
         case 3:
             return isDescriptionTapped ? UITableViewAutomaticDimension : 200
         case 4:
@@ -140,17 +165,27 @@ extension AppDetailOpenTableViewController {
             cell.setUp(app: self.app!)
             return cell
         case 1:
-             cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.whatsNewTableViewCell.rawValue) as!
+            let cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.whatsNewTableViewCell.rawValue) as!
         WhatsNewTableViewCell
+            cell.setUp(app: self.app!)
+            return cell
         case 2:
-            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.previewTableViewCell.rawValue) as!
+            let cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.previewTableViewCell.rawValue) as!
             PreviewTableViewCell
+            cell.imageViews = loadedImageViews
+            return cell
+           
         case 3:
-            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.descriptionTableViewCell.rawValue) as!
+            let cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.descriptionTableViewCell.rawValue) as!
             DescriptionTableViewCell
+            cell.setUp(description: (app?.description)!, artistName: (app?.artistName)!)
+            return cell
         case 4:
-            cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.ratingsAndReviewsTableViewCell.rawValue) as!
+            let cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.ratingsAndReviewsTableViewCell.rawValue) as!
             RatingsAndReviewsTableViewCell
+            
+            cell.setUp(averageUserRating: (app?.averageUserRating)!, userRatingCount: (app?.userRatingCount)!)
+            return cell
         case 5:
             cell = tableView.dequeueReusableCell(withIdentifier: DetailOpenCells.userRatingTableViewCell.rawValue) as!
             UserRatingTableViewCell

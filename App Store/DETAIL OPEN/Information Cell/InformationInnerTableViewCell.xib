@@ -24,49 +24,40 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="160.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="M04-6a-9vC">
-                        <rect key="frame" x="16" y="12" width="288" height="21"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkx-ZJ-aFq">
-                                <rect key="frame" x="0.0" y="0.0" width="149" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="149" id="uFV-fb-iTk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
-                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap, Inc." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDL-Hj-1jn">
-                                <rect key="frame" x="222" y="0.0" width="66" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="V79-gJ-Xvn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                    </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiW-ER-NoM">
-                        <rect key="frame" x="16" y="51" width="288" height="99"/>
-                        <string key="text">Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp is your local guide for finding </string>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiW-ER-NoM">
+                        <rect key="frame" x="16" y="30" width="288" height="99"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <string key="text">Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp i Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp i Yelp is your local guide for finding the perfect place to eat, shop, drink, explore, and relax.  Yelp i</string>
                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Snap, Inc." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDL-Hj-1jn">
+                        <rect key="frame" x="88" y="70" width="143" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="Seller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkx-ZJ-aFq">
+                        <rect key="frame" x="93" y="70" width="134" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
+                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="xiW-ER-NoM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="CpY-ca-1ba"/>
-                    <constraint firstItem="M04-6a-9vC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="HXf-CI-TGb"/>
-                    <constraint firstAttribute="bottom" secondItem="xiW-ER-NoM" secondAttribute="bottom" constant="10.5" id="JhK-2T-Dzj"/>
-                    <constraint firstItem="xiW-ER-NoM" firstAttribute="top" secondItem="M04-6a-9vC" secondAttribute="bottom" constant="18" id="b4Z-cl-P4L"/>
-                    <constraint firstAttribute="trailing" secondItem="xiW-ER-NoM" secondAttribute="trailing" constant="16" id="iih-Qo-tXf"/>
-                    <constraint firstAttribute="trailing" secondItem="M04-6a-9vC" secondAttribute="trailing" constant="16" id="iky-RN-fzt"/>
-                    <constraint firstItem="M04-6a-9vC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="y1y-S5-7rf"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="34" y="112.5"/>
+            <point key="canvasLocation" x="-167" y="-85"/>
         </tableViewCell>
+        <view contentMode="scaleToFill" id="NfW-s2-8sR">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="446"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="yvD-9U-lN3"/>
+            <point key="canvasLocation" x="533" y="17"/>
+        </view>
     </objects>
 </document>
