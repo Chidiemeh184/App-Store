@@ -8,7 +8,7 @@
 
 <p align="center">	
 <a href="http://g.recordit.co/jQtiCL29SL.gif"><img src="http://g.recordit.co/jQtiCL29SL.gif" title="GAMES"/></a>
-<a href="http://g.recordit.co/sKUDPm93Fx.gif"><img src="http://g.recordit.co/sKUDPm93Fx.gif" title="UPDATES"/></a>
+<a href="http://g.recordit.co/kKX1VVJRLv.gif"><img src="http://g.recordit.co/kKX1VVJRLv.gif" title="UPDATES"/></a>
 </p>
 
 
