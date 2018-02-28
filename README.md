@@ -1,4 +1,4 @@
-# App-Store
+
 <h1 align="center">
  Newspaper
 </h1>
