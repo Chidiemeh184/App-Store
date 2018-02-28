@@ -14,7 +14,7 @@
 
 
 <p align="center">
-	<a href="http://g.recordit.co/cuCynKBJS3.gif"><img src="http://g.recordit.co/86DPIBuDWE.gif" title="Newspaper"/></a>
+	<a href="http://recordit.co/cuCynKBJS3.gif"><img src="http://recordit.co/cuCynKBJS3.gif" title="Newspaper"/></a>
 </p>
 
 
